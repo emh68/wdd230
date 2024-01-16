@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+
+
+h1 {
+  font-family: "Rock Salt", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #ebebeb;
+  margin: auto;
+  max-width: 800px;
+}
+
+h2 {
+  text-align: center;
+  color: #14213D;
+  background-color: #ade8f4;
+  padding: 20px;
+  margin: 0;
+}
+
+h3 {
+  display: grid;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #14213D;
+  color: #ebebeb;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+
+
+main {
+  display: grid;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  max-width: 800px;
+  margin: auto;
+
+}
+
+header {
+  display: grid;
+  margin: auto;
+  max-width: 800px;
+  grid-template-columns: auto auto;
+  background-color: #14213D;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.profile-image {
+  display: grid;
+  padding: 20px;
+  margin: 0;
+
+}
+
+nav {
+  display: grid;
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  margin: auto;
+  max-width: 800px;
+  background-color: #ebebeb;
+
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+nav a {
+
+  display: grid;
+  padding: .5rem;
+}
+
+.card {
+  background-color: #ebebeb;
+  margin-bottom: 0;
+}
+
+footer {
+  margin: auto;
+  background-color: #ebebeb;
+  max-width: 800px;
+  text-align: center;
+}
