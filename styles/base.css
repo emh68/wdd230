@@ -3,11 +3,9 @@
 
 
 h1 {
-  font-family: "Rock Salt", "Trebuchet MS", "Lucida Sans Unicode",
-    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: 'Rock Salt', 'Trebuchet MS', 'Arial, sans-serif';
   color: #ebebeb;
-  margin: auto;
-  max-width: 800px;
+
 }
 
 h2 {
@@ -20,7 +18,7 @@ h2 {
 
 h3 {
   display: grid;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
   background-color: #14213D;
   color: #ebebeb;
   max-width: 800px;
@@ -49,17 +47,9 @@ header {
   gap: 30px;
 }
 
-.profile-image {
-  display: grid;
-  padding: 20px;
-  margin: 0;
-
-}
-
 nav {
-  display: grid;
+  /* display: grid; */
   justify-content: center;
-  /* margin-bottom: 20px; */
   margin: auto;
   max-width: 800px;
   background-color: #ebebeb;
@@ -67,22 +57,28 @@ nav {
 }
 
 nav ul {
+  display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+
 }
 
 nav a {
-
-  display: grid;
+  display: block;
   padding: .5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+li {
+  flex: 1 1 auto;
 }
 
 .card {
   background-color: #ebebeb;
   margin-bottom: 0;
+
 }
 
 footer {
@@ -90,4 +86,5 @@ footer {
   background-color: #ebebeb;
   max-width: 800px;
   text-align: center;
+  padding: 20px;
 }
