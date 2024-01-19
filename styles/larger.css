@@ -1,63 +1,4 @@
 @media screen and (min-width: 640px) {
-    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    h1 {
-        font-family: 'Rock Salt', 'Trebuchet MS', 'Arial', 'sans-serif';
-        color: #ebebeb;
-    }
-
-    h2 {
-        text-align: center;
-        color: #14213D;
-        background-color: #ade8f4;
-        padding: 20px;
-        margin: 0;
-    }
-
-    h3 {
-        display: grid;
-        font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
-        background-color: #14213D;
-        color: #ebebeb;
-        max-width: 800px;
-        text-align: center;
-        margin: auto;
-        padding: 20px;
-    }
-
-    main {
-        display: grid;
-        font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
-        max-width: 800px;
-        margin: auto;
-    }
-
-    header {
-        display: grid;
-        margin: auto;
-        max-width: 800px;
-        grid-template-columns: auto auto;
-        background-color: #14213D;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    nav {
-        /* display: grid; */
-        justify-content: center;
-        margin: auto;
-        max-width: 800px;
-        background-color: #ebebeb;
-        padding: 10px;
-    }
 
     nav ul {
         display: flex;
@@ -66,27 +7,7 @@
         margin: 0;
     }
 
-    nav a {
-        display: block;
-        padding: .5rem;
-        text-align: center;
-        text-decoration: none;
-    }
-
     nav ul li {
         flex: 1 1 auto;
-    }
-
-    .card {
-        background-color: #ebebeb;
-        margin-bottom: 0;
-    }
-
-    footer {
-        margin: auto;
-        background-color: #ebebeb;
-        max-width: 800px;
-        text-align: center;
-        padding: 20px;
     }
 }

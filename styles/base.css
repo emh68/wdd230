@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap'); */
 
 * {
   margin: 0;
@@ -70,10 +69,6 @@ nav a {
   padding: .5rem;
   text-align: center;
   text-decoration: none;
-}
-
-nav ul li {
-  flex: 1 1 auto;
 }
 
 .card {
