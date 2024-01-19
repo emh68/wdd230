@@ -3,7 +3,7 @@
 
 
 h1 {
-  font-family: 'Rock Salt', 'Trebuchet MS', 'Arial, sans-serif';
+  font-family: 'Rock Salt', 'Trebuchet MS', 'Arial', 'sans-serif';
   color: #ebebeb;
 
 }
@@ -30,7 +30,7 @@ h3 {
 
 main {
   display: grid;
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
   max-width: 800px;
   margin: auto;
 
