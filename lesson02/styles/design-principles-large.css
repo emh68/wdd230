@@ -1,0 +1,12 @@
+@media(min-width: 1000px) {
+
+    body {
+        display: grid;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr auto;
+        grid-gap: 30px;
+    }
+}
