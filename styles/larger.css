@@ -7,4 +7,14 @@
     nav ul li {
         flex: 1 1 auto;
     }
+
+    h2 {
+        grid-column: span 2;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
