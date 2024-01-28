@@ -21,7 +21,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
-        max-width: 1080px;
         margin: auto;
     }
 
@@ -30,5 +29,13 @@
         text-align: center;
         width: 100%;
         margin-bottom: 0;
+    }
+
+    .learning-activities {
+        margin-bottom: 0px;
+    }
+
+    iframe {
+        width: 100%;
     }
 }
