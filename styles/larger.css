@@ -1,11 +1,20 @@
 @media screen and (min-width: 640px) {
 
-    nav ul {
+    .navigation {
         display: flex;
     }
 
-    nav ul li {
-        flex: 1 1 auto;
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
     }
 
     main {

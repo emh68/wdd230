@@ -43,23 +43,57 @@ header {
   gap: 30px;
 }
 
-nav {
+#menu {
+  font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: .5rem .75rem;
+  background-color: #ebebeb;
+  color: black;
+
+}
+
+#menu::before {
+  content: "≡";
+}
+
+.navigation {
   justify-content: center;
   background-color: #ebebeb;
   padding: 10px;
 }
 
-nav ul {
-  list-style-type: none;
+.navigation li {
+  display: none;
   padding: 0;
   margin: 0;
 }
 
-nav a {
+.navigation a {
   display: block;
   padding: .5rem;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: 0.5s;
+  /* font-size: clamp(1rem, 2vmin, 1.5rem); */
+}
+
+.navigation a:hover,
+.navigation a:active {
+  color: white;
+  background-color: black;
+}
+
+.show li {
+  display: block;
+}
+
+#menu.show::before {
+  content: "x";
 }
 
 ul {
@@ -75,10 +109,14 @@ section {
   margin-bottom: 10px;
 }
 
+.learning-activities li {
+  margin-bottom: 12px;
+}
+
 section p {
-  align-items: center;
   text-align: center;
   margin: 20px;
+  padding: 60px;
 }
 
 footer {
