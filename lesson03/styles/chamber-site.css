@@ -1,0 +1,96 @@
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-family: 'Poppins', 'Trebuchet MS', 'Arial', 'sans-serif';
+    color: white;
+}
+
+h2 {
+    font-family: 'Poppins', 'Trebuchet MS', 'Arial', 'sans-serif';
+    color: white;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'Poppins', 'Arial', 'sans-serif';
+    color: #000;
+}
+
+body {
+    max-width: 100%;
+}
+
+header {
+    background-color: #2f3061;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+nav {
+    justify-content: center;
+    background-color: #a53860;
+    padding: 20px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+nav li {
+    display: block;
+    flex: 1 1 auto;
+    text-decoration: none;
+}
+
+
+nav a {
+    color: #fff;
+    font-family: 'Poppins', 'Trebuchet MS', 'Arial', 'sans-serif';
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
+    margin: 0px 30px;
+}
+
+main ol li {
+    margin: 10px 20px;
+}
+
+.color-container {
+    display: flex;
+}
+
+.color-box {
+    color: #fff;
+    width: 130px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.hex-codes {
+    display: flex;
+}
+
+footer {
+    margin: auto;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
