@@ -7,13 +7,14 @@
 
 h1 {
     font-family: 'Poppins', 'Trebuchet MS', 'Arial', 'sans-serif';
-    color: white;
+    color: #fff;
 }
 
 h2 {
     font-family: 'Poppins', 'Trebuchet MS', 'Arial', 'sans-serif';
-    color: white;
+    color: #fff;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -26,17 +27,17 @@ body {
 }
 
 header {
-    background-color: #2f3061;
+    background-color: #2F3061;
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 nav {
     justify-content: center;
-    background-color: #a53860;
-    padding: 20px;
+    background-color: #A53860;
+    padding: 10px;
 }
 
 
@@ -86,6 +87,7 @@ main ul li {
     height: 70px;
     margin-right: 10px;
 }
+
 
 .hex-codes {
     display: flex;
