@@ -72,6 +72,10 @@ main ol li {
     margin: 10px 20px;
 }
 
+main ul li {
+    list-style: none;
+}
+
 .color-container {
     display: flex;
 }
