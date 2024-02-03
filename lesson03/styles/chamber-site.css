@@ -73,6 +73,8 @@ main ul li {
 
 .color-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .color-box {
@@ -80,6 +82,7 @@ main ul li {
     width: 130px;
     height: 70px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 
