@@ -23,13 +23,15 @@
 
 <body>
     <header>
-        <div class="logo-box">
-            <img src="images/logo.png" alt="Draper_City_Chamber_of_Commerce_Logo"
-                style="max-width: 200px; max-height: 200px">
-        </div>
+        <h1>Draper City Chamber of Commerce</h1>
     </header>
+    <div class="logo-box">
+        <img src="images/logo.png" alt="Draper_City_Chamber_of_Commerce_Logo"
+            style="max-width: 200px; max-height: 200px">
+    </div>
+    <a id="menu" href="#"></a>
     <nav>
-        <ul>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
@@ -37,6 +39,37 @@
         </ul>
     </nav>
     <main>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam alias architecto vel
+                necessitatibus error ab accusamus atque dicta doloribus sapiente delectus iusto cumque, ratione quam
+                unde nesciunt expedita voluptatibus!</p>
+            <div class="element-container">
+                <div class="element-button-wrapper">
+                    <a class="element-button" href="/join">
+                        <span class="button-content-wrapper">
+                            <span class="button-text">Become A Member</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <h2>Membership Benefits</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consectetur tenetur aspernatur
+                molestias repellendus voluptatibus cum inventore sunt odit, perspiciatis ipsa quidem, maxime molestiae
+                quis natus dolores eligendi! Error, quia.</p>
+            <div class="element-container">
+                <div class="element-button-wrapper">
+                    <a class="element-button" href="/join">
+                        <span class="button-content-wrapper">
+                            <span class="button-text">Become A Member</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- <button id="joinButton">BECOME A MEMBER</button> -->
+        </section>
         <section class="events">
 
         </section>
@@ -44,13 +77,17 @@
 
         </section>
         <section class="spotlights">
-
+            <h2>Business Highlights</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aut rerum accusamus odio corrupti, cumque
+                aliquid animi nisi labore, alias distinctio accusantium. Officiis id natus doloremque dolorum quam
+                minima tenetur!</p>
         </section>
 
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> Draper Chamber | Eli Hansen | WDD 230 Project</p>
-        <p id="lastModified">Last Modified:</p>
+        <span>&copy; <span id="currentYear"></span> Draper Chamber &nbsp;|&nbsp; Eli Hansen &nbsp;|&nbsp; WDD 230
+            Project &nbsp;|&nbsp; <span id="lastModified">Last Modified:</span>
+
     </footer>
     <script src="scripts/chamber.js"></script>
 </body>
