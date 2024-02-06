@@ -9,6 +9,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 .logo-box {
     display: flex;
     align-items: center;
@@ -36,6 +40,7 @@ header {
     padding: .5rem .75rem;
     background-color: #2F3061;
     color: #fff;
+    text-align: right;
 }
 
 #menu::before {
@@ -83,6 +88,22 @@ ul {
     /* padding: 20px; */
 }
 
+.mission {
+    padding: 40px;
+    text-align: justify;
+}
+
+.mission-box {
+    position: relative;
+    background-color: #fff;
+    /* White background color */
+    padding: 40px;
+    /* Adjust padding as needed */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle box shadow */
+}
 
 /* nav {
     justify-content: center;
