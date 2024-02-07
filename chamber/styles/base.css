@@ -23,6 +23,10 @@ body {
     max-width: 100%;
 }
 
+main {
+    margin: 0;
+}
+
 header {
     display: flex;
     background-color: #fff;
@@ -89,50 +93,54 @@ ul {
 }
 
 .mission {
-    padding: 40px;
+    /* padding: 40px; */
     text-align: justify;
+
 }
 
 .mission-box {
-    position: relative;
+    position: absolute;
     background-color: #fff;
-    /* White background color */
     padding: 40px;
-    /* Adjust padding as needed */
     border-radius: 10px;
-    /* Optional: Add rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Optional: Add a subtle box shadow */
+    bottom: 280px;
+    max-height: 20em;
+    overflow: hidden;
+    margin: 60px;
+    text-align: justify;
 }
 
-/* nav {
-    justify-content: center;
+img {
+    /* display: flex; */
+    max-width: 100%;
+    /* position: relative; */
+    display: block;
+
+}
+
+.benefits {
     background-color: #2F3061;
-    padding: 10px;
 }
 
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-
+.benefits-box {
+    position: absolute;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle box shadow */
+    bottom: 0px;
+    max-height: 20em;
+    margin: 60px;
+    text-align: justify;
 }
 
-nav li {
-    display: block;
-    flex: 1 1 auto;
-    text-decoration: none;
+.events {
+    background-color: #ebebeb;
 }
 
-
-nav a {
-    color: #fff;
-    font-family: 'Poppins', 'Trebuchet MS', 'Arial', 'sans-serif';
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-} */
 
 footer {
     display: flex;
