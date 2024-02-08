@@ -27,7 +27,7 @@ main {
 
 input,
 button {
-    padding: 0.5rem;
+    padding: .5rem;
 }
 
 button {
@@ -56,6 +56,10 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.message {
+    font-size: 14px;
 }
 
 @media only screen and (min-width: 32.5em) {

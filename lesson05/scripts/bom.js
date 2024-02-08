@@ -1,6 +1,7 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
+const messageDiv = document.querySelector('.message');
 
 button.addEventListener('click', function addChapter() {
     const validInputRegex = /^[a-zA-Z]+\s\d{1,2}$/;
@@ -19,8 +20,9 @@ button.addEventListener('click', function addChapter() {
 
         input.focus();
         input.value = '';
+        messageDiv.textContent = '';
     }
     else {
-        alert('Please enter a valid input in the format "Book Chapter" (e.g., "Helaman 5" or "Alma 14").');
+        messageDiv.textContent = 'Please enter a valid input in the format "Book Chapter" (e.g., "Helaman 5" or "Alma 14").';
     }
 });
