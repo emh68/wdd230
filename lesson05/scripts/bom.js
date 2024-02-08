@@ -3,7 +3,8 @@ const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
 button.addEventListener('click', function addChapter() {
-    if (input.value !== '') {
+    const validInputRegex = /^[a-zA-Z]+\s\d{1,2}$/;
+    if (validInputRegex.test(input.value)) {
         const li = document.createElement('li');
         const deleteButton = document.createElement('button');
         li.textContent = input.value;
@@ -18,5 +19,8 @@ button.addEventListener('click', function addChapter() {
 
         input.focus();
         input.value = '';
+    }
+    else {
+        alert('Please enter a valid input in the format "Book Chapter" (e.g., "Helaman 5" or "Alma 14").');
     }
 });
