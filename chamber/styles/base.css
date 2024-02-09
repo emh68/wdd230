@@ -30,9 +30,9 @@ main {
 }
 
 header {
-    display: flex;
+    /* display: flex;
     background-color: #fff;
-    text-align: center;
+    text-align: center; */
     /* justify-content: center; */
     padding: 35px;
 }
@@ -103,7 +103,6 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 .herotextbox {
@@ -116,25 +115,33 @@ ul {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-
 }
 
 .benefits {
-    background-color: #6dad6b;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: #6dad6b; */
+}
+
+.benefits img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
-/* .benefits-box {
+.benefitstextbox {
     position: absolute;
     background-color: #fff;
-    padding: 40px;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    bottom: 0px;
-    max-height: 20em;
-    margin: 60px;
-    text-align: justify;
-} */
+    text-align: center;
+}
 
 .events {
     background-color: #ebebeb;
@@ -142,6 +149,7 @@ ul {
     border-radius: 10px;
     border-color: #000;
     text-align: justify;
+    padding: 20px;
 
 }
 
@@ -151,10 +159,17 @@ ul {
     border-radius: 10px;
     border-color: #000;
     text-align: justify;
+    padding: 20px;
+}
+
+.contact {
+    /* font-family: 'Trebuchet MS', 'Arial', 'sans-serif'; */
+    display: block;
 }
 
 footer {
-    display: flex;
+    /* display: flex; */
+    display: grid;
     color: #fff;
     background-color: #2F3061;
     text-align: center;

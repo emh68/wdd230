@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <meta property="og:title" content="Example Website for Salt Lake City, UT Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="images/salt-lake-skyline.jpg">
     <meta property="og:url" content="https://www.github.io/emh68/wdd230/chamber.html">
     <title>Salt Lake Chamber of Commerce</title>
 </head>
@@ -60,21 +60,25 @@
                 </div>
             </div>
         </div>
-        <div class="benefits-box">
-            <h2>Membership Benefits</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consectetur tenetur aspernatur
-                molestias repellendus voluptatibus cum inventore sunt odit, perspiciatis ipsa quidem, maxime
-                molestiae
-                quis natus dolores eligendi! Error, quia.</p>
-            <div class="element-container">
-                <div class="element-button-wrapper">
-                    <a class="element-button" href="/join">
-                        <span class="button-content-wrapper">
-                            <span class="button-text">Become A Member</span>
-                        </span>
-                    </a>
+        <div class="benefits">
+            <picture>
+                <img src="images/grey-gradient-background.jpg" alt="">
+                <div class=" benefitstextbox">
+                    <h2>Membership Benefits</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consectetur tenetur aspernatur
+                        molestias repellendus voluptatibus cum inventore sunt odit, perspiciatis ipsa quidem, maxime
+                        molestiae
+                        quis natus dolores eligendi! Error, quia.</p>
+                    <div class="element-container">
+                        <div class="element-button-wrapper">
+                            <a class="element-button" href="/join">
+                                <span class="button-content-wrapper">
+                                    <span class="button-text">Become A Member</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
         <!-- <button id="joinButton">BECOME A MEMBER</button> -->
         <section class="events">
@@ -102,8 +106,15 @@
 
     </main>
     <footer>
+        <div class="contact">
+            <p>
+                <strong>Salt Lake Chamber</strong><br>201 South Main Street #2300<br>
+                Salt Lake City, UT 84111<br><br>Phone: (801) 364-3631<br>Email: info@slchamber.com
+            </p><br>
+        </div>
         <span>&copy; <span id="currentYear"></span> Draper Chamber &nbsp;|&nbsp; Eli Hansen &nbsp;|&nbsp; WDD 230
-            Project &nbsp;|&nbsp; <span id="lastModified">Last Modified:</span></span>
+            Project</span>
+        <div id="lastModified">Last Modified:</div></span>
 
     </footer>
     <script src="scripts/chamber.js"></script>
