@@ -17,11 +17,18 @@
         display: none;
     }
 
+    body {
+        max-width: 100%;
+        margin: auto;
+    }
+
+
     main {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
         margin: auto;
+        max-width: 100%;
     }
 
     h2 {
@@ -31,16 +38,17 @@
         margin-bottom: 0;
     }
 
-    /* h3 {
-        display: grid;
-        grid-template-columns: 1fr auto;
-    } */
-
     .weather-and-events {
-        display: grid;
-        grid-template-columns: 65% 35% auto;
+        display: flex;
 
+    }
 
+    .events {
+        flex: 2;
+    }
+
+    .weather {
+        flex: 1;
     }
 
 

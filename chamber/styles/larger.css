@@ -1,0 +1,53 @@
+@media screen and (min-width: 800px) {
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    body {
+        max-width: 100%;
+        margin: auto;
+    }
+
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .weather-and-events {
+        display: flex;
+
+    }
+
+    .events {
+        flex: 2;
+    }
+
+    .weather {
+        flex: 1;
+    }
+}
