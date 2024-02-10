@@ -31,5 +31,18 @@
         margin-bottom: 0;
     }
 
+    /* h3 {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    } */
+
+    .weather-and-events {
+        display: grid;
+        grid-template-columns: 65% 35% auto;
+
+
+    }
+
+
 
 }
