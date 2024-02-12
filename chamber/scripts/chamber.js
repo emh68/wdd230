@@ -14,3 +14,13 @@ hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('show');
     hambutton.classList.toggle('show');
 });
+
+
+const modeButton = document.querySelector('#modeToggle');
+const body = document.querySelector('body');
+const main = document.querySelector('main');
+
+modeButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode', modeButton.checked);
+    main.classList.toggle('dark-mode', modeButton.checked);
+});
