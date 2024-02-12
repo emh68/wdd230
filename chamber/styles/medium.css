@@ -38,6 +38,26 @@
         margin-bottom: 0;
     }
 
+    .membership-benefits {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        /* justify-content: center;
+        margin-top: 20px; */
+
+    }
+
+    .membership-headline,
+    .element-container {
+        grid-column: 1 / -1;
+    }
+
+    .element-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .weather-and-events {
         display: flex;
 
@@ -51,6 +71,14 @@
         flex: 1;
     }
 
+    .footer-content {
+        grid-column: 1 / -1;
+    }
 
+    .contact-info {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr;
+        grid-gap: 20px; */
+    }
 
 }
