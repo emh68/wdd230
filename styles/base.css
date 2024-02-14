@@ -29,6 +29,11 @@ h3 {
   border-top-left-radius: 6px;
 }
 
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
 main {
   font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
   padding: 10px;
@@ -110,6 +115,7 @@ section {
   margin-bottom: 10px;
   box-shadow: 0 0 10px;
 }
+
 
 .learning-activities li {
   margin-bottom: 12px;
