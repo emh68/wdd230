@@ -108,10 +108,15 @@ section {
 
 .learning-activities {
   margin-bottom: 10px;
+  box-shadow: 0 0 10px;
 }
 
 .learning-activities li {
   margin-bottom: 12px;
+}
+
+.information {
+  box-shadow: 0 0 10px;
 }
 
 section p {
