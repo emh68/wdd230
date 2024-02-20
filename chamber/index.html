@@ -46,9 +46,13 @@
     <main>
         <div class="hero">
             <picture>
-                <img src="images/skyline.webp" alt="Salt_Lake_City_Skyline">
+                <source srcset="images/wdd230-org-small.webp" media="(max-width: 640px)">
+                <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1024px)">
+                <img src="images/wdd230-org-large.webp" alt="Three people in an office meeting" width="1280"
+                    height="720">
+                <!-- <img src="images/skyline.webp" alt="Salt_Lake_City_Skyline"> -->
             </picture>
-            <div class="herotextbox">
+            <!-- <div class="herotextbox">
                 <h2>Our Mission</h2>
                 <hr>
                 <p>The mission of the Salt Lake Chamber of Commerce is to bring business leaders in the Salt Lake area
@@ -63,16 +67,13 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <section class="membership-benefits">
-            <!-- <img src="images/blue-background.jpg" alt=""> -->
-            <!-- <div class=" benefits"> -->
             <div class="membership-headline">
                 <h2>Membership Benefits</h2>
                 <hr>
             </div>
-            <!-- <div class="benefitstextbox"></div> -->
             <div class="benefits-higlights">
                 <h3>Business Highlights</h3>
                 <p>In addition to our ribbon cutting ceremonies, every month we highlight a business member of the
@@ -102,7 +103,6 @@
                     </a>
                 </div>
             </div>
-            <!-- </div> -->
         </section>
         <!-- <button id="joinButton">BECOME A MEMBER</button> -->
         <div class="weather-and-events">
