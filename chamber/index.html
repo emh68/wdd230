@@ -112,13 +112,25 @@
                 <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero cumque exercitationem eos ad aut
                     earum doloribus quisquam at assumenda. Tempore amet voluptatum nisi dolorem autem praesentium
-                    nesciunt
-                    aperiam magni.</p>
+                    nesciunt aperiam magni.</p>
             </section>
             <section class="weather">
                 <h2>Weather</h2>
                 <hr>
-                <p>Weather</p>
+                <label for="temperature">Temperature: </label>
+                <span id="temperature" placeholder=""></span>
+
+                <br>
+
+                <!-- Wind Speed Input -->
+                <label for="windSpeed">Wind Speed: </label>
+                <span id="windSpeed" placeholder=""></span>
+
+                <br>
+
+                <!-- Display Wind Chill Factor -->
+                <label for="windChill">Windchill: </label>
+                <span id="windChillValue">N/A</span></label>
 
             </section>
         </div>
@@ -144,6 +156,7 @@
         </div>
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
