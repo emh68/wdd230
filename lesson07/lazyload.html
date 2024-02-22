@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/lazyloading.css">
+    <title>Example of Lazing Loading</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Loading Images</h1>
+    </header>
+    <main>
+        <picture id="lazyimages">
+            <img width="400" height="600" loading="lazy" src="https://loremflickr.com/400/600/paris" alt="">
+            <img width="400" height="600" loading="lazy" src="https://loremflickr.com/400/600/brazil,rio" alt="">
+            <img width="400" height="600" loading="lazy" src="https://loremflickr.com/400/600/tahiti" alt="">
+            <img width="400" height="600" loading="lazy" src="https://loremflickr.com/400/600/rome" alt="">
+            <img width="400" height="600" loading="lazy" src="https://loremflickr.com/400/600/beach" alt="">
+            <img width="400" height="600" loading="lazy" src="https://loremflickr.com/400/600/hawaii" alt="">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Eli Hansen | U.S.A.</p>
+        <p id="lastModified">Last Modified:</p>
+    </footer>
+    <script src="./scripts/lazyloading.js"></script>
+</body>
+
+</html>
