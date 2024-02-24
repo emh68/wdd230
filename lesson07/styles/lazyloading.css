@@ -71,6 +71,10 @@ h1 {
     text-align: center;
 }
 
+body {
+    background-color: #ebebeb;
+}
+
 main {
     font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
     margin: 10px;
@@ -85,23 +89,35 @@ header {
     gap: 30px;
 }
 
-#lazyimages {
+picture {
+    padding: 10px;
+}
+
+img {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
     max-width: 100%;
     margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px #2f2f2f;
 }
 
 .fadeFromBlack {
     animation: fadeFromBlack 3s;
-}    
+}
 
 
 @keyframes fadeFromBlack {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 iframe {
