@@ -13,7 +13,7 @@ chaptersArray.forEach(chapter => {
 
 // Change the button click event listener
 button.addEventListener('click', () => {
-    const validInputRegex = /^\d+\s[A-Za-z]+\s\d+$/;
+    const validInputRegex = /^(\d\s[A-Z][a-z]*\s\d{1,2}|[A-Z][a-z]*\s\d{1,2})$/;
     if (validInputRegex.test(input.value)) {
 
         if (input.value !== '') {  // Make sure the input is not empty
