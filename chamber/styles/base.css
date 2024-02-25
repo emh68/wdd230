@@ -309,6 +309,33 @@ hr {
     padding: 20px;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Sidebar takes 1 part, Main content takes 3 parts */
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #eee6c9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid for main content */
+    gap: 20px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr;
