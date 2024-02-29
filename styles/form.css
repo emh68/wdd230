@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Rock Salt', 'Trebuchet MS', 'Arial', 'sans-serif';
+    color: #ebebeb;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
+    text-align: center;
+    padding: 15px;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
+    background-color: #14213D;
+    color: #ebebeb;
+    text-align: center;
+    padding: 20px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+main {
+    font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
+    padding: 0 5%;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    background-color: #14213D;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    gap: 30px;
+}
+
+#menu {
+    font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #ebebeb;
+    color: black;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation {
+    justify-content: center;
+    background-color: #ebebeb;
+    padding: 15px;
+}
+
+.navigation li {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .5rem;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "x";
+}
+
+ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+footer p {
+    padding: 10px;
+}
+
+footer {
+    margin: auto;
+    background-color: #14213D;
+    color: #ebebeb;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*----------- FORM ---------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #14213D;
+    border-radius: 10px;
+    padding: .5rem 2%;
+
+}
+
+form legend {
+    color: #14213D;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div,
+form label.rating {
+    display: block;
+    padding-top: 1rem;
+    color: #000;
+    font-size: 1rem;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.rating input {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 18rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #13979c;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: rgb(180, 14, 14) solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#rangevalue {
+    font-size: 2rem;
+}
+
+#rangevalues {
+    display: flex;
+    margin: 0 0 0 20px;
+    width: 270px;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+}

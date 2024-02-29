@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <meta property="og:title" content="Eli Hansen Web Development Website">
     <meta property="og:type" content="website">
@@ -39,17 +39,52 @@
         </ul>
     </nav>
     <main>
-        <section class="form">
-            <h3>Information</h3>
+        <h2>Login</h2>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>User Info</legend>
+                <label class="top">Username*<input type="text" id="uid" name="uid" required></label>
+                <label class="top">Password*<input type="password" id="pwd" name="pwd"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Password must at least 8 characters long and contain at least one number and one uppercase letter"
+                        required></label>
+                <label class="top">Confirm Password*<input type="password" id="confirmPwd" name="confirmPwd"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Password must at least 8 characters long and contain at least one number and one uppercase letter"
+                        required></label>
+                <div class="message"></div>
+                <label class="top">Email*<input type="email" id="email" name="email"
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu" title="Please enter a valid byui.edu email address."
+                        placeholder="someone@byui.edu" required></label>
+                <label class="rating">Rating<input type="range" id="rating" name="rating" min="0" max="10" value="0"
+                        step="1" list="rangevalues">
+                    <!-- <div id="rangevalue">0</div> -->
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </label>
 
-        </section>
+            </fieldset>
+            <input type="submit" value="Sign In" class="submitBtn">
+        </form>
+
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> | Eli Hansen | U.S.A.</p>
         <p id="lastModified">Last Modified:</p>
     </footer>
     <script src="scripts/getdates.js"></script>
-
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>
