@@ -21,7 +21,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
-        margin: auto;
+        margin: 100px 20%;
     }
 
     h2 {

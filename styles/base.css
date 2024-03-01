@@ -60,10 +60,11 @@ body {
   margin: 0;
 }
 
-.course-page main {
+main {
   font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
   padding: 10px;
   margin: 10px;
+
 }
 
 header {
