@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eli Hansen">
+    <meta name="description" content="Salt Lake Chamber of Commerce Site">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&family=Wix+Madefor+Text:wght@500&display=swap">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Example Website for Salt Lake City, UT Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.github.io/emh68/wdd230/chamber/images/skyline.jpg">
+    <meta property="og:url" content="https://www.github.io/emh68/wdd230/chamber.html">
+    <title>Salt Lake Chamber of Commerce</title>
+</head>
+
+<body>
+    <label class="switch" aria-label="Toggle Dark Mode">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider round"></span>
+    </label>
+    <header>
+        <h1>Salt Lake Chamber of Commerce</h1>
+    </header>
+    <div class="logo-box">
+        <img src="images/logo.webp" alt="Salt_Lake_City_Chamber_of_Commerce_Logo"
+            style="max-width: 150px; max-height: 150px">
+    </div>
+    <a id="menu" href="#" aria-label="Toggle Hamburger Menu"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>User Info</legend>
+                <label>First Name*<input type="text" id="fname" name="fname" required></label>
+                <label>Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label>Title or Position*<input type="text" id="role" name="role" pattern="[a-zA-Z\s\-]{7,}"
+                        title="Only alpha characters, hyphens and spaces are allowed and must be at least 7 characters long."></label>
+                <label>Email*<input type="email" id="email" name="email" placeholder="yourname@company.com"
+                        required></label>
+                <label>Phone*<input type="tel" id="phone" name="phone" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Info</legend>
+                <label>Business/Organization's Name*<input type="text" id="bname" name="bname" required></label>
+                <label for="business-description">Business/Organization Description<textarea id="bdescript"
+                        name="bdescript" rows="6" cols="50"
+                        placeholder="Please enter a brief description about your business and the products and services you offer."></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">
+                                <h2>NP Membership</h2>
+                            </th>
+                            <th scope="col">
+                                <h2>Bronze Membership</h2>
+                            </th>
+                            <th scope="col">
+                                <h2>Silver Membership</h2>
+                            </th>
+                            <th scope="col">
+                                <h2>Gold Membership</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feature 1</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Feature 2</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Feature 3</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Feature 4</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <td></td>
+                        <td><input type="radio" id="selectNP" name="selectedMembership" value="NP">
+                            <label for="selectNP">Select NP</label>
+                        </td>
+                        <td><input type="radio" id="selectBronze" name="selectedMembership" value="Bronze">
+                            <label for="selectBronze">Select Bronze</label>
+                        </td>
+                        <td><input type="radio" id="selectSilver" name="selectedMembership" value="Silver">
+                            <label for="selectSilver">Select Silver</label>
+                        </td>
+                        <td><input type="radio" id="selectGold" name="selectedMembership" value="Gold">
+                            <label for="selectGold">Select Gold</label>
+                        </td>
+
+                    </tbody>
+                </table>
+            </fieldset>
+            <input type="hidden" id="dateTime" name="dateTime">
+        </form>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>
+                <strong>Salt Lake Chamber</strong><br>201 South Main Street #2300<br>
+                Salt Lake City, UT 84111<br><br>Phone: (801) 364-3631<br>Email: info@slchamber.com
+            </p>
+        </div>
+        <br>
+        <div class="footer-content"><span>&copy; <span id="currentYear"></span> Draper Chamber &nbsp;|&nbsp; Eli
+                Hansen &nbsp;|&nbsp; WDD 230 Project &nbsp;|&nbsp; <span id="lastModified">Last Modified:</span></span>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>
