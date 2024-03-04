@@ -1,0 +1,70 @@
+{
+    "wardInformation": [
+        {
+            "familyName": "Johnson",
+            "moveInDate": "2023-06-10",
+            "numberOfPeople": 5,
+            "visitedByBishopric": false,
+            "familyMembers": [
+                {
+                    "name": "Emily Johnson",
+                    "gender": "Female",
+                    "birthdate": "1990-08-15"
+                },
+                {
+                    "name": "Daniel Johnson",
+                    "gender": "Male",
+                    "birthdate": "1993-03-22"
+                },
+                {
+                    "name": "Olivia Johnson",
+                    "gender": "Female",
+                    "birthdate": "2015-12-01"
+                },
+                {
+                    "name": "Liam Johnson",
+                    "gender": "Male",
+                    "birthdate": "2018-05-07"
+                },
+                {
+                    "name": "Ava Johnson",
+                    "gender": "Female",
+                    "birthdate": "2022-02-14"
+                }
+            ]
+        },
+        {
+            "familyName": "Miller",
+            "moveInDate": "2021-09-28",
+            "numberOfPeople": 5,
+            "visitedByBishopric": true,
+            "familyMembers": [
+                {
+                    "name": "Christopher Miller",
+                    "gender": "Male",
+                    "birthdate": "1982-12-10"
+                },
+                {
+                    "name": "Rebecca Miller",
+                    "gender": "Female",
+                    "birthdate": "1985-06-25"
+                },
+                {
+                    "name": "Ethan Miller",
+                    "gender": "Male",
+                    "birthdate": "2008-03-18"
+                },
+                {
+                    "name": "Sophie Miller",
+                    "gender": "Female",
+                    "birthdate": "2011-10-07"
+                },
+                {
+                    "name": "Andrew Miller",
+                    "gender": "Male",
+                    "birthdate": "2014-07-14"
+                }
+            ]
+        }
+    ]
+}
