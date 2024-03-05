@@ -312,178 +312,6 @@ hr {
     margin-bottom: 20px;
 }
 
-/* .calendar {
-    background-color: #FFF;
-    border-radius: 0.8rem;
-    box-shadow: 0 0.8rem 1.6rem rgba(35, 131, 157, 0.2);
-    padding: 3.2rem;
-
-}
-
-.calendar__header {
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 0.2rem;
-    padding: 0 0.4rem 1.2rem;
-    text-transform: uppercase;
-}
-
-.calendar__day-names {
-    border-bottom: 0.1rem solid #828889;
-    display: flex;
-    gap: 1.2rem;
-    margin-bottom: 0.8rem;
-    padding: 0.8rem 0;
-}
-
-.calendar__day-name {
-    aspect-ratio: 1;
-    color: #828889;
-    font-weight: normal;
-    text-align: center;
-    width: 2.4rem;
-}
-
-.calendar__day_numbers {
-    display: flex;
-    flex-direction: column;
-}
-
-.calendar__day-numbers-row {
-    display: flex;
-    gap: 1.2rem;
-    padding: 0.6rem 0;
-}
-
-.calendar__day-numbers-row:first-child {
-    justify-content: flex-end;
-}
-
-.calendar__day-number {
-    align-content: center;
-    justify-content: center;
-    aspect-ratio: 1;
-    color: #000;
-    display: flex;
-    line-height: 1.4;
-    text-align: center;
-    width: 2.4rem;
-}
-
-.calendar__day-number--current {
-    background-color: #23839D;
-    border-radius: 50%;
-    box-shadow: 0 0 0 0.4rem #23839D;
-    color: #FFF;
-} */
-
-/* 
-////////////////////////////////
-.calendar-container {
-    background: #fff;
-    width: 450px;
-    border-radius: 10px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-.calendar-container header {
-    display: flex;
-    align-items: center;
-    padding: 25px 30px 10px;
-    justify-content: space-between;
-}
-
-header .calendar-navigation {
-    display: flex;
-}
-
-header .calendar-navigation span {
-    height: 38px;
-    width: 38px;
-    margin: 0 1px;
-    cursor: pointer;
-    text-align: center;
-    line-height: 38px;
-    border-radius: 50%;
-    user-select: none;
-    color: #aeabab;
-    font-size: 1.9rem;
-}
-
-.calendar-navigation span:last-child {
-    margin-right: -10px;
-}
-
-header .calendar-navigation span:hover {
-    background: #f2f2f2;
-}
-
-header .calendar-current-date {
-    font-weight: 500;
-    font-size: 1.45rem;
-}
-
-.calendar-body {
-    padding: 20px;
-}
-
-.calendar-body ul {
-    list-style: none;
-    flex-wrap: wrap;
-    display: flex;
-    text-align: center;
-}
-
-.calendar-body .calendar-dates {
-    margin-bottom: 20px;
-}
-
-.calendar-body li {
-    width: calc(100% / 7);
-    font-size: 1.07rem;
-    color: #414141;
-}
-
-.calendar-body .calendar-weekdays li {
-    cursor: default;
-    font-weight: 500;
-}
-
-.calendar-body .calendar-dates li {
-    margin-top: 30px;
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.calendar-dates li.inactive {
-    color: #aaa;
-}
-
-.calendar-dates li.active {
-    color: #fff;
-}
-
-.calendar-dates li::before {
-    position: absolute;
-    content: "";
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.calendar-dates li.active::before {
-    background: #6332c5;
-}
-
-.calendar-dates li:not(.active):hover::before {
-    background: #e4e1e1;
-} */
 
 /*-------- FORM ----------- */
 :root {
@@ -492,10 +320,11 @@ header .calendar-current-date {
 }
 
 form fieldset {
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 600px;
     border: 1px solid #999;
     border-radius: 10px;
-    padding: 1.5rem 10%;
+    padding: 1.5rem 5%;
 }
 
 form legend {
@@ -518,6 +347,29 @@ form label textarea {
 
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+
+}
+
+th,
+td {
+    padding: 15px 6px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+.feature {
+    font-size: small;
+}
+
+
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -527,42 +379,3 @@ footer {
     justify-content: center;
     padding: 40px;
 }
-
-
-
-/* .container {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    gap: 20px;
-    padding: 20px;
-    width: 1500px;
-    margin: 0 auto;
-    background-image: linear-gradient(to right #eee6c9, #a586);
-}
-
-.sidebar {
-    background-color: #eee6c9;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.main-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.photo-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.photo-gallery img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-} */
