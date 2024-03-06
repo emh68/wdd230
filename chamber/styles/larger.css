@@ -22,9 +22,7 @@
         margin: auto;
     }
 
-
     main {
-        /* grid-gap: 10px; */
         margin: auto;
         max-width: 100%;
     }
@@ -33,12 +31,10 @@
         grid-column: 1 / -1;
         text-align: center;
         width: 100%;
-        /* margin-bottom: 0; */
     }
 
     .weather-and-events {
         display: flex;
-
     }
 
     .events {
@@ -50,8 +46,30 @@
     }
 
     /*--------- Discover --------*/
-    .container {
-        grid-template-columns: 1fr 2fr;
 
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
     }
+
+    .facts-container {
+        height: 280px;
+    }
+
+    .sidebar {
+        gap: 20px;
+        height: 1500px;
+    }
+
+    .news {
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .photo-gallery img:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s ease-in-out;
+    }
+
 }

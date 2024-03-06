@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const factsList = document.getElementById('facts-list');
+const factsList = document.querySelector('.facts-list');
 let currentFactIndex = 0;
 
 const additionalFacts = [

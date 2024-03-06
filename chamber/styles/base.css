@@ -15,13 +15,10 @@ h1 {
     justify-items: center; */
 }
 
-h2 {
+h2,
+h3,
+h4 {
     text-align: center;
-    padding: 10px;
-}
-
-
-h3 {
     padding: 10px;
 }
 
@@ -240,41 +237,57 @@ hr {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     /* background-image: linear-gradient(to right, #eee6c9, #a586); */
+    background-color: #2f30612d;
+    /* background-color: #ebebeb; */
 }
 
 #message {
-    font-size: 20px;
+    font-size: larger;
     font-weight: 700;
-    padding-top: 20px;
+    padding: 20px;
     margin: 0 auto;
     text-align: center;
 }
 
 .sidebar {
     display: grid;
-    background-color: #eee6c9;
+    /* background-color: #0000003f; */
+    /* background-color: #8f8f8f62; */
+    background-color: #1c666650;
     padding: 20px;
     margin: 0 0 20px 0;
     border-radius: 10px;
     grid-template-columns: 1fr;
-    width: 100%;
+    /* width: 100%; */
 }
 
-#facts-container {
+.facts-container,
+.facts-list,
+.news,
+iframe {
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+
+.facts-container {
     width: 100%;
-    height: 10em;
+    height: auto;
     overflow: hidden;
     padding-top: 20px;
     position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    align-items: center;
 }
 
-#facts-list {
+.facts-list {
     text-align: center;
     list-style-type: none;
     padding: 0;
@@ -283,10 +296,12 @@ hr {
     transition: transform 1s ease-in-out;
 }
 
-#facts-list li {
+.facts-list li {
     width: 100%;
-    height: 10em;
+    /* height: 10em; */
     flex-shrink: 0;
+    padding: 20px;
+    text-align: center;
 }
 
 @keyframes autoplay {
@@ -299,6 +314,27 @@ hr {
     }
 }
 
+.news {
+    width: 100%;
+    /* height: auto; */
+    padding: 10px;
+    /* position: relative; */
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    /* gap: 20px; */
+    margin: 20px auto;
+}
+
+.calendar {
+    width: 100%;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+}
+
 
 .photo-gallery {
     display: grid;
@@ -308,8 +344,11 @@ hr {
 .photo-gallery img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 2px 2px 4px #2f2f2f;
 }
 
 
