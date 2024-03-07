@@ -5,19 +5,18 @@ const learningActivitiesSection = document.querySelector('.learning-activities u
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
+    displayLinks(data.lessons);
 }
-
-getLinks();
 
 function displayLinks(weeks) {
     weeks.forEach(week => {
         let listItem = document.createElement('li');
-        listItem.innerHTML = `${week.week}: `
+        listItem.innerHTML = `${week.lesson}: `
 
         week.links.forEach(link => {
             let linkElement = document.createElement('a');
-            linkElement.href = `${baseURL}${linksURL}`;
+            linkElement.href = `${baseURL}${link.url}`;
             linkElement.target = '_blank';
             linkElement.textContent = link.title;
             const separator = document.createTextNode(' | ');
@@ -31,3 +30,5 @@ function displayLinks(weeks) {
 
     });
 }
+
+getLinks();
