@@ -12,9 +12,9 @@ async function getLinks() {
 function displayLinks(weeks) {
     weeks.forEach(week => {
         let listItem = document.createElement('li');
-        listItem.innerHTML = `${week.lesson}: `
+        listItem.innerHTML = `Week ${week.lesson}: `
 
-        week.links.forEach(link => {
+        week.links.forEach((link, index) => {
             let linkElement = document.createElement('a');
             linkElement.href = `${baseURL}${link.url}`;
             linkElement.target = '_blank';
