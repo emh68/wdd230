@@ -1,0 +1,184 @@
+{
+    "members": [
+        {
+            "names": "ABC Corporation",
+            "addresses": "456 Oak Street, Salt Lake City, Utah, 84108",
+            "phone numbers": "801-535-1234",
+            "website URLs": "http://www.abccorp.com",
+            "image or icon file names": "abc_logo.png",
+            "membership level": "Gold",
+            "additional_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod turpis vel enim vehicula, eu pulvinar odio tincidunt."
+        },
+        {
+            "names": "XYZ Enterprises",
+            "addresses": "303 Eco Boulevard, Salt Lake City, Utah, 84106",
+            "phone numbers": "801-364-5678",
+            "website URLs": "http://www.xyzent.com",
+            "image or icon file names": "xyz_logo.png",
+            "membership level": "Silver",
+            "additional_info": "Integer commodo turpis eu enim dictum, vel posuere velit dictum. Duis auctor justo sit amet augue finibus, vel euismod sem consectetur."
+        },
+        {
+            "names": "Community Foundation",
+            "addresses": "701 Pine Avenue, Salt Lake City, Utah, 84104",
+            "phone numbers": "801-678-9012",
+            "website URLs": "http://www.communityfoundation.org",
+            "image or icon file names": "community_logo.png",
+            "membership level": "Non-Profit",
+            "additional_info": "Pellentesque quis mi at mauris aliquet consectetur. Nunc bibendum velit vitae libero ullamcorper, non cursus dui ultricies."
+        },
+        {
+            "names": "City Art Gallery",
+            "addresses": "209 Tech Lane, Salt Lake City, Utah, 84101",
+            "phone numbers": "801-288-3456",
+            "website URLs": "http://www.cityartgallery.com",
+            "image or icon file names": "artgallery_logo.png",
+            "membership level": "Bronze",
+            "additional_info": "Fusce ullamcorper, ligula vel efficitur bibendum, justo felis consectetur neque, id bibendum tellus mi id quam."
+        },
+        {
+            "names": "Tech Innovations",
+            "addresses": "606 Service Street, South Salt Lake, Utah, 84115",
+            "phone numbers": "801-708-6789",
+            "website URLs": "http://www.techinnovations.com",
+            "image or icon file names": "tech_logo.png",
+            "membership level": "Gold",
+            "additional_info": "Suspendisse potenti. Duis nec justo ut orci varius mattis ut at libero. Aenean ac consequat lacus."
+        },
+        {
+            "names": "Green Solutions Inc.",
+            "addresses": "912 Culinary Court, Salt Lake City, Utah, 84102",
+            "phone numbers": "801-532-9876",
+            "website URLs": "http://www.greensolutions.com",
+            "image or icon file names": "green_logo.png",
+            "membership level": "Silver",
+            "additional_info": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In vel velit auctor, varius massa ut, ultrices velit."
+        },
+        {
+            "names": "Utah Sports Gear",
+            "addresses": "407 Summit Road, Salt Lake City, Utah, 84109",
+            "phone numbers": "801-535-1122",
+            "website URLs": "http://www.utahsports.com",
+            "image or icon file names": "sports_logo.png",
+            "membership level": "Non-Profit",
+            "additional_info": "Curabitur auctor tincidunt ligula, id posuere odio ultricies nec. Sed scelerisque justo id ex tincidunt, at varius urna vulputate."
+        },
+        {
+            "names": "Financial Strategies LLC",
+            "addresses": "501 Skyline Avenue, Salt Lake City, Utah, 84105",
+            "phone numbers": "801-364-3344",
+            "website URLs": "http://www.financialstrategies.com",
+            "image or icon file names": "financial_logo.png",
+            "membership level": "Bronze",
+            "additional_info": "Proin aliquet, justo at vulputate scelerisque, tellus sapien facilisis mi, vel tristique urna tellus vitae tortor."
+        },
+        {
+            "names": "South Salt Lake Services",
+            "addresses": "103 Money Street, Salt Lake City, Utah, 84103",
+            "phone numbers": "801-678-5566",
+            "website URLs": "http://www.southslservices.com",
+            "image or icon file names": "ssl_services_logo.png",
+            "membership level": "Gold",
+            "additional_info": "Nam aliquet, justo at dapibus accumsan, metus lectus aliquam ex, ut gravida justo dui vel lectus."
+        },
+        {
+            "names": "Mountain Adventures Co.",
+            "addresses": "508 Adventure Road, Salt Lake City, Utah, 84116",
+            "phone numbers": "801-288-7788",
+            "website URLs": "http://www.mountainadventures.com",
+            "image or icon file names": "mountain_logo.png",
+            "membership level": "Silver",
+            "additional_info": "Sed id efficitur felis. Fusce at metus vel elit volutpat dictum in vel tortor. Praesent aliquet massa vel feugiat suscipit."
+        },
+        {
+            "names": "Innovate Tech Solutions",
+            "addresses": "814 Design Lane, Salt Lake City, Utah, 84106",
+            "phone numbers": "801-532-9900",
+            "website URLs": "http://www.innovatetech.com",
+            "image or icon file names": "innovate_logo.png",
+            "membership level": "Non-Profit",
+            "additional_info": "Duis ac ligula vel orci consequat laoreet. Etiam feugiat est a massa rhoncus, vitae gravida tortor dictum."
+        },
+        {
+            "names": "Gourmet Delights Catering",
+            "addresses": "409 Legal Lane, Salt Lake City, Utah, 84104",
+            "phone numbers": "801-708-1122",
+            "website URLs": "http://www.gourmetdelights.com",
+            "image or icon file names": "gourmet_logo.png",
+            "membership level": "Bronze",
+            "additional_info": "Vestibulum dignissim risus id orci congue, a fringilla turpis rhoncus. Praesent volutpat lacus vel justo feugiat, ut congue felis imperdiet."
+        },
+        {
+            "names": "Sunset Realty Group",
+            "addresses": "306 Culinary Avenue, Salt Lake City, Utah, 84101",
+            "phone numbers": "801-535-3344",
+            "website URLs": "http://www.sunsetrealty.com",
+            "image or icon file names": "sunset_logo.png",
+            "membership level": "Gold",
+            "additional_info": "Pellentesque ut velit in ligula tincidunt pellentesque. Nunc luctus metus ut malesuada cursus. Ut nec lacus nec urna efficitur interdum."
+        },
+        {
+            "names": "Creative Minds Design Studio",
+            "addresses": "204 Design Avenue, Salt Lake City, Utah, 84102",
+            "phone numbers": "801-364-5566",
+            "website URLs": "http://www.creativeminds.com",
+            "image or icon file names": "creative_logo.png",
+            "membership level": "Silver",
+            "additional_info": "Sed id sagittis tortor. Fusce efficitur nulla ut neque bibendum, vel luctus elit fermentum. Curabitur a odio ac orci laoreet egestas."
+        },
+        {
+            "names": "Green Valley Farms",
+            "addresses": "915 Tech Avenue, Salt Lake City, Utah, 84103",
+            "phone numbers": "801-532-7788",
+            "website URLs": "http://www.greenvalleyfarms.com",
+            "image or icon file names": "greenvalley_logo.png",
+            "membership level": "Non-Profit",
+            "additional_info": "Nam ullamcorper augue ac tellus eleifend, sit amet suscipit elit posuere. Integer varius justo eu diam tincidunt, ac commodo nulla pellentesque."
+        },
+        {
+            "names": "Skyline Tech Solutions",
+            "addresses": "107 Adventure Road, Salt Lake City, Utah, 84105",
+            "phone numbers": "801-708-9900",
+            "website URLs": "http://www.skylinetech.com",
+            "image or icon file names": "skyline_logo.png",
+            "membership level": "Bronze",
+            "additional_info": "Mauris id augue ac lacus venenatis sagittis. Sed eget risus in velit tincidunt facilisis vel at libero. Curabitur suscipit pharetra dolor, vel efficitur elit mattis id."
+        },
+        {
+            "names": "Health Harmony Wellness Center",
+            "addresses": "4303 E 477 S, Salt Lake City, Utah, 84108",
+            "phone numbers": "801-532-1122",
+            "website URLs": "http://www.healthharmony.com",
+            "image or icon file names": "health_logo.png",
+            "membership level": "Gold",
+            "additional_info": "Nulla facilisi. Proin eu dui vel libero commodo mattis in vitae tellus. Curabitur non ante id purus commodo gravida eu ut lectus."
+        },
+        {
+            "names": "Summit Outdoor Adventures",
+            "addresses": "356 Innovation Avenue, Salt Lake City, Utah, 84109",
+            "phone numbers": "801-364-3344",
+            "website URLs": "http://www.summitadventures.com",
+            "image or icon file names": "summit_logo.png",
+            "membership level": "Silver",
+            "additional_info": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc sed luctus elit, eu volutpat mauris."
+        },
+        {
+            "names": "City Legal Solutions",
+            "addresses": "747 Skyline Street, Salt Lake City, Utah, 84115",
+            "phone numbers": "801-535-5566",
+            "website URLs": "http://www.citylegalsolutions.com",
+            "image or icon file names": "legal_logo.png",
+            "membership level": "Non-Profit",
+            "additional_info": "Duis suscipit justo non odio tincidunt, sit amet tincidunt elit cursus. Sed luctus metus a felis pellentesque, vel facilisis erat ullamcorper."
+        },
+        {
+            "names": "Tech Valley Innovations",
+            "addresses": "814 Money Lane, Salt Lake City, Utah, 84116",
+            "phone numbers": "801-708-7788",
+            "website URLs": "http://www.techvalleyinnovations.com",
+            "image or icon file names": "techvalley_logo.png",
+            "membership level": "Bronze",
+            "additional_info": "Morbi sit amet leo quis metus tincidunt sollicitudin nec non justo. Sed tristique, odio vel faucibus ullamcorper, ex lacus vehicula mi, non varius justo metus et tellus."
+        }
+    ]
+}

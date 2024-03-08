@@ -418,3 +418,19 @@ footer {
     justify-content: center;
     padding: 40px;
 }
+
+/* -------- Directory -------*/
+
+.directory-view {
+    margin-left: auto;
+    /* margin: 5rem right; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #bed;
+    text-align: center;
+}
+
+.directory-view button {
+    padding: .5rem;
+    font-weight: 700;
+}
