@@ -11,8 +11,6 @@
 h1 {
     font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
     text-align: center;
-    /* align-items: center;
-    justify-items: center; */
 }
 
 h2,
@@ -146,7 +144,6 @@ header {
     padding: .5rem .75rem;
     background-color: #2F3061;
     color: #fff;
-    /* text-align: right; */
 }
 
 #menu::before {
@@ -159,7 +156,6 @@ header {
     justify-content: center;
     background-color: #2F3061;
     padding: 20px;
-
 }
 
 .navigation li {
@@ -239,11 +235,8 @@ hr {
     display: grid;
     gap: 20px;
     padding: 20px;
-    /* max-width: 1200px; */
     margin: 0 auto;
-    /* background-image: linear-gradient(to right, #eee6c9, #a586); */
     background-color: #2f30612d;
-    /* background-color: #ebebeb; */
 }
 
 #message {
@@ -256,14 +249,11 @@ hr {
 
 .sidebar {
     display: grid;
-    /* background-color: #0000003f; */
-    /* background-color: #8f8f8f62; */
     background-color: #1c666650;
     padding: 20px;
     margin: 0 0 20px 0;
     border-radius: 10px;
     grid-template-columns: 1fr;
-    /* width: 100%; */
 }
 
 .facts-container,
@@ -272,7 +262,6 @@ hr {
 iframe {
     max-width: 100%;
     margin: 0 auto;
-
 }
 
 
@@ -298,7 +287,6 @@ iframe {
 
 .facts-list li {
     width: 100%;
-    /* height: 10em; */
     flex-shrink: 0;
     padding: 20px;
     text-align: center;
@@ -316,13 +304,10 @@ iframe {
 
 .news {
     width: 100%;
-    /* height: auto; */
     padding: 10px;
-    /* position: relative; */
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
-    /* gap: 20px; */
     margin: 20px auto;
 }
 
@@ -344,7 +329,6 @@ iframe {
 .photo-gallery img {
     width: 100%;
     height: auto;
-    /* border-radius: 10px; */
     margin-bottom: 20px;
     background-color: #fff;
     padding: 10px;
