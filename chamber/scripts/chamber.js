@@ -99,3 +99,17 @@ function updateFacts() {
     factsList.style.transform = `translateX(-${currentFactIndex * 100}%)`;
 }
 
+// Deferred loading of Google Calendar on Discover page
+document.addEventListener('DOMContentLoaded', function () {
+    const iframe = document.getElementById('calendar');
+    // const iframe = document.createElement('iframe');
+    iframe.src = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FDenver&bgcolor=%23ffffff&src=Nzc1Yjk0ODI1NTBlNDZkZGIyMWVkZjlmNTlhZjRiNTE1ZWExMzcxYTk4N2FiYzc3ZGY4Yjg1NDA4MGQ0NTBhZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23C0CA33';
+    iframe.width = '500';
+    iframe.height = '500';
+    iframe.title = 'Salt Lake Chamber Calendar';
+
+    // Append the iframe when needed (e.g., on user interaction)
+    calendarContainer.addEventListener('click', function () {
+        calendarContainer.appendChild(iframe);
+    });
+});
