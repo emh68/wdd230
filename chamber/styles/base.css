@@ -311,14 +311,19 @@ iframe {
     margin: 20px auto;
 }
 
-.calendar {
+.visit-links h4 {
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+/* .calendar {
     width: 100%;
     padding: 50px;
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
     margin: 20px auto;
-}
+} */
 
 
 .photo-gallery {

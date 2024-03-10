@@ -1,4 +1,4 @@
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
 
     .navigation {
         display: flex;
@@ -53,16 +53,15 @@
     }
 
     .facts-container {
-        height: 280px;
+        height: auto;
     }
 
     .sidebar {
         gap: 20px;
-        height: 1500px;
+        height: auto;
     }
 
     .news {
-        border: 1px solid #ddd;
         text-align: center;
         padding: 20px;
     }

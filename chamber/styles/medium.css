@@ -42,9 +42,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        /* justify-content: center;
-        margin-top: 20px; */
-
     }
 
     .membership-headline,
@@ -77,8 +74,6 @@
 
     .contact-info {
         display: grid;
-        /* grid-template-columns: 1fr 1fr;
-        grid-gap: 20px; */
     }
 
 }
