@@ -30,7 +30,12 @@ const createMemberCard = (members) => {
         // image.src = member.image;
         // image.alt = member.name;
         name.textContent = member.name;
-        address.textContent = member.address;
+        let addressParts = member.address.split(', ');
+        let streetAddress = addressParts[0];
+        let cityStateZip = addressParts.slice(1).join(', ');
+
+        address.innerHTML = `${streetAddress}<br>${cityStateZip}`;
+
         phone.textContent = member.phone;
         website.href = member.websiteURL;
         website.textContent = member.websiteURL;
@@ -40,7 +45,7 @@ const createMemberCard = (members) => {
         image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '400');
-        image.setAttribute('height', '380');
+        image.setAttribute('height', '400');
 
         card.classList.add('member-card');
         details.classList.add('member-details');

@@ -423,3 +423,12 @@ footer {
     padding: .5rem;
     font-weight: 700;
 }
+
+.membersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    text-align: center;
+
+}
