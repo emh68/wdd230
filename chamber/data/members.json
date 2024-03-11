@@ -60,8 +60,8 @@
             "name": "Financial Strategies LLC",
             "address": "511 Skyline Avenue, Salt Lake City, Utah, 84105",
             "phone": "801-364-3344",
-            "websiteURL": "http://www.financialstrategies.com",
-            "image": "financial_logo.png",
+            "websiteURL": "http://www.financialstrategiesslc.com",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/financial-strategies-llc.webp",
             "membershiplvl": "Bronze"
         },
         {
@@ -90,7 +90,7 @@
         },
         {
             "name": "Gourmet Delights Catering",
-            "address": "409 Legal Lane, Salt Lake City, Utah, 84104",
+            "address": "360 Culinary Avenue, Salt Lake City, Utah, 84104",
             "phone": "801-708-1122",
             "websiteURL": "http://www.gourmetdelights.com",
             "image": "gourmet_logo.png",
@@ -98,7 +98,7 @@
         },
         {
             "name": "Sunset Realty Group",
-            "address": "360 Culinary Avenue, Salt Lake City, Utah, 84101",
+            "address": "495 S State Street, Salt Lake City, Utah, 84101",
             "phone": "801-535-3344",
             "websiteURL": "http://www.sunsetrealty.com",
             "image": "sunset_logo.png",
@@ -114,18 +114,18 @@
         },
         {
             "name": "Green Valley Farms",
-            "address": "915 Tech Avenue, Salt Lake City, Utah, 84103",
+            "address": "915 McDonald Avenue, Salt Lake City, Utah, 84103",
             "phone": "801-532-7788",
             "websiteURL": "http://www.greenvalleyfarms.com",
-            "image": "greenvalley_logo.png",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/green-valley-farms.webp",
             "membershiplvl": "Non-Profit"
         },
         {
-            "name": "Skyline Tech Solutions",
-            "address": "107 Adventure Road, Salt Lake City, Utah, 84105",
+            "name": "Morning Brew",
+            "address": "747 Skyline Street, Salt Lake City, Utah, 84105",
             "phone": "801-708-9900",
-            "websiteURL": "http://www.skylinetech.com",
-            "image": "skyline_logo.png",
+            "websiteURL": "http://www.morningbrew.com",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/morning-brew.webp",
             "membershiplvl": "Bronze"
         },
         {
@@ -138,15 +138,15 @@
         },
         {
             "name": "Summit Outdoor Adventures",
-            "address": "356 Innovation Avenue, Salt Lake City, Utah, 84109",
+            "address": "107 Adventure Road, Salt Lake City, Utah, 84109",
             "phone": "801-364-3344",
             "websiteURL": "http://www.summitadventures.com",
-            "image": "summit_logo.png",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/wummit-outdoor.webp",
             "membershiplvl": "Silver"
         },
         {
             "name": "City Legal Solutions",
-            "address": "747 Skyline Street, Salt Lake City, Utah, 84115",
+            "address": "409 Legal Lane, Salt Lake City, Utah, 84115",
             "phone": "801-535-5566",
             "websiteURL": "http://www.citylegalsolutions.com",
             "image": "legal_logo.png",
