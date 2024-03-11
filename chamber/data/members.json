@@ -14,7 +14,7 @@
             "phone": "801-364-5678",
             "websiteURL": "http://www.xyzent.com",
             "image": "https://emh68.github.io/wdd230/chamber/images/directory/XYZ-enterprises-logo.webp",
-            "membershiplvl": "Silver"
+            "membershiplvl": "Non-Profit"
         },
         {
             "name": "Community Foundation",
@@ -22,7 +22,7 @@
             "phone": "801-678-9012",
             "websiteURL": "htttp://www.slccommunityfoundation.com",
             "image": "https://emh68.github.io/wdd230/chamber/images/directory/community-foundation.webp",
-            "membershiplvl": "Non-Profit"
+            "membershiplvl": "Silver"
         },
         {
             "name": "City Art Gallery",
@@ -54,7 +54,7 @@
             "phone": "801-535-1122",
             "websiteURL": "http://www.utahsports.com",
             "image": "https://emh68.github.io/wdd230/chamber/images/directory/utah-sports-gear.webp",
-            "membershiplvl": "Non-Profit"
+            "membershiplvl": "Bronze"
         },
         {
             "name": "Financial Strategies LLC",
@@ -62,7 +62,7 @@
             "phone": "801-364-3344",
             "websiteURL": "http://www.financialstrategiesslc.com",
             "image": "https://emh68.github.io/wdd230/chamber/images/directory/financial-strategies-llc.webp",
-            "membershiplvl": "Bronze"
+            "membershiplvl": "Gold"
         },
         {
             "name": "South Salt Lake Services",
@@ -70,7 +70,7 @@
             "phone": "801-678-5566",
             "websiteURL": "http://www.southslservices.com",
             "image": "ssl_services_logo.png",
-            "membershiplvl": "Gold"
+            "membershiplvl": "Non-Profit"
         },
         {
             "name": "Mountain Adventures Co.",
@@ -86,14 +86,14 @@
             "phone": "801-532-9900",
             "websiteURL": "http://www.innovatetech.com",
             "image": "innovate_logo.png",
-            "membershiplvl": "Non-Profit"
+            "membershiplvl": "Gold"
         },
         {
             "name": "Gourmet Delights Catering",
             "address": "360 Culinary Avenue, Salt Lake City, Utah, 84104",
             "phone": "801-708-1122",
             "websiteURL": "http://www.gourmetdelights.com",
-            "image": "gourmet_logo.png",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/gourmet-delights-catering.webp",
             "membershiplvl": "Bronze"
         },
         {
@@ -134,14 +134,14 @@
             "phone": "801-532-1122",
             "websiteURL": "http://www.healthharmony.com",
             "image": "health_logo.png",
-            "membershiplvl": "Gold"
+            "membershiplvl": "Non-Profit"
         },
         {
             "name": "Summit Outdoor Adventures",
             "address": "107 Adventure Road, Salt Lake City, Utah, 84109",
             "phone": "801-364-3344",
             "websiteURL": "http://www.summitadventures.com",
-            "image": "https://emh68.github.io/wdd230/chamber/images/directory/wummit-outdoor.webp",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/summit-outdoor.webp",
             "membershiplvl": "Silver"
         },
         {
@@ -149,15 +149,15 @@
             "address": "409 Legal Lane, Salt Lake City, Utah, 84115",
             "phone": "801-535-5566",
             "websiteURL": "http://www.citylegalsolutions.com",
-            "image": "legal_logo.png",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/city-legal.webp",
             "membershiplvl": "Non-Profit"
         },
         {
-            "name": "Tech Valley Innovations",
-            "address": "814 Money Lane, Salt Lake City, Utah, 84116",
+            "name": "SLC IT",
+            "address": "814 Host Road, Salt Lake City, Utah, 84116",
             "phone": "801-708-7788",
-            "websiteURL": "http://www.techvalleyinnovations.com",
-            "image": "techvalley_logo.png",
+            "websiteURL": "http://www.slcit.com",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/slcit.webp",
             "membershiplvl": "Bronze"
         }
     ]
