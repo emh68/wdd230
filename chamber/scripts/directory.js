@@ -3,6 +3,7 @@ const listButton = document.querySelector('#list');
 const display = document.querySelector('article');
 const membersData = "https://emh68.github.io/wdd230/chamber/data/members.json";
 const article = document.querySelector('.article');
+const githubPagesURL = "https://emh68.github.io/wdd230/chamber/images";
 
 
 async function getMembers() {
@@ -41,7 +42,9 @@ const createMemberCard = (members) => {
         website.textContent = member.websiteURL;
         membership.textContent = `Membership Level: ${member.membershiplvl}`;
 
-        image.setAttribute('src', member.image);
+        let imagePath = `${githubPagesURL}/chamber/images/${member.image}`;
+
+        image.setAttribute('src', imagePath);
         image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '400');
