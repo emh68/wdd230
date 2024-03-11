@@ -5,7 +5,7 @@
             "address": "456 Oak Street, Salt Lake City, Utah, 84108",
             "phone": "801-535-1234",
             "websiteURL": "http://www.abccorp.com",
-            "image": "https://emh68.github.io/wdd230/chamber/images/ABC-corp-logo.webp",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/ABC-corp-logo.webp",
             "membershiplvl": "Gold"
         },
         {
@@ -13,23 +13,23 @@
             "address": "343 Eco Boulevard, Salt Lake City, Utah, 84106",
             "phone": "801-364-5678",
             "websiteURL": "http://www.xyzent.com",
-            "image": "https://emh68.github.io/wdd230/chamber/images/XYZ-Enterprises-logo.webp",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/XYZ-enterprises-logo.webp",
             "membershiplvl": "Silver"
         },
         {
             "name": "Community Foundation",
             "address": "701 Pine Avenue, Salt Lake City, Utah, 84104",
             "phone": "801-678-9012",
-            "websiteURL": "http://www.communityfoundation.org",
-            "image": "community_logo.png",
+            "websiteURL": "htttp://www.slccommunityfoundation.com",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/community-foundation.webp",
             "membershiplvl": "Non-Profit"
         },
         {
             "name": "City Art Gallery",
             "address": "209 Tech Lane, Salt Lake City, Utah, 84101",
             "phone": "801-288-3456",
-            "websiteURL": "http://www.cityartgallery.com",
-            "image": "artgallery_logo.png",
+            "websiteURL": "http://www.slccityartgallery.com",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/city-art-gallery.webp",
             "membershiplvl": "Bronze"
         },
         {
@@ -37,7 +37,7 @@
             "address": "826 Service Street, South Salt Lake, Utah, 84115",
             "phone": "801-708-6789",
             "websiteURL": "http://www.techinnovations.com",
-            "image": "tech_logo.png",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/tech-innovations.webp",
             "membershiplvl": "Gold"
         },
         {
@@ -45,7 +45,7 @@
             "address": "912 Culinary Court, Salt Lake City, Utah, 84102",
             "phone": "801-532-9876",
             "websiteURL": "http://www.greensolutions.com",
-            "image": "green_logo.png",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/green-solutions.webp",
             "membershiplvl": "Silver"
         },
         {
@@ -53,7 +53,7 @@
             "address": "407 Summit Road, Salt Lake City, Utah, 84109",
             "phone": "801-535-1122",
             "websiteURL": "http://www.utahsports.com",
-            "image": "sports_logo.png",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/utah-sports-gear.webp",
             "membershiplvl": "Non-Profit"
         },
         {
