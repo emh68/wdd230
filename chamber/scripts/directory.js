@@ -44,7 +44,7 @@ const createMemberCard = (members) => {
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
-        // image.setAttribute('width', '160');
+        image.setAttribute('width', '160');
         // image.setAttribute('height', '100');
 
         details.classList.add('member-details');
