@@ -2,7 +2,7 @@ const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
 const display = document.querySelector('article');
 const membersData = "https://emh68.github.io/wdd230/chamber/data/members.json";
-const article = document.querySelector('.article');
+
 
 
 async function getMembers() {
@@ -44,10 +44,9 @@ const createMemberCard = (members) => {
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '400');
-        image.setAttribute('height', '400');
+        image.setAttribute('width', '160');
+        image.setAttribute('height', '100');
 
-        card.classList.add('member-card');
         details.classList.add('member-details');
 
         details.append(name, address, phone, website, membership);
