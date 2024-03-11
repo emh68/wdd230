@@ -56,24 +56,23 @@ const createMemberCard = (members) => {
     });
 }
 
+const toggleView = (viewType) => {
+    if (viewType === 'list') {
+        display.classList.add('membersList');
+    } else {
+        display.classList.remove('membersList');
+    }
+}
+
+// Event listeners for grid and list buttons
+gridButton.addEventListener('click', () => {
+    toggleView('grid');
+});
+
+listButton.addEventListener('click', () => {
+    toggleView('list');
+});
+
+// Initialize with default grid view
 getMembers();
-
-
-// function displayMembers(members) {
-//     members.forEach(member => {
-//         const card = createMemberCard(member);
-//         membersGrid.appendChild(card);
-
-//         const listItem = document.createElement('li');
-//         listItem.textContent = member.name;
-//         membersList.appendChild(listItem);
-//     });
-// }
-
-// function toggleView(viewType) {
-//     display.classList.toggle('grid', viewType === 'grid');
-//     display.classList.toggle('list', viewType === 'list');
-// }
-
-// gridButton.addEventListener('click', () => toggleView('grid'));
-// listButton.addEventListener('click', () => toggleView('list'));
+toggleView('grid'); // Grid is the default view
