@@ -85,7 +85,7 @@
             "address": "814 Design Lane, Salt Lake City, Utah, 84106",
             "phone": "801-532-9900",
             "websiteURL": "http://www.innovatetech.com",
-            "image": "innovate_logo.png",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/innovate-tech-solutions.webp",
             "membershiplvl": "Gold"
         },
         {
@@ -109,7 +109,7 @@
             "address": "204 Design Avenue, Salt Lake City, Utah, 84102",
             "phone": "801-364-5566",
             "websiteURL": "http://www.creativeminds.com",
-            "image": "creative_logo.png",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/creative-minds.webp",
             "membershiplvl": "Silver"
         },
         {
@@ -133,7 +133,7 @@
             "address": "4303 E 477 S, Salt Lake City, Utah, 84108",
             "phone": "801-532-1122",
             "websiteURL": "http://www.healthharmony.com",
-            "image": "health_logo.png",
+            "image": "https://emh68.github.io/wdd230/chamber/images/directory/hhwc.webp",
             "membershiplvl": "Non-Profit"
         },
         {
