@@ -364,6 +364,7 @@ form fieldset {
     margin: 2rem auto;
     max-width: 600px;
     border: 1px solid #999;
+    /* background-color: #f3f3fc; */
     border-radius: 10px;
     padding: 1.5rem 5%;
 }
@@ -383,13 +384,64 @@ form label textarea {
     font-size: 1rem;
     border-radius: 4px;
     padding: .75rem;
-    max-width: 20rem;
-    width: 60%;
+    max-width: 50rem;
+    width: 80%;
 
 }
 
+.membership-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-table {
+.membership-option {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.non-profit {
+    background-color: rgb(209, 220, 235);
+}
+
+.brnze {
+    background-color: #f4e6cf;
+}
+
+.slvr {
+    background-color: #d8d8d8;
+}
+
+.gld {
+    background-color: #fcf7cf;
+}
+
+
+.membership-option h2 {
+    margin-top: 0;
+}
+
+.membership-option ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-option ul li {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.membership-option .price {
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* table {
     width: 100%;
     border-collapse: collapse;
     border: 1px solid #000;
@@ -426,7 +478,7 @@ tbody tr:last-child {
 
 .feature {
     font-size: small;
-}
+} */
 
 .button-container {
     text-align: center;
