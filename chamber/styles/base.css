@@ -401,7 +401,7 @@ td {
     text-align: center;
 }
 
-form input.submitBtn {
+.submitBtn {
     border: none;
     background-color: #13979c;
     color: white;
