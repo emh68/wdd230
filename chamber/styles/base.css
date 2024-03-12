@@ -119,6 +119,12 @@ input:checked+.slider:before {
     background-color: #000;
 }
 
+.dark-mode form legend,
+.dark-mode .facts-container {
+    color: #fff;
+    background-color: #000;
+}
+
 body {
     max-width: 100%;
 }
@@ -411,6 +417,12 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
 
+}
+
+.thankyoumessage {
+    margin: 0 auto;
+    text-align: center;
+    padding: 200px;
 }
 
 
