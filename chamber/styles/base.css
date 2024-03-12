@@ -26,104 +26,7 @@ h4 {
     justify-content: center;
 }
 
-.switch {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: inline-block;
-    width: 50px;
-    height: 24px;
-}
 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #FED74F;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: '🔆';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 22px;
-    width: 22px;
-    left: 1px;
-    bottom: 1px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #2F3061;
-
-}
-
-input:hover+.slider {
-    box-shadow: 0 0 20px #fff;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-    content: '';
-    background-image: url('../images/moon.webp');
-    background-size: cover;
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-#mode {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 3rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-.dark-mode {
-    background-color: #000;
-    color: #fff;
-    border-color: #eee;
-}
-
-.dark-mode header,
-.dark-mode .herotextbox,
-.dark-mode .membership-benefits,
-.dark-mode .events,
-.dark-mode .weather,
-.dark-mode .spotlights {
-    background-color: #000;
-}
-
-.dark-mode form legend,
-.dark-mode .facts-container {
-    color: #fff;
-    background-color: #000;
-}
 
 body {
     max-width: 100%;
@@ -347,6 +250,107 @@ iframe {
 }
 
 
+/* ------- Dark Mode -------*/
+.switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FED74F;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: '🔆';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    width: 22px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2F3061;
+
+}
+
+input:hover+.slider {
+    box-shadow: 0 0 20px #fff;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    content: '';
+    background-image: url('../images/moon.webp');
+    background-size: cover;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+    border-color: #eee;
+}
+
+.dark-mode header,
+.dark-mode .herotextbox,
+.dark-mode .membership-benefits,
+.dark-mode .events,
+.dark-mode .weather,
+.dark-mode .spotlights {
+    background-color: #000;
+}
+
+.dark-mode form legend,
+.dark-mode .facts-container {
+    color: #fff;
+    background-color: #000;
+}
+
+
 /*-------- FORM ----------- */
 :root {
     --border: #999;
@@ -411,7 +415,7 @@ form input.submitBtn {
     border: none;
     background-color: #13979c;
     color: white;
-    border-radius: 1rem;
+    border-radius: 10px;
     padding: .75rem 1.5rem;
     margin: 0 auto 2rem auto;
     width: 96%;
