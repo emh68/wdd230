@@ -350,6 +350,9 @@ input:checked+.slider:before {
     background-color: #000;
 }
 
+.dark-mode .feature {
+    color: #000;
+}
 
 /*-------- FORM ----------- */
 :root {
@@ -385,22 +388,40 @@ form label textarea {
 
 }
 
+
 table {
     width: 100%;
     border-collapse: collapse;
+    border: 1px solid #000;
     border-radius: 10px;
-
 }
 
 th,
 td {
     padding: 15px 6px;
     border: 1px solid #000;
-    border-radius: 10px;
+    border-radius: 0;
 }
 
 td {
     text-align: center;
+}
+
+thead th {
+    background-color: #2F3061;
+    color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+tbody tr:last-child {
+    background-color: transparent;
 }
 
 .feature {
@@ -413,7 +434,7 @@ td {
 
 form input.submitBtn {
     border: none;
-    background-color: #13979c;
+    background-color: #157679;
     color: white;
     border-radius: 10px;
     padding: .75rem 1.5rem;
