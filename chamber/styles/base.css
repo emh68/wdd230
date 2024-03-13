@@ -389,18 +389,15 @@ form label textarea {
 
 }
 
-.membership-options {
+.membership-option {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.membership-option {
+    text-align: center;
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 10px;
-    width: 400px;
+    margin-bottom: 20px;
     max-width: 100%;
 }
 
@@ -439,6 +436,10 @@ form label textarea {
     font-weight: 700;
     margin-top: 10px;
     text-align: center;
+}
+
+.membership-option input[type="radio"] {
+    margin-top: 5px;
 }
 
 /* table {
