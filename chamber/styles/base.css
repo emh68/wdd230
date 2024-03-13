@@ -350,7 +350,8 @@ input:checked+.slider:before {
     background-color: #000;
 }
 
-.dark-mode .feature {
+.dark-mode .feature,
+.dark-mode .membership-option {
     color: #000;
 }
 
