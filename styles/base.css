@@ -158,11 +158,17 @@ section {
   font-weight: 700;
 }
 
-/* #visits {
-  color: navy;
-  font-weight: bolder;
-  font-size: larger;
-} */
+.weather-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-container img,
+.weather-container span,
+.weather-container figcaption {
+  margin-right: 5px;
+}
 
 section p {
   text-align: center;
