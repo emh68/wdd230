@@ -140,15 +140,13 @@ hr {
     padding: 10px;
 }
 
-.weather-events-container {
+.weather-events-container {}
+
+.weather,
+.events {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-
-}
-
-.weather {
-    display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    grid-template-columns: 1fr;
     align-items: center;
     text-align: center;
     padding-bottom: 20px;
@@ -159,7 +157,7 @@ hr {
     box-shadow: 0 0 10px;
 }
 
-.weather-container figcaption,
+.weather figcaption,
 .temp-low,
 .temp-high,
 .windspeed,
