@@ -140,13 +140,10 @@ hr {
     padding: 10px;
 }
 
-.weather-container {
+.weather-events-container {
     display: grid;
-    background-color: #ebebeb;
-    border: 1px solid;
-    border-radius: 6px 6px;
-    border-color: #c8c8c8;
-    box-shadow: 0 0 10px;
+    grid-template-columns: 2fr 1fr;
+
 }
 
 .weather {
@@ -155,6 +152,11 @@ hr {
     align-items: center;
     text-align: center;
     padding-bottom: 20px;
+    background-color: #ebebeb;
+    border: 1px solid;
+    border-radius: 6px 6px;
+    border-color: #c8c8c8;
+    box-shadow: 0 0 10px;
 }
 
 .weather-container figcaption,
