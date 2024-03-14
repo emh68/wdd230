@@ -105,7 +105,7 @@
             </div>
         </section>
         <!-- <button id="joinButton">BECOME A MEMBER</button> -->
-        <section class="weather-and-events">
+        <section class="events-container">
             <div class="events">
                 <!-- <img src="images/salt-lake-city-street.jpg" alt="Salt_Lake_City_Street_with_Tram"> -->
                 <h2>Events</h2>
@@ -114,11 +114,17 @@
                     earum doloribus quisquam at assumenda. Tempore amet voluptatum nisi dolorem autem praesentium
                     nesciunt aperiam magni.</p>
             </div>
+        </section>
+        <section class="weather-container">
             <div class="weather">
                 <h2>Weather</h2>
                 <hr>
-                <div class="temperature">Temperature: <span id="temperature"></span></div>
-                <div class="windspeed">Wind Speed: <span id="windSpeed"></span></div>
+                <img id="weather-icon" src="" alt="">
+                <strong><span id="current-temp"></span></strong>
+                <figcaption></figcaption>
+                <div class="temp-low">L: <span id="temp-low"></span></div>
+                <div class="temp-high">H: <span id="temp-high"></span></div>
+                <div class="windspeed">Wind: <span id="wind-speed"></span></div>
                 <div class="windchill">Wind Chill: <span id="windChillValue">N/A</span></div>
             </div>
         </section>

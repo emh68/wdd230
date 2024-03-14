@@ -1,3 +1,33 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the last visit date from localStorage
+    const lastVisit = localStorage.getItem("lastVisit");
+
+    // Get the current date in milliseconds
+    const currentDate = Date.now();
+
+    // Check if it's the first visit
+    if (!lastVisit) {
+        localStorage.setItem("lastVisit", currentDate);
+        document.getElementById("message").textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        // Calculate the difference in days
+        const timeDifference = currentDate - lastVisit;
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+        // Display message based on the time difference
+        if (daysDifference < 1) {
+            document.getElementById("message").textContent = "Back so soon! Awesome!";
+        } else {
+            const message = (daysDifference === 1) ? "day" : "days";
+            document.getElementById("message").textContent = `You last visited ${daysDifference} ${message} ago.`;
+        }
+
+        // Update the last visit date in localStorage
+        localStorage.setItem("lastVisit", currentDate);
+    }
+});
+
+// Interesting facts generator and animation
 const factsList = document.querySelector('.facts-list');
 let currentFactIndex = 0;
 
