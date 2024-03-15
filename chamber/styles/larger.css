@@ -33,17 +33,12 @@
         width: 100%;
     }
 
-    .weather-and-events {
-        display: flex;
-    }
+    /* 
+    .weather-events-container {}
 
-    .events {
-        flex: 2;
-    }
+    .events {}
 
-    .weather {
-        flex: 1;
-    }
+    .weather {} */
 
     /*--------- Discover --------*/
 
