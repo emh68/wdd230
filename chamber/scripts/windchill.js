@@ -1,16 +1,30 @@
-
 document.addEventListener('DOMContentLoaded', function () {
-    // Your JavaScript code here
-    const url = 'https://api.openweathermap.org/data/2.5/weather?lat=40.761&lon=-111.891&appid=b2384255491935468122e0e1ee279982&units=imperial';
+
+    const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=40.761&lon=-111.891&appid=b2384255491935468122e0e1ee279982&units=imperial';
+    const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.761&lon=-111.891&appid=b2384255491935468122e0e1ee279982&units=imperial';
 
     async function apiFetch() {
         try {
-            const response = await fetch(url);
-            if (response.ok) {
-                const data = await response.json();
-                console.log(data);
-                displayResults(data);
-                calculateWindChill(data.main.temp, data.wind.speed);
+            const [currentResponse, forecastResponse] = await Promise.all([fetch(currentWeatherUrl), fetch(forecastUrl)]);
+            if (currentResponse.ok && forecastResponse.ok) {
+                const currentData = await currentResponse.json();
+                const forecastData = await forecastResponse.json();
+                //--- Remove after testing ----//
+                console.log(currentData);
+                console.log("Current Weather Data:");
+                console.log(currentData);
+                console.log("Forecast Data:");
+                console.log(forecastData);
+                /////////////////////////////////
+
+                displayResults(currentData, forecastData);
+                const currentWindChillElement = document.querySelectorAll('#current-wind-chill');
+                const tomorrowWindChillElement = document.querySelectorAll('#tomorrow-wind-chill');
+                const dayAfterTomorrowWindChillElement = document.querySelectorAll('#day-after-tomorrow-wind-chill');
+                calculateWindChill(currentData.main.temp, currentData.wind.speed, currentWindChillElement);
+                calculateWindChill(forecastData.list[1].main.temp, forecastData.list[1].wind.speed, tomorrowWindChillElement);
+                calculateWindChill(forecastData.list[9].main.temp, forecastData.list[9].wind.speed, dayAfterTomorrowWindChillElement);
+
             } else {
                 throw Error(await response.text());
             }
@@ -21,20 +35,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
     apiFetch();
 
-    function displayResults(data) {
-        document.querySelector('#current-temp').innerHTML = `${Math.round(data.main.temp)}&deg;F`;
-        const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-        document.querySelector('#weather-icon').setAttribute('src', iconsrc);
-        document.querySelector('#weather-icon').setAttribute('alt', 'Weather icon');
-        document.querySelector('figcaption').textContent = `${data.weather[0].description}`;
-        document.querySelector('#temp-low').innerHTML = `${Math.round(data.main.temp_min)}&deg;F`;
-        document.querySelector('#temp-high').innerHTML = `${Math.round(data.main.temp_max)}&deg;F`;
-        document.querySelector('#wind-speed').innerHTML = `${Math.round(data.wind.speed)} mph`;
-        const windChillElement = document.querySelector('#wind-chill');
-        calculateWindChill(data.main.temp, data.wind.speed, windChillElement);
+    function displayResults(currentData, forecastData) {
+        // Display current weather
+        document.querySelector('#current-temp').innerHTML = `${Math.round(currentData.main.temp)}&deg;F`;
+        document.querySelector('#current-weather-icon').setAttribute('src', `https://openweathermap.org/img/w/${currentData.weather[0].icon}.png`);
+        document.querySelector('#current-weather-icon').setAttribute('alt', 'Weather icon');
+        document.querySelector('#current-desc').textContent = `${currentData.weather[0].description}`;
+        document.querySelector('#current-temp-low').innerHTML = `${Math.round(currentData.main.temp_min)}&deg;F`;
+        document.querySelector('#current-temp-high').innerHTML = `${Math.round(currentData.main.temp_max)}&deg;F`;
+        document.querySelector('#current-wind-speed').innerHTML = `${Math.round(currentData.wind.speed)} mph`;
+
+        // Display tomorrow's weather
+        document.querySelector('#tomorrow-temp').innerHTML = `${Math.round(forecastData.list[1].main.temp)}&deg;F`;
+        document.querySelector('#tomorrow-weather-icon').setAttribute('src', `https://openweathermap.org/img/w/${forecastData.list[1].weather[0].icon}.png`);
+        document.querySelector('#tomorrow-weather-icon').setAttribute('alt', 'Weather icon');
+        document.querySelector('#tomorrow-desc').textContent = `${forecastData.list[1].weather[0].description}`;
+        document.querySelector('#tomorrow-temp-low').innerHTML = `${Math.round(forecastData.list[1].main.temp_min)}&deg;F`;
+        document.querySelector('#tomorrow-temp-high').innerHTML = `${Math.round(forecastData.list[1].main.temp_max)}&deg;F`;
+        document.querySelector('#tomorrow-wind-speed').innerHTML = `${Math.round(forecastData.list[1].wind.speed)} mph`;
+
+        // Display day after tomorrow's weather
+        document.querySelector('#day-after-tomorrow-temp').innerHTML = `${Math.round(forecastData.list[9].main.temp)}&deg;F`;
+        document.querySelector('#day-after-tomorrow-weather-icon').setAttribute('src', `https://openweathermap.org/img/w/${forecastData.list[9].weather[0].icon}.png`);
+        document.querySelector('#day-after-tomorrow-weather-icon').setAttribute('alt', 'Weather icon');
+        document.querySelector('#day-after-tomorrow-desc').textContent = `${forecastData.list[9].weather[0].description}`;
+        document.querySelector('#day-after-tomorrow-temp-low').innerHTML = `${Math.round(forecastData.list[9].main.temp_min)}&deg;F`;
+        document.querySelector('#day-after-tomorrow-temp-high').innerHTML = `${Math.round(forecastData.list[9].main.temp_max)}&deg;F`;
+        document.querySelector('#day-after-tomorrow-wind-speed').innerHTML = `${Math.round(forecastData.list[9].wind.speed)} mph`;
+
     }
 
-    function calculateWindChill(temperature, windSpeed, windChillElement) {
+    function calculateWindChill(temperature, windSpeed, windChillElements) {
         // Check if the input values meet the specification limits
         if (temperature <= 50 && windSpeed > 3.0) {
             // Calculate wind chill factor using the formula
@@ -43,10 +74,20 @@ document.addEventListener('DOMContentLoaded', function () {
             // Round the result to a whole number
             windChill = Math.round(windChill);
 
-            document.querySelector('#wind-chill').innerHTML = `${windChill}&deg;F`;
+            // Update wind chill for each element
+            windChillElements.forEach(element => {
+                // Display wind chill
+                element.innerHTML = `Wind chill: ${windChill}&deg;F`;
+                // Show wind chill element
+                element.style.display = 'inline';
+            });
         } else {
-            // If input values do not meet the requirements, display "N/A"
-            document.querySelector('#wind-chill').innerHTML = 'N/A';
+            // If input values do not meet the requirements, hide wind chill for each element
+            windChillElements.forEach(element => {
+                // Hide wind chill
+                element.style.display = 'none';
+            });
         }
     }
+
 });

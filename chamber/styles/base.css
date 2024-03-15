@@ -158,10 +158,20 @@ hr {
 }
 
 .weather figcaption,
-.temp-low,
-.temp-high,
-.windspeed,
-.wind-chill {
+.current-temp-low,
+.current-temp-high,
+.current-windspeed,
+.current-wind-chill,
+.tomorrow-desc,
+.tomorrow-temp-low,
+.tomorrow-temp-high,
+.tomorrow-windspeed,
+.tomorrow-wind-chill,
+.day-after-tomorrow-desc,
+.day-after-tomorrow-temp-low,
+.day-after-tomorrow-temp-high,
+.day-after-tomorrow-windspeed,
+.day-after-tomorrow-wind-chill {
     font-size: x-small;
 }
 
