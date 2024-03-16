@@ -104,7 +104,7 @@ ul {
 .banner {
     padding-top: 10px;
     position: relative;
-    background-color: #a53860;
+    background-color: #ebebeb;
     justify-content: center;
     align-items: center;
 
@@ -112,7 +112,7 @@ ul {
 
 .banner-text,
 .material-icons {
-    color: #fff;
+    color: #000;
 }
 
 .banner-text {
