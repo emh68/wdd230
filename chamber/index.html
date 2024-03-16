@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&family=Wix+Madefor+Text:wght@500&display=swap">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -44,12 +45,19 @@
         </ul>
     </nav>
     <main>
+        <div class="banner">
+            <!-- <div class="banner-content"> -->
+            <div class="banner-text">
+                <strong>
+                    Join us every Wednesday at 7:00pm at our Main Street office for our Chamber of Commerce Meet &
+                    Greet!
+                </strong>
+            </div>
+            <!-- </div> -->
+            <button class="banner-close" type="button"></button><span class="material-icons">close</span>
+        </div>
         <div class="hero">
             <picture>
-                <!-- <source srcset="images/wdd230-org-small.webp" media="(max-width: 640px)">
-                <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1024px)">
-                <img src="images/wdd230-org-large.webp" alt="Three people in an office meeting" width="1280"
-                    height="720"> -->
                 <img src="images/skyline.webp" alt="Salt_Lake_City_Skyline">
             </picture>
             <!-- <div class="herotextbox">
@@ -74,7 +82,7 @@
                 <h2>Membership Benefits</h2>
                 <hr>
             </div>
-            <div class="benefits-higlights">
+            <div class="benefits-highlights">
                 <h3>Business Highlights</h3>
                 <p>In addition to our ribbon cutting ceremonies, every month we highlight a business member of the
                     chamber. You are able to introduce your business and let the community know a little more about what
@@ -173,8 +181,9 @@
             </p>
         </div>
         <br>
-        <div class="footer-content"><span>&copy; <span id="currentYear"></span> Draper Chamber &nbsp;|&nbsp; Eli
-                Hansen &nbsp;|&nbsp; WDD 230 Project &nbsp;|&nbsp; <span id="lastModified">Last Modified:</span></span>
+        <div class="footer-content"><span>&copy; <span id="currentYear"></span> Salt Lake City Chamber of Commerce <br>
+                Eli Hansen &nbsp;|&nbsp; WDD 230 Project &nbsp;|&nbsp; <span id="lastModified">Last
+                    Modified:</span></span>
         </div>
     </footer>
     <script src="scripts/chamber.js"></script>

@@ -34,6 +34,7 @@ body {
 
 main {
     margin: 0;
+    background-color: #ebebeb;
 }
 
 header {
@@ -100,6 +101,36 @@ ul {
     list-style-type: none;
 }
 
+.banner {
+    padding-top: 10px;
+    position: relative;
+    background-color: #a53860;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-text,
+.material-icons {
+    color: #fff;
+}
+
+.banner-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.material-icons {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.banner-close {
+    background: none;
+    border: none;
+}
+
 .hero {
     position: relative;
 }
@@ -139,6 +170,29 @@ hr {
 .herotextbox p {
     padding: 10px;
 }
+
+.membership-benefits {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    border: 1px solid #fff;
+    background-color: #fff;
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.benefits-highlights,
+.benefits-advertising,
+.benefits-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
 
 .weather-events-container {
     display: grid;

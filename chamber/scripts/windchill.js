@@ -1,5 +1,23 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the current day of the week (0 = Sun, 1 = Mon, etc.)
+    const currentDayOfWeek = new Date().getDay();
+    const banner = document.querySelector(".banner");
 
+    // Check if it is Monday, Tuesday or Wednesday
+    if (currentDayOfWeek >= 1 && currentDayOfWeek <= 3) {
+        banner.style.display = "block"; // Show the banner
+    } else {
+        banner.style.display = "none"; // Hide the banner
+    }
+
+    // Close banner when closeButton clicked
+    const closeButton = document.querySelector(".material-icons");
+    closeButton.addEventListener("click", function () {
+        banner.style.display = "none"; // Hide the banner when the close button is clicked
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
     const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=40.761&lon=-111.891&appid=b2384255491935468122e0e1ee279982&units=imperial';
     const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.761&lon=-111.891&appid=b2384255491935468122e0e1ee279982&units=imperial';
 

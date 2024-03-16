@@ -24,9 +24,9 @@
 
 
     main {
-        display: grid;
+        /* display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 10px;
+        grid-gap: 10px; */
         margin: auto;
         max-width: 100%;
     }
@@ -55,25 +55,46 @@
         align-items: center;
     }
 
-    .weather-and-events {
-        display: flex;
-
+    .weather-events-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
     }
 
+
     .events {
-        flex: 2;
+        grid-column: 1;
     }
 
     .weather {
-        flex: 1;
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
     }
 
-    .footer-content {
+    .weather h2,
+    .weather hr {
         grid-column: 1 / -1;
+        text-align: center;
+    }
+
+
+    /* .current-weather,
+    .tomorrow-weather,
+    .day-after-tomorrow-weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    } */
+
+    .footer-content {
+        /* grid-column: 1 / -1; */
     }
 
     .contact-info {
         display: grid;
     }
-
 }
