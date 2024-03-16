@@ -27,13 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
             if (currentResponse.ok && forecastResponse.ok) {
                 const currentData = await currentResponse.json();
                 const forecastData = await forecastResponse.json();
-                //--- Remove after testing ----//
-                console.log(currentData);
-                console.log("Current Weather Data:");
-                console.log(currentData);
-                console.log("Forecast Data:");
-                console.log(forecastData);
-                /////////////////////////////////
 
                 displayResults(currentData, forecastData);
                 const currentWindChillElement = document.querySelectorAll('#current-wind-chill');
