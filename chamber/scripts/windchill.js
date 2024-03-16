@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Get the current day of the week (0 = Sun, 1 = Mon, etc.)
-    const currentDayOfWeek = new Date().getDay();
+    const currentDayOfWeek = 1;
+    // const currentDayOfWeek = new Date().getDay();
     const banner = document.querySelector(".banner");
 
     // Check if it is Monday, Tuesday or Wednesday
