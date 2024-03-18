@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Close banner when closeButton clicked
-    const closeButton = document.querySelector(".material-icons");
+    const closeButton = document.querySelector(".banner-close");
     closeButton.addEventListener("click", function () {
         banner.style.display = "none"; // Hide the banner when the close button is clicked
     });

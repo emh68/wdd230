@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&family=Wix+Madefor+Text:wght@500&display=swap">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -46,38 +46,20 @@
     </nav>
     <main>
         <div class="banner">
-            <!-- <div class="banner-content"> -->
             <div class="banner-text">
                 <strong>
                     Join us every Wednesday at 7:00pm at our Main Street office for our Chamber of Commerce Meet &
                     Greet!
                 </strong>
             </div>
-            <!-- </div> -->
-            <button class="banner-close" type="button" aria-label="Close banner"><span
-                    class="material-icons">close</span>
-            </button>
+            <button class="banner-close" type="button" aria-label="Close banner">✕</button>
         </div>
         <div class="hero">
             <picture>
-                <img src="images/skyline.webp" alt="Salt_Lake_City_Skyline">
+                <source srcset="images/slc-skyline-small.webp" media="(max-width: 480px)" loading="lazy">
+                <source srcset="images/slc-skyline-medium.webp" media="(max-width: 1280px)" loading="lazy">
+                <img src="images/slc.webp" alt="Salt_Lake_City_Skyline" width="1280" height="853" loading="lazy">
             </picture>
-            <!-- <div class="herotextbox">
-                <h2>Our Mission</h2>
-                <hr>
-                <p>The mission of the Salt Lake Chamber of Commerce is to bring business leaders in the Salt Lake area
-                    together to build relationships, facilitate business growth and stability and improve the local
-                    economy.</p>
-                <div class="element-container">
-                    <div class="element-button-wrapper">
-                        <a class="element-button" href="/join">
-                            <span class="button-content-wrapper">
-                                <span class="button-text">Become A Member</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div> -->
         </div>
         <section class="membership-benefits">
             <div class="membership-headline">
@@ -87,22 +69,19 @@
             <div class="benefits-highlights">
                 <h3>Business Highlights</h3>
                 <p>In addition to our ribbon cutting ceremonies, every month we highlight a business member of the
-                    chamber. You are able to introduce your business and let the community know a little more about what
-                    you do and the services you provide.
+                    chamber.
                 </p>
             </div>
             <div class="benefits-advertising">
                 <h3>Website Advertising</h3>
-                <p>We are constantly advertising the benefits of businesses in our community and how they can help drive
-                    economic growth. Not only do we list chamber members in our business directory, but we also provide
-                    dedicated advertising opportunities.
+                <p>From out weekly Meet & Greets, to our monthly luncheons, to our website, we have multiple
+                    different channels we can use to advertise your business.
                 </p>
             </div>
             <div class="benefits-connect">
                 <h3>Connect</h3>
-                <p>We also have special events where you can network and connect with other business leaders in the
-                    community and we have special partnerships that can help connect you with additional tools and
-                    resources to help your business thrive. </p>
+                <p>As a member of the chamber you will have opportunities to connect with other business leaders and
+                    access to special resources that can help you improve your business.</p>
             </div>
             <div class="element-container">
                 <div class="element-button-wrapper">
@@ -114,7 +93,6 @@
                 </div>
             </div>
         </section>
-        <!-- <button id="joinButton">BECOME A MEMBER</button> -->
         <section class="weather-events-container">
             <div class="events">
                 <!-- <img src="images/salt-lake-city-street.jpg" alt="Salt_Lake_City_Street_with_Tram"> -->
@@ -160,7 +138,6 @@
                     <div class="day-after-tomorrow-windspeed">Wind: <span id="day-after-tomorrow-wind-speed"></span>
                     </div>
                     <div class="day-after-tomorrow-wind-chill"><span id="day-after-tomorrow-wind-chill"></span>
-
                     </div>
                 </div>
             </div>

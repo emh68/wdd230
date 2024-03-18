@@ -102,7 +102,7 @@ ul {
 }
 
 .banner {
-    padding-top: 10px;
+    padding: 10px;
     position: relative;
     background-color: #ebebeb;
     justify-content: center;
@@ -120,15 +120,14 @@ ul {
     padding: 20px;
 }
 
-.material-icons {
+.banner-close {
     position: absolute;
     top: 8px;
-    right: 8px;
-}
-
-.banner-close {
-    background: none;
+    right: 10px;
+    font-size: large;
+    font-weight: bolder;
     border: none;
+    background: none;
 }
 
 .hero {
