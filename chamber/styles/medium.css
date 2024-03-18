@@ -24,9 +24,6 @@
 
 
     main {
-        /* display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 10px; */
         margin: auto;
         max-width: 100%;
     }
@@ -90,8 +87,15 @@
         padding: 10px;
     } */
 
-    .footer-content {
-        /* grid-column: 1 / -1; */
+    .membersGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .membersList {
+        grid-gap: 0;
+        display: list-item;
+        list-style-type: none;
     }
 
     .contact-info {

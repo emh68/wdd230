@@ -34,7 +34,7 @@ body {
 
 main {
     margin: 0;
-    background-color: #ebebeb;
+    /* background-color: #ebebeb; */
 }
 
 header {
@@ -568,7 +568,6 @@ form input.submitBtn {
     padding: 200px;
 }
 
-
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -580,14 +579,13 @@ footer {
 }
 
 /* -------- Directory -------*/
-
 .directory-view {
     margin-left: auto;
     /* margin: 5rem right; */
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
     padding: 0.5rem;
-    background-color: #bed;
-    text-align: center;
+    background-color: #fff;
+    text-align: right;
 }
 
 .directory-view button {
@@ -601,42 +599,41 @@ footer {
     grid-gap: 20px;
     align-items: center;
     text-align: center;
+    display: list-item;
+    word-wrap: break-word;
+}
+
+.membersGrid img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 
 .membersList article {
-    margin-bottom: 20px;
-    padding: 15px;
+    padding: 25px;
     background-color: #f0f0f0;
-    display: list-item;
-    list-style: none;
 }
 
 .membersList {
-    display: flex;
-    flex-direction: column;
+    grid-gap: 0;
+    display: list-item;
     list-style-type: none;
-    /* Remove default list styles */
-    padding: 0;
 }
 
-.membersList article {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0;
-
+.membersList img,
+.membersList div,
+.membersList h3,
+.membersList p,
+.membersList a {
+    max-width: 100%;
+    word-wrap: break-word;
 }
-
-/* .membersList li {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f0f0f0;
-    
-} */
 
 .membersList img {
     display: none;
 }
 
 .membersList article:nth-child(even) {
-    background-color: #9e9de9;
+    background-color: #dbdbdb;
 }
