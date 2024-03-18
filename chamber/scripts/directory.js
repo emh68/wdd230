@@ -9,9 +9,6 @@ async function getMembers() {
     const response = await fetch(membersData);
     const data = await response.json();
 
-    /* ---- Remove after testing ---- */
-    console.log(data);
-    /* ------------------------------*/
     // displayMembers(data.members);
     createMemberCard(data.members);
 }
