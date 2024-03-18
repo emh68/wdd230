@@ -579,10 +579,6 @@ footer {
 }
 
 /* -------- Directory -------*/
-.fa {
-    text-rendering: auto;
-}
-
 .directory-view {
     margin-left: auto;
     /* margin: 5rem right; */
