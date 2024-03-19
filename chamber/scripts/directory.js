@@ -24,8 +24,6 @@ const createMemberCard = (members) => {
         let phone = document.createElement('p');
         let website = document.createElement('a');
         let membership = document.createElement('p');
-        // image.src = member.image;
-        // image.alt = member.name;
         name.textContent = member.name;
         let addressParts = member.address.split(', ');
         let streetAddress = addressParts[0];
@@ -42,7 +40,6 @@ const createMemberCard = (members) => {
         image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '160');
-        // image.setAttribute('height', '100');
 
         details.classList.add('member-details');
 

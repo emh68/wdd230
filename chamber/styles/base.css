@@ -182,7 +182,7 @@ hr {
     margin: 20px auto;
 }
 
-.benefits-highlights,
+.benefits-spotlight,
 .benefits-advertising,
 .benefits-connect {
     align-items: center;
@@ -243,6 +243,21 @@ hr {
 .day-after-tomorrow-windspeed,
 .day-after-tomorrow-wind-chill {
     font-size: x-small;
+}
+
+.spotlight {
+    background-color: #ebebeb;
+    border: 1px solid #000;
+    width: 100%;
+    padding: 20px;
+}
+
+.spotlight .membersGrid {
+    background-color: #fff;
+    /* border: 1px solid #000;
+    width: 400px;
+    height: 400px; */
+    margin: 0 auto;
 }
 
 /*------ Discover --------*/
@@ -601,7 +616,6 @@ footer {
     grid-gap: 20px;
     align-items: center;
     text-align: center;
-    display: list-item;
     word-wrap: break-word;
 }
 
