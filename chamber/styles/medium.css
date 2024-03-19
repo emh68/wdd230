@@ -41,16 +41,20 @@
         gap: 20px;
     }
 
-    .membership-headline,
-    .element-container {
+    .membership-headline {
         grid-column: 1 / -1;
     }
 
-    .element-container {
+    .button {
+        grid-column: 1 / -1;
+        width: 200px;
+    }
+
+    /* .element-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
     .weather-events-container {
         display: grid;
