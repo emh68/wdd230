@@ -218,8 +218,13 @@ hr {
     align-items: center;
     text-align: center;
     /* padding-bottom: 20px; */
-    background-color: #fff;
+    background-color: #ebebeb;
+    /* padding: 20px; */
+}
+
+.events p {
     padding: 20px;
+
 }
 
 .weather {
@@ -227,10 +232,10 @@ hr {
     text-align: center;
     padding-bottom: 20px;
     background-color: #f5f5ff;
-    /* border: 1px solid; */
-    border-radius: 6px 6px;
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
     /* border-color: #c8c8c8; */
-    box-shadow: 0 0 10px;
+    /* box-shadow: 0 0 10px; */
 }
 
 .weather figcaption,
@@ -252,18 +257,31 @@ hr {
 }
 
 .spotlight {
+    background-color: #ebebeb;
+    margin: 0px 20px 20px;
+}
+
+.spotlight-container {
     /* background-image: repeating-radial-gradient(#4586, #a586); */
     /* border: 1px solid #000; */
-    width: 100%;
-    padding: 20px;
+
+    padding: 40px;
+    background-color: #ebebeb;
+    /* display: grid; */
+
+    margin: 0 auto;
+    border: 1px solid#000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
 }
 
 .spotlight .membersGrid {
-    background-color: #fff;
+    /* background-color: #fff;
     border-radius: 6px;
     border: 1px solid #ebebeb;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px; */
     margin: 0 auto;
+
 }
 
 
