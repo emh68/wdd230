@@ -25,7 +25,7 @@ modeButton.addEventListener('click', () => {
     main.classList.toggle('dark-mode', modeButton.checked);
 });
 
-
+// Directory toggle between grid and list view
 const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
 const display = document.querySelector('article');
@@ -39,7 +39,7 @@ async function getMembers() {
     createMemberCard(data.members);
 }
 
-// Function to randomly select members with membership level Silver or Gold
+// Randomly select members with membership level Silver or Gold
 function selectRandomSilverGoldMembers(members, count) {
     const silverGoldMembers = members.filter(member => member.membershiplvl === 'Silver' || member.membershiplvl === 'Gold');
     const selectedMembers = [];
@@ -52,24 +52,41 @@ function selectRandomSilverGoldMembers(members, count) {
     return selectedMembers;
 }
 
-// Function to display randomly selected members on index.html
-async function displayRandomSilverGoldMembers(count) {
+// Display randomly selected members
+async function displayRandomSpotlightMembers(count) {
     const response = await fetch(membersData);
     const data = await response.json();
-    const randomMembers = selectRandomSilverGoldMembers(data.members, count);
+    const spotlightMembers = data.members.filter(member => member.membershiplvl === 'Silver' || member.membershiplvl === 'Gold');
+    const selectedMembers = [];
 
-    randomMembers.forEach(member => {
-        createMemberCard([member]); // Passing as an array to keep the same structure as createMemberCard function
+    // Randomly select unique members until count is reached
+    while (selectedMembers.length < count && spotlightMembers.length > 0) {
+        const randomIndex = Math.floor(Math.random() * spotlightMembers.length);
+        const selectedMember = spotlightMembers[randomIndex];
+
+        // Check if selected member is not already in selectedMembers array
+        if (!selectedMembers.includes(selectedMember)) {
+            selectedMembers.push(selectedMember);
+        }
+
+        // Remove selected member from spotlightMembers array to avoid selecting it again
+        spotlightMembers.splice(randomIndex, 1);
+    }
+
+    // Display the selected members
+    selectedMembers.forEach(member => {
+        createMemberCard([member]);
     });
 }
 
 // Initialize by displaying random members
 async function initialize() {
-    await displayRandomSilverGoldMembers(2); // Change the argument to display 2 or 3 members
+    await displayRandomSpotlightMembers(2); // Number of members to display
 }
 
 // Call initialize() when the page loads
 initialize();
+
 
 const createMemberCard = (members) => {
     members.forEach((member) => {

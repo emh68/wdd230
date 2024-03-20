@@ -35,6 +35,10 @@
         margin-bottom: 0;
     }
 
+    hr {
+        grid-column: 1 / -1;
+    }
+
     .membership-benefits {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -80,16 +84,14 @@
         text-align: center;
     }
 
+    .spotlight {
+        display: grid;
+    }
 
-    /* .current-weather,
-    .tomorrow-weather,
-    .day-after-tomorrow-weather {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-    } */
+    .spotlight .membersGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     .membersGrid {
         display: grid;
