@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('#day-after-tomorrow-temp-low').innerHTML = `${Math.round(forecastData.list[9].main.temp_min)}&deg;F`;
         document.querySelector('#day-after-tomorrow-temp-high').innerHTML = `${Math.round(forecastData.list[9].main.temp_max)}&deg;F`;
         document.querySelector('#day-after-tomorrow-wind-speed').innerHTML = `${Math.round(forecastData.list[9].wind.speed)} mph`;
-
     }
 
     function calculateWindChill(temperature, windSpeed, windChillElements) {
@@ -69,15 +68,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Update wind chill for each element
             windChillElements.forEach(element => {
-                // Display wind chill
                 element.innerHTML = `Wind chill: ${windChill}&deg;F`;
-                // Show wind chill element
                 element.style.display = 'inline';
             });
+
         } else {
             // If input values do not meet the requirements, hide wind chill for each element
             windChillElements.forEach(element => {
-                // Hide wind chill
                 element.style.display = 'none';
             });
         }
