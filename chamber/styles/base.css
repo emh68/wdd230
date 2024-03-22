@@ -479,12 +479,14 @@ input:checked+.slider:before {
     border-color: #eee;
 }
 
-.dark-mode a:visited {
+.dark-mode .facts-container a:visited,
+.dark-mode .visit-links a:visited {
     color: #b495d0;
     background-color: transparent;
 }
 
-.dark-mode a {
+.dark-mode .facts-container a,
+.dark-mode .visit-links a {
     color: #8181fe;
     background-color: transparent;
 }
