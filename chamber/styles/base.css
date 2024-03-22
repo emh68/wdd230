@@ -479,6 +479,16 @@ input:checked+.slider:before {
     border-color: #eee;
 }
 
+.dark-mode a:visited {
+    color: #b495d0;
+    background-color: transparent;
+}
+
+.dark-mode a {
+    color: #8181fe;
+    background-color: transparent;
+}
+
 .dark-mode header,
 .dark-mode .herotextbox,
 .dark-mode .membership-benefits,
