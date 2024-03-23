@@ -490,10 +490,12 @@ input:checked+.slider:before {
     text-decoration: underline;
 }
 
+.dark-mode .membersGrid .member-details a,
 .dark-mode .events a,
 .dark-mode .facts-container a,
 .dark-mode .visit-links a {
-    color: #8181fe;
+    color: #ffe344;
+    text-decoration: none;
     background-color: transparent;
 }
 
@@ -511,11 +513,6 @@ input:checked+.slider:before {
 .dark-mode .facts-container {
     color: #fff;
     background-color: #000;
-}
-
-.dark-mode .membersGrid .member-details a {
-    color: #ffe344;
-    text-decoration: none;
 }
 
 .dark-mode .feature,
