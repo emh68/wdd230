@@ -218,6 +218,7 @@ hr {
     align-items: center;
     text-align: center;
     background-color: #ebebeb;
+    border: 1px solid #ebebeb;
 }
 
 .events h3,
@@ -258,6 +259,7 @@ hr {
 .spotlight {
     background-color: #ebebeb;
     margin: 0px 20px 20px;
+    border: 1px solid #ebebeb;
 }
 
 .spotlight-container {
@@ -479,12 +481,16 @@ input:checked+.slider:before {
     border-color: #eee;
 }
 
+.dark-mode .membersGrid .member-details a:visited,
+.dark-mode .events a:visited,
 .dark-mode .facts-container a:visited,
 .dark-mode .visit-links a:visited {
     color: #b495d0;
     background-color: transparent;
+    text-decoration: underline;
 }
 
+.dark-mode .events a,
 .dark-mode .facts-container a,
 .dark-mode .visit-links a {
     color: #8181fe;
@@ -496,7 +502,8 @@ input:checked+.slider:before {
 .dark-mode .membership-benefits,
 .dark-mode .events,
 .dark-mode .weather,
-.dark-mode .spotlights {
+.dark-mode .spotlight,
+.dark-mode .directory-view {
     background-color: #000;
 }
 
@@ -504,6 +511,11 @@ input:checked+.slider:before {
 .dark-mode .facts-container {
     color: #fff;
     background-color: #000;
+}
+
+.dark-mode .membersGrid .member-details a {
+    color: #ffe344;
+    text-decoration: none;
 }
 
 .dark-mode .feature,

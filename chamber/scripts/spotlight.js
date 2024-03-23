@@ -14,16 +14,19 @@ function selectRandomSilverGoldMembers(members, count) {
     const selectedMembers = [];
 
     // Ensure that selected members are unique
-    while (selectedMembers.length < count) {
+    while (selectedMembers.length < count && silverGoldMembers.length > 0) {
         const randomIndex = Math.floor(Math.random() * silverGoldMembers.length);
         const selectedMember = silverGoldMembers[randomIndex];
-        if (!selectedMembers.some(member => member.id === selectedMember.id)) {
+        if (!selectedMembers.some(member => JSON.stringify(member) === JSON.stringify(selectedMember))) {
             selectedMembers.push(selectedMember);
         }
+        // Remove selected member to avoid duplication
+        silverGoldMembers.splice(randomIndex, 1);
     }
 
     return selectedMembers;
 }
+
 
 // Display randomly selected members
 async function displayRandomSpotlightMembers(count) {
