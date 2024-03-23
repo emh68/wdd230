@@ -33,15 +33,7 @@
         width: 100%;
     }
 
-    /* 
-    .weather-events-container {}
-
-    .events {}
-
-    .weather {} */
-
     /*--------- Discover --------*/
-
     .container {
         display: grid;
         grid-template-columns: 1fr 2fr;

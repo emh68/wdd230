@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const timeDifference = currentDate - lastVisit;
         const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
-        // Display message based on the time difference
+        // Display message based on last visit
         if (daysDifference < 1) {
             document.getElementById("message").textContent = "Back so soon! Awesome!";
         } else {
@@ -53,7 +53,6 @@ const additionalFacts = [
     "The city has a diverse culinary scene, with a mix of international cuisines and a focus on locally sourced ingredients.",
     "Salt Lake City is a gateway to numerous national parks, including Zion, Bryce Canyon, and Arches National Parks.",
     "The Sundance Film Festival, one of the largest independent film festivals in the world, takes place annually in Park City, near Salt Lake City."
-    // Add more facts here
 ];
 
 additionalFacts.forEach((fact) => {

@@ -20,20 +20,18 @@ function selectRandomSilverGoldMembers(members, count) {
         if (!selectedMembers.some(member => JSON.stringify(member) === JSON.stringify(selectedMember))) {
             selectedMembers.push(selectedMember);
         }
-        // Remove selected member to avoid duplication
+        // Remove selected member to avoid duplicate
         silverGoldMembers.splice(randomIndex, 1);
     }
 
     return selectedMembers;
 }
 
-
 // Display randomly selected members
 async function displayRandomSpotlightMembers(count) {
     const members = await getMembers();
     const selectedMembers = selectRandomSilverGoldMembers(members, count);
 
-    // Display the selected members
     createMemberCard(selectedMembers);
 }
 
@@ -78,5 +76,5 @@ const createMemberCard = (members) => {
     });
 }
 
-// Call initialize() when the page loads
+// Call initialize() when page loads
 initialize();
