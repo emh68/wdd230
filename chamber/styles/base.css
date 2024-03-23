@@ -521,6 +521,20 @@ input:checked+.slider:before {
     color: #000;
 }
 
+.dark-mode .membersList h3,
+.dark-mode .membersList p {
+    color: #fff
+}
+
+.dark-mode .membersList article {
+    background-color: #161616;
+}
+
+.dark-mode .membersList article:nth-child(even) {
+    background-color: #000000;
+}
+
+
 /*-------- FORM ----------- */
 :root {
     --border: #999;
@@ -696,5 +710,5 @@ footer {
 }
 
 .membersList article:nth-child(even) {
-    background-color: #dbdbdb;
+    background-color: #e1e1e1;
 }
