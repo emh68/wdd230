@@ -82,6 +82,10 @@ header {
     background-color: #a53860;
 }
 
+.active::before {
+    content: "👉 ";
+}
+
 .show li {
     display: block;
 }
@@ -217,7 +221,8 @@ hr {
     align-items: center;
     text-align: center;
     padding-bottom: 20px;
-    background-color: #f5f5ff;
+    background-color: #ebebeb;
+    /* background-color: #f5f5ff; */
     border: 1px solid #ebebeb;
     /* border-radius: 6px; */
 }
@@ -237,7 +242,7 @@ hr {
 .day-after-tomorrow-temp-high,
 .day-after-tomorrow-windspeed,
 .day-after-tomorrow-wind-chill {
-    font-size: x-small;
+    font-size: 12px;
 }
 
 .spotlight {
