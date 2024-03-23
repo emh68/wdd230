@@ -499,6 +499,7 @@ input:checked+.slider:before {
     background-color: transparent;
 }
 
+.dark-mode .facts-container .facts-list li,
 .dark-mode header,
 .dark-mode .herotextbox,
 .dark-mode .membership-benefits,
