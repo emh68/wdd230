@@ -529,17 +529,19 @@ iframe {
 }
 
 .membersGrid {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 20px;
-    align-items: center;
+    align-items: center; */
     text-align: center;
     word-wrap: break-word;
 }
 
 .membersGrid img {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
+    width: 160px;
+    height: 120px;
     margin: 0 auto;
     padding-top: 20px;
 }
