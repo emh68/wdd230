@@ -222,9 +222,7 @@ hr {
     text-align: center;
     padding-bottom: 20px;
     background-color: #ebebeb;
-    /* background-color: #f5f5ff; */
     border: 1px solid #ebebeb;
-    /* border-radius: 6px; */
 }
 
 .weather figcaption,
@@ -265,12 +263,9 @@ hr {
 }
 
 footer {
-    /* display: grid;
-    grid-template-columns: 1fr; */
     color: #fff;
     background-color: #2F3061;
     text-align: center;
-    /* justify-content: center; */
     padding: 40px;
 }
 
@@ -499,7 +494,6 @@ iframe {
     font-weight: 700;
     font-size: large;
     word-wrap: break-word;
-    /* max-width: 100%; */
     padding: 20px;
 }
 
