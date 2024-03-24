@@ -24,9 +24,6 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 150px;
-    max-height: 150px;
-    margin: 0 auto;
 }
 
 body {
@@ -266,12 +263,12 @@ hr {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
     color: #fff;
     background-color: #2F3061;
     text-align: center;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 40px;
 }
 
