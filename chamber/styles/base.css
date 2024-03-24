@@ -1,5 +1,5 @@
 :root {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
 }
 
 * {
@@ -540,8 +540,6 @@ iframe {
 .membersGrid img {
     /* display: flex;
     align-items: center; */
-    width: 160px;
-    height: 120px;
     margin: 0 auto;
     padding-top: 20px;
 }
