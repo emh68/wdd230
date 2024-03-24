@@ -222,7 +222,9 @@ hr {
     text-align: center;
     padding-bottom: 20px;
     background-color: #ebebeb;
+    /* background-color: #f5f5ff; */
     border: 1px solid #ebebeb;
+    /* border-radius: 6px; */
 }
 
 .weather figcaption,
@@ -497,6 +499,7 @@ iframe {
     font-weight: 700;
     font-size: large;
     word-wrap: break-word;
+    /* max-width: 100%; */
     padding: 20px;
 }
 
@@ -531,16 +534,15 @@ iframe {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 20px;
+    align-items: center;
     text-align: center;
     word-wrap: break-word;
-    width: 100%;
-    height: auto;
 }
 
 .membersGrid img {
-    width: 200px;
-    height: auto;
-    object-fit: cover;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
     padding-top: 20px;
 }
 
