@@ -263,12 +263,12 @@ hr {
 }
 
 footer {
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
+    display: grid;
+    grid-template-columns: 1fr;
     color: #fff;
     background-color: #2F3061;
     text-align: center;
-    /* justify-content: center; */
+    justify-content: center;
     padding: 40px;
 }
 
@@ -497,7 +497,6 @@ iframe {
     font-weight: 700;
     font-size: large;
     word-wrap: break-word;
-    /* max-width: 100%; */
     padding: 20px;
 }
 
@@ -532,7 +531,6 @@ iframe {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 20px;
-    /* align-items: center; */
     text-align: center;
     word-wrap: break-word;
     width: 100%;
@@ -543,9 +541,6 @@ iframe {
     width: 200px;
     height: auto;
     object-fit: cover;
-    /* display: flex;
-    align-items: center; */
-    /* margin: 0 auto; */
     padding-top: 20px;
 }
 
