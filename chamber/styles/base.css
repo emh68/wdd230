@@ -538,12 +538,12 @@ iframe {
 }
 
 .membersGrid img {
-    /* width: 200px;
+    width: 200px;
     height: auto;
-    object-fit: cover; */
-    display: flex;
+    object-fit: cover;
+    /* display: flex;
     align-items: center;
-    /* margin: 0 auto; */
+    margin: 0 auto; */
     padding-top: 20px;
 }
 
