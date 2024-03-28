@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'bronkohregular';
+    src: url('fonts/bronkoh-regular-bf65519bc788d98-webfont.woff');
+}
+
+:root {
+    font-family: 'bronkohregular';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    font-family: 'bronkohregular', Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 100%;
+}
+
+header {
+    text-align: center;
+    background-color: #0C326B;
+}
+
+
+.navigation {
+    justify-content: center;
+    padding: 20px;
+}
+
+/* .navigation li {
+    display: none;
+    padding: 0;
+    margin: 0;
+} */
+
+.navigation a {
+    display: block;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: #AAF3D7;
+}
+
+
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: #0C326B;
+}
