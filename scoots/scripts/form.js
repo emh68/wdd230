@@ -218,3 +218,32 @@ async function addRental() {
 
     rentalInputs.appendChild(div);
 }
+
+function updateTotalCost() {
+    const rentals = document.querySelectorAll("[id^='rentalInputs'] > div");
+    let totalCost = 0;
+    rentals.forEach(rental => {
+        const vehicleType = rental.querySelector("select").value;
+        const rentalType = rental.querySelector("input[name^='vehicle']:checked").value;
+        const rentalCost = vehicleCosts[vehicleType][rentalType];
+        totalCost += rentalCost;
+        // Display the cost for the current rental
+        const rentalCostDiv = rental.querySelector(".rental-cost");
+        if (rentalCostDiv) {
+            rentalCostDiv.textContent = `Cost: $${rentalCost}`;
+        } else {
+            const newRentalCostDiv = document.createElement("div");
+            newRentalCostDiv.classList.add("rental-cost");
+            newRentalCostDiv.textContent = `Cost: $${rentalCost}`;
+            rental.appendChild(newRentalCostDiv);
+        }
+    });
+    document.getElementById("totalCost").textContent = `Total Cost: $${totalCost}`;
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    addRental(); // Adding one rental by default when the page loads
+});
+
+document.getElementById("rentalForm").addEventListener("change", updateTotalCost);
