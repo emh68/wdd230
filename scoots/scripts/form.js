@@ -148,6 +148,7 @@
 
 // document.getElementById("rentalForm").addEventListener("change", updateTotalCost);
 
+const rentalsData = "https://emh68.github.io/wdd230/scoots/data/rentals.json";
 
 async function addRental() {
     const rentalInputs = document.getElementById("rentalInputs");
@@ -217,3 +218,21 @@ async function addRental() {
 
     rentalInputs.appendChild(div);
 }
+
+function updateTotalCost() {
+    const rentals = document.querySelectorAll("[id^='rentalInputs'] > div");
+    let totalCost = 0;
+    rentals.forEach(rental => {
+        const vehicleType = rental.querySelector("select").value;
+        const rentalType = rental.querySelector("input[name^='vehicle']:checked").value;
+        // Here you would need to map the selected vehicle type to the cost from the JSON data
+        // Example: totalCost += vehicleCosts[vehicleType][rentalType];
+    });
+    document.getElementById("totalCost").textContent = `Total Cost: $${totalCost}`;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    addRental(); // Adding one rental by default when the page loads
+});
+
+document.getElementById("rentalForm").addEventListener("change", updateTotalCost);
