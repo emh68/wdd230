@@ -1,0 +1,121 @@
+{
+    "rentals": [
+        {
+            "vehicle": "Honda Metro Scooter",
+            "capacity": "max. 1 person",
+            "cost": [
+                {
+                    "half-day": 20
+                },
+                {
+                    "full-day": 30
+                }
+            ],
+            "image": ""
+        },
+        {
+            "vehicle": "Honda Dio Scooter",
+            "capacity": "max. 2 people",
+            "cost": [
+                {
+                    "half-day": 30
+                },
+                {
+                    "full-day": 40
+                }
+            ],
+            "image": ""
+        },
+        {
+            "vehicle": "Honda PCX150 Scooter",
+            "capacity": "max. 2 people",
+            "cost": [
+                {
+                    "half-day": 40
+                },
+                {
+                    "full-day": 50
+                }
+            ],
+            "image": ""
+        },
+        {
+            "vehicle": "Honda Pioneer ATV",
+            "capacity": "max. 4 people",
+            "cost": [
+                {
+                    "half-day": 50
+                },
+                {
+                    "full-day": 70
+                }
+            ],
+            "image": ""
+        },
+        {
+            "vehicle": "Jeep Wrangler - 2 door",
+            "capacity": "max. 4 people",
+            "cost": [
+                {
+                    "half-day": 60
+                },
+                {
+                    "full-day": 85
+                }
+            ],
+            "image": ""
+        },
+        {
+            "vehicle": "Jeep Wrangler - 4 door with a/c",
+            "capacity": "max. 5 people",
+            "cost": [
+                {
+                    "half-day": 70
+                },
+                {
+                    "full-day": 100
+                }
+            ],
+            "image": ""
+        },
+        {
+            "vehicle": "Yamaha EX Waverunner",
+            "capacity": "max. 2 people",
+            "cost": [
+                {
+                    "half-day": 50
+                },
+                {
+                    "full-day": 70
+                }
+            ],
+            "image": ""
+        },
+        {
+            "vehicle": "Yamaha VX Waverunner",
+            "capacity": "max. 3 people",
+            "cost": [
+                {
+                    "half-day": 60
+                },
+                {
+                    "full-day": 90
+                }
+            ],
+            "image": ""
+        },
+        {
+            "vehicle": "Sea Doo GTI",
+            "capacity": "max. 3 people",
+            "cost": [
+                {
+                    "half-day": 70
+                },
+                {
+                    "full-day": 100
+                }
+            ],
+            "image": ""
+        }
+    ]
+}

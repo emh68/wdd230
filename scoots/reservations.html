@@ -52,14 +52,22 @@
                 <legend>User Info</legend>
                 <label>First Name*<input type="text" id="fname" name="fname" required></label>
                 <label>Last Name*<input type="text" id="lname" name="lname" required></label>
-                <label>Cruise Line<input type="text" id="cruiseline" name="cruiseline" pattern="[a-zA-Z\s\-]{7,}"
-                        title="Only alpha characters, hyphens and spaces are allowed and must be at least 7 characters long."></label>
+                <label>Cruise Line<input type="text" id="cruiseline" name="cruiseline" pattern="[a-zA-Z\s\-]{5,}"
+                        title="Only alpha characters, hyphens and spaces are allowed and must be at least 5 characters long."></label>
                 <label>Email*<input type="email" id="email" name="email" placeholder="yourname@company.com"
                         required></label>
                 <label>Phone*<input type="tel" id="phone" name="phone" placeholder="i.e. 3258954456" required></label>
             </fieldset>
             <fieldset>
                 <legend>Reservation Info</legend>
+                <label>Pickup Date* <input type="date" id="pickupdate" name="pickupdate" required></label>
+                <label>Return Date* <input type="date" id="returndate" name="returndate" required></label>
+                <div id="rentalInputs">
+                    <!-- Rental inputs will be dynamically generated here -->
+                </div>
+
+                <button type="button" onclick="addRental()">Add Rental</button>
+
             </fieldset>
             <input type="hidden" id="dateTime" name="dateTime">
             <div class="button-container">
@@ -83,6 +91,7 @@
 
     </footer>
     <script src="scripts/index.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>
