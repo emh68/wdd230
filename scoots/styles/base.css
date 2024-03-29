@@ -3,8 +3,15 @@
     src: url('fonts/bronkoh-regular-bf65519bc788d98-webfont.woff');
 }
 
+@font-face {
+    font-family: 'bronkohextrabold';
+    src: url('fonts/bronkoh-extrabold-bf65519bc761d7b-webfont.woff');
+}
+
 :root {
     font-family: 'bronkohregular';
+    --font_breg: 'bronkohregular';
+    --font_bxbold: 'bronkohextrabold';
 }
 
 * {
@@ -14,8 +21,9 @@
 }
 
 h1 {
-    color: white;
-    font-family: 'bronkohregular', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #000;
+    font-family: var(--font_breg), Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -23,21 +31,41 @@ body {
 }
 
 header {
+    display: flex;
     text-align: center;
+    justify-content: center;
     background-color: #0C326B;
 }
 
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    /* background-color: #2F3061; */
+    color: #fff;
+}
+
+#menu::before {
+    content: "≡";
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
 
 .navigation {
+    font-family: var(--font_bxbold);
+    font-size: small;
     justify-content: center;
     padding: 20px;
 }
 
-/* .navigation li {
+.navigation li {
     display: none;
-    padding: 0;
+    padding: 5px;
     margin: 0;
-} */
+}
 
 .navigation a {
     display: block;
@@ -50,14 +78,59 @@ header {
 
 .navigation a:hover,
 .navigation a:active {
-    color: white;
+    color: #000;
     background-color: #AAF3D7;
 }
 
+.active::before {
+    content: "👉 ";
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "x";
+}
+
+ul {
+
+    list-style-type: none;
+}
+
+.banner {
+    padding: 10px;
+    position: relative;
+    background-color: #ebebeb;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text,
+.material-icons {
+    color: #000;
+}
+
+.banner-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-close {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    background: none;
+}
 
 
 footer {
     text-align: center;
+    padding: 20px;
     color: #fff;
     background-color: #0C326B;
 }
