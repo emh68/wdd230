@@ -134,3 +134,58 @@ footer {
     color: #fff;
     background-color: #0C326B;
 }
+
+
+/*--------- Form ------------*/
+
+form fieldset {
+    margin: 2rem auto;
+    max-width: 900px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form legend {}
+
+form label {
+    display: block;
+    padding-top: 1rem;
+}
+
+form label input {
+    display: block;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.rental-period-div {
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.rental-period-div label {
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.rental-period-div input[type="radio"] {
+    display: inline-block;
+    /* vertical-align: middle; */
+}
+
+
+form input.submitBtn {
+    border: none;
+    background-color: #0C326B;
+    color: #fff;
+    border-radius: 5px;
+    padding: .75rem 1.5rem;
+    margin: 0 auto 2rem auto;
+    /* width: 96%; */
+    /* max-width: 15rem; */
+}
