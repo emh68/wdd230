@@ -146,7 +146,9 @@ form fieldset {
     padding: 10px;
 }
 
-form legend {}
+/* form legend {
+    padding: 0px;
+} */
 
 form label {
     display: block;
@@ -163,10 +165,10 @@ form label input {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.rental-period-div {
-    /* display: flex; */
-    /* align-items: center; */
-}
+/* .rental-period-div {
+    display: flex;
+    align-items: center;
+} */
 
 .rental-period-div label {
     margin-right: 30px;
