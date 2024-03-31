@@ -185,6 +185,11 @@ async function addNewRental(disableInputs = false) {
     const rentalNumber = rentalInputs.children.length + 1;
     const rentals = await fetchData();
 
+    // Create a container div for the rental content
+    const containerDiv = document.createElement("div");
+    containerDiv.classList.add("rental-container");
+
+    // Create the rental div
     const div = document.createElement("div");
 
     const selectLabel = document.createElement("label");
@@ -240,15 +245,22 @@ async function addNewRental(disableInputs = false) {
     // Add delete button
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "❌";
+    deleteButton.classList.add("deleteButton");
     deleteButton.addEventListener("click", function () {
-        rentalInputs.removeChild(div);
+        rentalInputs.removeChild(containerDiv); // Remove the container div instead of rental div
         updateTotalCost();
     });
-    div.appendChild(deleteButton);
+    containerDiv.appendChild(deleteButton); // Append delete button to the container div
 
-    rentalInputs.appendChild(div);
-    return div;
+    // Append the rental div to the container div
+    containerDiv.appendChild(div);
+
+    // Append the container div to rental inputs
+    rentalInputs.appendChild(containerDiv);
+
+    return containerDiv; // Return the container div
 }
+
 
 function checkDatesBeforeSelection() {
     // Check if pickup date and return date are selected
@@ -341,10 +353,13 @@ async function updateTotalCost() {
                         rental.appendChild(rentalCostDiv);
                     }
                     rentalCostDiv.textContent = `Cost: $${rentalTotalCost}, Days: ${days}`;
+                    rentalCostDiv.classList.add("rentalCost");
                 }
             }
         }
     });
 
-    document.getElementById("totalCost").textContent = `Total Cost: $${totalCost}`;
+    const totalCostElement = document.getElementById("totalCost");
+    totalCostElement.textContent = `Total Cost: $${totalCost}`;
+    totalCostElement.classList.add("totalCost");
 }

@@ -171,17 +171,65 @@ form label input {
 } */
 
 .rental-period-div label {
+    display: inline-flex;
+    margin-right: 40px;
+    align-items: center;
     margin-right: 30px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .rental-period-div input[type="radio"] {
-    display: inline-block;
+    margin-right: 10px;
+    /* display: inline-block; */
     /* vertical-align: middle; */
+}
+
+.radio-label {
+    cursor: pointer;
+    margin-right: 70px;
+}
+
+input[type="radio"] {
+    transform: scale(1.2);
+    margin-right: 5px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+.rental-container {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+#rentalInputs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.totalCost {
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
 }
 
 
 form input.submitBtn {
+    display: block;
     border: none;
     background-color: #0C326B;
     color: #fff;
