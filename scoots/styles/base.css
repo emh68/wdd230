@@ -174,7 +174,71 @@ footer {
 }
 
 
-/*--------- Form ------------*/
+
+/*--------- Rentals --------------- */
+:root {
+    --back: rgb(115, 38, 76);
+    --back2: hsla(0, 0%, 95%, 1);
+    --foredark: hsla(0, 0%, 10%, 1);
+    --forelight: hsla(0, 0%, 100%, 1);
+    --border: hsla(0, 0%, 20%, .8);
+    --borderlight: hsla(0, 0%, 33%, .3);
+    --shadow: hsl(0, 0%, 50%);
+    --zebra: hsla(234, 76%, 77%, 0.26);
+}
+
+/* body {
+    font-family: "Trebushet MS", Arial, serif;
+} */
+
+table {
+    /* margin: 0 auto; */
+    width: 75%;
+    margin: 10px auto;
+    border: thin solid var(--border);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+}
+
+tr:first-child th,
+.highlight {
+    background-color: var(--back);
+    color: var(--forelight);
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+    background-color: var(--back2);
+    /* background-color: var(--back2); */
+    font-size: larger;
+}
+
+.special {
+    background-color: var(--back);
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+/* th,
+td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+} */
+
+
+/*--------- Reservations ------------*/
 
 form fieldset {
     margin: 0 auto;
