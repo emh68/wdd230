@@ -5,10 +5,12 @@
             "capacity": "max. 1 person",
             "cost": [
                 {
-                    "half-day": 20
+                    "reservation-half-day": 20,
+                    "walk-in-half-day": 25
                 },
                 {
-                    "full-day": 30
+                    "reservation-full-day": 30,
+                    "walk-in-full-day": 35
                 }
             ],
             "image": ""
@@ -18,10 +20,12 @@
             "capacity": "max. 2 people",
             "cost": [
                 {
-                    "half-day": 30
+                    "reservation-half-day": 30,
+                    "walk-in-half-day": 35
                 },
                 {
-                    "full-day": 40
+                    "reservation-full-day": 40,
+                    "walk-in-full-day": 45
                 }
             ],
             "image": ""
@@ -31,10 +35,12 @@
             "capacity": "max. 2 people",
             "cost": [
                 {
-                    "half-day": 40
+                    "reservation-half-day": 40,
+                    "walk-in-half-day": 45
                 },
                 {
-                    "full-day": 50
+                    "reservation-full-day": 50,
+                    "walk-in-full-day": 55
                 }
             ],
             "image": ""
@@ -44,10 +50,12 @@
             "capacity": "max. 4 people",
             "cost": [
                 {
-                    "half-day": 50
+                    "reservation-half-day": 50,
+                    "walk-in-half-day": 60
                 },
                 {
-                    "full-day": 70
+                    "reservation-full-day": 70,
+                    "walk-in-full-day": 80
                 }
             ],
             "image": ""
@@ -57,10 +65,12 @@
             "capacity": "max. 4 people",
             "cost": [
                 {
-                    "half-day": 60
+                    "reservation-half-day": 60,
+                    "walk-in-half-day": 70
                 },
                 {
-                    "full-day": 85
+                    "reservation-full-day": 85,
+                    "walk-in-full-day": 90
                 }
             ],
             "image": ""
@@ -70,10 +80,12 @@
             "capacity": "max. 5 people",
             "cost": [
                 {
-                    "half-day": 70
+                    "reservation-half-day": 70,
+                    "walk-in-half-day": 85
                 },
                 {
-                    "full-day": 100
+                    "reservation-full-day": 100,
+                    "walk-in-full-day": 125
                 }
             ],
             "image": ""
@@ -83,10 +95,12 @@
             "capacity": "max. 2 people",
             "cost": [
                 {
-                    "half-day": 50
+                    "reservation-half-day": 50,
+                    "walk-in-half-day": 55
                 },
                 {
-                    "full-day": 70
+                    "reservation-full-day": 70,
+                    "walk-in-full-day": 75
                 }
             ],
             "image": ""
@@ -96,10 +110,12 @@
             "capacity": "max. 3 people",
             "cost": [
                 {
-                    "half-day": 60
+                    "reservation-half-day": 60,
+                    "walk-in-half-day": 70
                 },
                 {
-                    "full-day": 90
+                    "reservation-full-day": 90,
+                    "walk-in-full-day": 100
                 }
             ],
             "image": ""
@@ -109,10 +125,12 @@
             "capacity": "max. 3 people",
             "cost": [
                 {
-                    "half-day": 70
+                    "reservation-half-day": 70,
+                    "walk-in-half-day": 85
                 },
                 {
-                    "full-day": 100
+                    "reservation-full-day": 100,
+                    "walk-in-full-day": 120
                 }
             ],
             "image": ""

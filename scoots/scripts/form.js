@@ -1,140 +1,3 @@
-
-
-// const rentalsData = "https://emh68.github.io/wdd230/scoots/data/rentals.json";
-
-// async function fetchData() {
-//     try {
-//         const response = await fetch(rentalsData);
-//         const data = await response.json();
-//         return data.rentals;
-//     } catch (error) {
-//         console.error('Error fetching rental data:', error);
-//         return [];
-//     }
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     // Add event listener to the "Add Rental" button
-//     const addRentalButton = document.getElementById("addRentalButton");
-//     addRentalButton.addEventListener("click", addRental);
-
-//     // Adding one rental by default when the page loads
-//     addRental();
-// });
-
-// async function addRental() {
-//     const rentalInputs = document.getElementById("rentalInputs");
-//     const rentalNumber = rentalInputs.children.length + 1;
-//     const rentals = await fetchData();
-
-//     const div = document.createElement("div");
-
-//     const selectLabel = document.createElement("label");
-//     selectLabel.textContent = "Select Vehicle Type:";
-//     div.appendChild(selectLabel);
-
-//     const select = document.createElement("select");
-//     select.name = `vehicle_${rentalNumber}_type`;
-
-//     rentals.forEach(rental => {
-//         const option = document.createElement("option");
-//         option.value = rental.vehicle;
-//         option.textContent = `${rental.vehicle} (${rental.capacity})`;
-//         select.appendChild(option);
-//     });
-
-//     div.appendChild(select);
-
-//     // Add rental period selection for each unit
-//     const rentalPeriodDiv = document.createElement("div");
-//     const rentalPeriodLabel = document.createElement("label");
-//     rentalPeriodLabel.textContent = `Select Rental Period:`;
-//     rentalPeriodDiv.appendChild(rentalPeriodLabel);
-
-//     const halfDayInput = document.createElement("input");
-//     halfDayInput.type = "radio";
-//     halfDayInput.name = `vehicle_${rentalNumber}_rental`;
-//     halfDayInput.value = "half-day";
-//     halfDayInput.addEventListener("change", updateTotalCost); // Add event listener
-//     rentalPeriodDiv.appendChild(halfDayInput);
-
-//     const halfDayLabel = document.createElement("label");
-//     halfDayLabel.textContent = "Half Day";
-//     rentalPeriodDiv.appendChild(halfDayLabel);
-
-//     const fullDayInput = document.createElement("input");
-//     fullDayInput.type = "radio";
-//     fullDayInput.name = `vehicle_${rentalNumber}_rental`;
-//     fullDayInput.value = "full-day";
-//     fullDayInput.addEventListener("change", updateTotalCost); // Add event listener
-//     rentalPeriodDiv.appendChild(fullDayInput);
-
-//     const fullDayLabel = document.createElement("label");
-//     fullDayLabel.textContent = "Full Day";
-//     rentalPeriodDiv.appendChild(fullDayLabel);
-
-//     div.appendChild(rentalPeriodDiv);
-
-//     // Add delete button
-//     const deleteButton = document.createElement("button");
-//     deleteButton.textContent = "❌";
-//     deleteButton.addEventListener("click", function () {
-//         rentalInputs.removeChild(div);
-//         updateTotalCost();
-//     });
-//     div.appendChild(deleteButton);
-
-//     rentalInputs.appendChild(div);
-// }
-
-// async function updateTotalCost() {
-//     console.log("Updating total cost...");
-
-//     const rentals = document.querySelectorAll("[id^='rentalInputs'] > div");
-//     let totalCost = 0;
-//     const rentalData = await fetchData();
-
-//     console.log("Rental data:", rentalData);
-
-//     rentals.forEach(rental => {
-//         const vehicleType = rental.querySelector("select").value;
-//         console.log("Selected vehicle type:", vehicleType);
-
-//         const rentalTypeInput = rental.querySelector("input[name^='vehicle']:checked");
-//         if (rentalTypeInput) {
-//             const rentalType = rentalTypeInput.value;
-//             console.log("Selected rental type:", rentalType);
-
-//             // Find the rental object in the data
-//             const rentalObject = rentalData.find(rental => rental.vehicle === vehicleType);
-//             console.log("Rental object:", rentalObject);
-
-//             // Check if the rental object and cost array exist
-//             if (rentalObject && rentalObject.cost) {
-//                 // Get the cost based on the selected rental period
-//                 const rentalCost = rentalObject.cost.find(cost => cost[rentalType]);
-//                 if (rentalCost) {
-//                     totalCost += rentalCost[rentalType];
-//                     console.log("Rental cost:", rentalCost[rentalType]);
-//                 }
-
-//                 // Display the cost for the current rental
-//                 let rentalCostDiv = rental.querySelector(".rental-cost");
-//                 if (!rentalCostDiv) {
-//                     rentalCostDiv = document.createElement("div");
-//                     rentalCostDiv.classList.add("rental-cost");
-//                     rental.appendChild(rentalCostDiv);
-//                 }
-//                 rentalCostDiv.textContent = `Cost: $${rentalCost[rentalType]}`;
-//             }
-//         }
-//     });
-
-//     console.log("Total cost:", totalCost);
-//     document.getElementById("totalCost").textContent = `Total Cost: $${totalCost}`;
-// }
-
-
 const rentalsData = "https://emh68.github.io/wdd230/scoots/data/rentals.json";
 
 async function fetchData() {
@@ -159,8 +22,23 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Add event listener to check dates before selecting rental period or vehicle type
     const pickupDateInput = document.getElementById("pickupdate");
     const returnDateInput = document.getElementById("returndate");
-    pickupDateInput.addEventListener("change", checkDatesBeforeSelection);
-    returnDateInput.addEventListener("change", checkDatesBeforeSelection);
+    pickupDateInput.addEventListener("change", function () {
+        updateTotalCost(); // Update total cost when pickup date changes
+        checkDatesBeforeSelection();
+    });
+    returnDateInput.addEventListener("change", function () {
+        updateTotalCost(); // Update total cost when return date changes
+        checkDatesBeforeSelection();
+    });
+
+    // Add event listener to handle changes in vehicle selection
+    const rentalInputs = document.getElementById("rentalInputs");
+    rentalInputs.addEventListener("change", function (event) {
+        const target = event.target;
+        if (target.tagName === "SELECT") {
+            updateTotalCost();
+        }
+    });
 });
 
 async function addRental(isDefault = false) {
@@ -198,7 +76,7 @@ async function addNewRental(disableInputs = false) {
 
     const select = document.createElement("select");
     select.name = `vehicle_${rentalNumber}_type`;
-    select.disabled = disableInputs; // Disable the select for default rental
+    select.disabled = disableInputs;
 
     rentals.forEach(rental => {
         const option = document.createElement("option");
@@ -216,6 +94,7 @@ async function addNewRental(disableInputs = false) {
     rentalPeriodLabel.textContent = `Select Rental Period:`;
     rentalPeriodDiv.appendChild(rentalPeriodLabel);
 
+    // Rental period half-day selection
     const halfDayInput = document.createElement("input");
     halfDayInput.type = "radio";
     halfDayInput.name = `vehicle_${rentalNumber}_rental`;
@@ -228,6 +107,7 @@ async function addNewRental(disableInputs = false) {
     halfDayLabel.textContent = "Half Day";
     rentalPeriodDiv.appendChild(halfDayLabel);
 
+    // Rental period full-day selection
     const fullDayInput = document.createElement("input");
     fullDayInput.type = "radio";
     fullDayInput.name = `vehicle_${rentalNumber}_rental`;
@@ -261,22 +141,45 @@ async function addNewRental(disableInputs = false) {
     return containerDiv; // Return the container div
 }
 
-
 function checkDatesBeforeSelection() {
-    // Check if pickup date and return date are selected
+    // Check if both pickup date and return date are selected
     const pickupDate = document.getElementById("pickupdate").value;
     const returnDate = document.getElementById("returndate").value;
+    const rentalInputs = document.querySelectorAll(".rental-container");
 
-    // If both pickup date and return date are selected, enable rental inputs
     if (pickupDate && returnDate) {
-        enableRentalInputs(); // Corrected here
+        // Calculate the difference in days between pickup and return dates
+        const pickupDateObj = new Date(pickupDate);
+        const returnDateObj = new Date(returnDate);
+        const differenceInDays = Math.ceil((returnDateObj - pickupDateObj) / (1000 * 60 * 60 * 24));
+
+        // Enable rental inputs
+        rentalInputs.forEach(rental => {
+            enableRentalInputsForSingle(rental);
+
+            // If the rental period is more than 1 day, disable the half-day rental radio button
+            const rentalPeriodDiv = rental.querySelector(".rental-period-div");
+            const halfDayInput = rentalPeriodDiv.querySelector("input[value='half-day']");
+            if (differenceInDays > 1) {
+                halfDayInput.disabled = true;
+                if (halfDayInput.checked) {
+                    rentalPeriodDiv.querySelector("input[value='full-day']").checked = true;
+                }
+            } else {
+                halfDayInput.disabled = false;
+            }
+        });
+
         clearMessage();
     } else {
-        // If either pickup date or return date is not selected, disable rental inputs and display message
-        disableAllRentalInputs();
-        displayMessage("Please enter the pickup date and return date.");
+        // Disable rental inputs and display message
+        rentalInputs.forEach(rental => {
+            disableRentalInputs(rental);
+        });
+        displayMessage("Please enter both the pickup date and return date.");
     }
 }
+
 
 function disableAllRentalInputs() {
     const rentalDivs = document.querySelectorAll("[id^='rentalInputs'] > div");
@@ -319,8 +222,6 @@ function clearMessage() {
 }
 
 async function updateTotalCost() {
-    console.log("Updating total cost...");
-
     let totalCost = 0;
     const rentals = document.querySelectorAll("[id^='rentalInputs'] > div");
     const rentalData = await fetchData();
@@ -334,7 +235,8 @@ async function updateTotalCost() {
             const rentalObject = rentalData.find(rental => rental.vehicle === vehicleType);
 
             if (rentalObject && rentalObject.cost) {
-                const rentalCost = rentalObject.cost.find(cost => cost[rentalType]);
+                const rentalCost = rentalObject.cost.find(cost => cost.hasOwnProperty(rentalType));
+
                 if (rentalCost) {
                     // Calculate number of days for the rental
                     const pickupDate = new Date(document.getElementById("pickupdate").value);
@@ -342,17 +244,27 @@ async function updateTotalCost() {
                     const days = Math.ceil((returnDate - pickupDate) / (1000 * 60 * 60 * 24));
 
                     // Calculate total cost for the rental
-                    const rentalTotalCost = rentalCost[rentalType] * days;
+                    let rentalTotalCost = 0;
+                    if (days === 0) { // If rental is for the same day
+                        rentalTotalCost = rentalCost[rentalType] * 1; // Get the rental period cost and multiply by 1
+                    } else if (days > 0) { // For rentals spanning multiple days
+                        rentalTotalCost = rentalCost[rentalType] * days; // Multiply rental period cost by number of days
+                    }
+
                     totalCost += rentalTotalCost;
 
-                    // Display rental cost and number of days
+                    // Display rental cost
                     let rentalCostDiv = rental.querySelector(".rental-cost");
                     if (!rentalCostDiv) {
                         rentalCostDiv = document.createElement("div");
                         rentalCostDiv.classList.add("rental-cost");
                         rental.appendChild(rentalCostDiv);
                     }
-                    rentalCostDiv.textContent = `Cost: $${rentalTotalCost}, Days: ${days}`;
+                    if (days > 0) { // Display days only if days > 0
+                        rentalCostDiv.textContent = `Cost: $${rentalTotalCost}, Days: ${days}`;
+                    } else {
+                        rentalCostDiv.textContent = `Cost: $${rentalTotalCost}`;
+                    }
                     rentalCostDiv.classList.add("rentalCost");
                 }
             }
