@@ -26,13 +26,13 @@
         <a id="menu" href="#" aria-label="Toggle Hamburger Menu"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="#">HOME</a></li>
+                <li><a href="#" class="active">HOME</a></li>
                 <li><a href="rentals.html">RENTALS</a></li>
                 <li><a href="reservations.html">RESERVATIONS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
-        <div class="social"></div>
+        <!-- <div class="social"></div>
         <a href="https://www.facebook.com/" target="_blank">
             <img src="https://cdn.glitch.global/4069f791-a8f6-4f88-baa5-e4107181a92e/5841491.png?v=1703629234574"
                 alt="Facebook_icon" style="width: 36px; height: 36px" />
@@ -44,19 +44,70 @@
         <a href="https://www.twitter.com/" target="_blank">
             <img src="https://cdn.glitch.global/4069f791-a8f6-4f88-baa5-e4107181a92e/twitter.png?v=1703629242245"
                 alt="Twitter_icon" style="width: 36px; height: 36px" />
-        </a>
+        </a> -->
     </header>
     <main>
         <div class="banner">
             <div class="banner-text">
-                Today's high will be:
+                Today's high will be: <span class="banner-temperature"></span>
             </div>
             <button class="banner-close" type="button" aria-label="Close banner">X</button>
         </div>
         <div class="hero">
             <h1>Scoots Scooter Tours and Rentals</h1>
-            <img src="images/beach.jpg" alt="" width="1500" height="1500">
+            <!-- <img src="images/beach.jpg" alt="" width="1500" height="1500"> -->
         </div>
+        <section class="weather-events-container">
+            <div class="events">
+                <h2>Events</h2>
+                <hr>
+                <h3>Ribbon Cutting - Ristorante Bellissimo</h3>
+                <p>Join us for the grand opening of Ristorante Bellissimo, Thursday at 1:00pm <a href="">more
+                        info...</a></p>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <hr>
+                <div class="current-weather">
+                    <strong id="current-month-day"></strong>
+                    <img id="current-weather-icon" src="#" alt="Weather icon">
+                    <strong><span id="current-temp"></span></strong>
+                    <figure>
+                        <figcaption id="current-desc"></figcaption>
+                    </figure>
+                    <div class="current-temp-low">L: <span id="current-temp-low"></span></div>
+                    <div class="current-temp-high">H: <span id="current-temp-high"></span></div>
+                    <div class="current-windspeed">Wind: <span id="current-wind-speed"></span></div>
+                    <div class="current-humidity">Humidity: <span id="current-humidity"></span></div>
+                </div>
+                <div class="tomorrow-weather">
+                    <strong id="tomorrow-month-day"></strong>
+                    <img id="tomorrow-weather-icon" src="#" alt="Weather icon">
+                    <strong><span id="tomorrow-temp"></span></strong>
+                    <figure>
+                        <figcaption id="tomorrow-desc"></figcaption>
+                    </figure>
+                    <div class="tomorrow-temp-low">L: <span id="tomorrow-temp-low"></span></div>
+                    <div class="tomorrow-temp-high">H: <span id="tomorrow-temp-high"></span></div>
+                    <div class="tomorrow-windspeed">Wind: <span id="tomorrow-wind-speed"></span></div>
+                    <div class="tomorrow-humidity">Humidity: <span id="tomorrow-humidity"></span></div>
+                </div>
+                <div class="day-after-tomorrow-weather">
+                    <strong id="day-after-tomorrow-month-day"></strong>
+                    <img id="day-after-tomorrow-weather-icon" src="#" alt="Weather icon">
+                    <strong><span id="day-after-tomorrow-temp"></span></strong>
+                    <figure>
+                        <figcaption id="day-after-tomorrow-desc"></figcaption>
+                    </figure>
+                    <div class="day-after-tomorrow-temp-low">L: <span id="day-after-tomorrow-temp-low"></span></div>
+                    <div class="day-after-tomorrow-temp-high">H: <span id="day-after-tomorrow-temp-high"></span></div>
+                    <div class="day-after-tomorrow-windspeed">Wind: <span id="day-after-tomorrow-wind-speed"></span>
+                    </div>
+                    <div class="day-after-tomorrow-humidity">Humidity: <span id="day-after-tomorrow-humidity"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
@@ -76,6 +127,7 @@
     </footer>
     <script src="scripts/index.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>

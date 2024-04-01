@@ -24,10 +24,18 @@ h1 {
     text-align: center;
     color: #000;
     font-family: var(--font_breg), Arial, Helvetica, sans-serif;
+    /* margin: 0 auto; */
 }
 
 body {
-    max-width: 100%;
+    /* max-width: 100%; */
+}
+
+main {
+    /* background-color: #999; */
+    /* background-image: url("/scoots/images/beach-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 header {
@@ -82,9 +90,9 @@ header {
     background-color: #AAF3D7;
 }
 
-.active::before {
+/* .active::before {
     content: "👉 ";
-}
+} */
 
 .show li {
     display: block;
@@ -107,26 +115,56 @@ ul {
     align-items: center;
 }
 
-.banner-text,
+/* .banner-text,
 .material-icons {
     color: #000;
-}
+} */
 
 .banner-text {
+    font-size: 1.1rem;
     text-align: center;
     padding: 20px;
+}
+
+.banner-temperature {
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .banner-close {
     position: absolute;
     top: 4px;
     right: 10px;
-    font-size: large;
+    font-size: 20px;
     font-weight: bolder;
     border: none;
     background: none;
 }
 
+.weather-events-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.current-weather,
+.tomorrow-weather,
+.day-after-tomorrow-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.weather {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+}
 
 footer {
     text-align: center;
@@ -139,11 +177,12 @@ footer {
 /*--------- Form ------------*/
 
 form fieldset {
-    margin: 2rem auto;
-    max-width: 900px;
-    border: 2px solid #000;
+    margin: 0 auto;
+    max-width: 600px;
+    border: 1px solid #000;
     border-radius: 10px;
     padding: 10px;
+    background-color: #fff;
 }
 
 /* form legend {
@@ -236,7 +275,7 @@ form input.submitBtn {
     color: #fff;
     border-radius: 5px;
     padding: .75rem 1.5rem;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto;
     /* width: 96%; */
     /* max-width: 15rem; */
 }
