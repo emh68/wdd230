@@ -4,6 +4,7 @@ async function fetchData() {
     try {
         const response = await fetch(rentalsData);
         const data = await response.json();
+        console.log("Fetched rental data:", data); // Log the fetched data
         return data.rentals;
     } catch (error) {
         console.error('Error fetching rental data:', error);
@@ -76,7 +77,7 @@ async function addNewRental(disableInputs = false) {
 
     const select = document.createElement("select");
     select.name = `vehicle_${rentalNumber}_type`;
-    select.disabled = disableInputs;
+    select.disabled = disableInputs; // Disable the select for default rental
 
     rentals.forEach(rental => {
         const option = document.createElement("option");
@@ -94,7 +95,6 @@ async function addNewRental(disableInputs = false) {
     rentalPeriodLabel.textContent = `Select Rental Period:`;
     rentalPeriodDiv.appendChild(rentalPeriodLabel);
 
-    // Rental period half-day selection
     const halfDayInput = document.createElement("input");
     halfDayInput.type = "radio";
     halfDayInput.name = `vehicle_${rentalNumber}_rental`;
@@ -107,7 +107,6 @@ async function addNewRental(disableInputs = false) {
     halfDayLabel.textContent = "Half Day";
     rentalPeriodDiv.appendChild(halfDayLabel);
 
-    // Rental period full-day selection
     const fullDayInput = document.createElement("input");
     fullDayInput.type = "radio";
     fullDayInput.name = `vehicle_${rentalNumber}_rental`;
@@ -138,26 +137,49 @@ async function addNewRental(disableInputs = false) {
     // Append the container div to rental inputs
     rentalInputs.appendChild(containerDiv);
 
+    // If the rental duration is more than one day, disable the half-day option for all rentals
+    const differenceInDays = calculateDifferenceInDays();
+    if (differenceInDays > 0) {
+        disableHalfDayOptions();
+    }
+
     return containerDiv; // Return the container div
 }
 
+function calculateDifferenceInDays() {
+    const pickupDate = document.getElementById("pickupdate").value;
+    const returnDate = document.getElementById("returndate").value;
+    if (pickupDate && returnDate) {
+        const pickupDateObj = new Date(pickupDate);
+        const returnDateObj = new Date(returnDate);
+        return Math.ceil((returnDateObj - pickupDateObj) / (1000 * 60 * 60 * 24));
+    }
+    return 0;
+}
+
+function disableHalfDayOptions() {
+    const rentalInputs = document.querySelectorAll(".rental-container");
+    rentalInputs.forEach(rental => {
+        const rentalPeriodDiv = rental.querySelector(".rental-period-div");
+        const halfDayInput = rentalPeriodDiv.querySelector("input[value='half-day']");
+        halfDayInput.disabled = true;
+        if (halfDayInput.checked) {
+            rentalPeriodDiv.querySelector("input[value='full-day']").checked = true;
+        }
+    });
+}
+
 function checkDatesBeforeSelection() {
-    // Check if both pickup date and return date are selected
     const pickupDate = document.getElementById("pickupdate").value;
     const returnDate = document.getElementById("returndate").value;
     const rentalInputs = document.querySelectorAll(".rental-container");
 
     if (pickupDate && returnDate) {
-        // Calculate the difference in days between pickup and return dates
-        const pickupDateObj = new Date(pickupDate);
-        const returnDateObj = new Date(returnDate);
-        const differenceInDays = Math.ceil((returnDateObj - pickupDateObj) / (1000 * 60 * 60 * 24));
+        const differenceInDays = calculateDifferenceInDays();
 
-        // Enable rental inputs
         rentalInputs.forEach(rental => {
             enableRentalInputsForSingle(rental);
 
-            // If the rental period is more than 1 day, disable the half-day rental radio button
             const rentalPeriodDiv = rental.querySelector(".rental-period-div");
             const halfDayInput = rentalPeriodDiv.querySelector("input[value='half-day']");
             if (differenceInDays > 1) {
@@ -172,14 +194,12 @@ function checkDatesBeforeSelection() {
 
         clearMessage();
     } else {
-        // Disable rental inputs and display message
         rentalInputs.forEach(rental => {
             disableRentalInputs(rental);
         });
         displayMessage("Please enter both the pickup date and return date.");
     }
 }
-
 
 function disableAllRentalInputs() {
     const rentalDivs = document.querySelectorAll("[id^='rentalInputs'] > div");
@@ -196,7 +216,7 @@ function enableRentalInputs() {
 }
 
 function disableRentalInputs(div) {
-    if (!div) return; // Add this check to handle undefined div
+    if (!div) return;
     const rentalInputs = div.querySelectorAll("input, select");
     rentalInputs.forEach(input => {
         input.disabled = true;
@@ -204,7 +224,7 @@ function disableRentalInputs(div) {
 }
 
 function enableRentalInputsForSingle(div) {
-    if (!div) return; // Add this check to handle undefined div
+    if (!div) return;
     const rentalInputs = div.querySelectorAll("input, select");
     rentalInputs.forEach(input => {
         input.disabled = false;
@@ -222,6 +242,8 @@ function clearMessage() {
 }
 
 async function updateTotalCost() {
+    console.log("Updating total cost...");
+
     let totalCost = 0;
     const rentals = document.querySelectorAll("[id^='rentalInputs'] > div");
     const rentalData = await fetchData();
@@ -235,7 +257,8 @@ async function updateTotalCost() {
             const rentalObject = rentalData.find(rental => rental.vehicle === vehicleType);
 
             if (rentalObject && rentalObject.cost) {
-                const rentalCost = rentalObject.cost.find(cost => cost.hasOwnProperty(rentalType));
+                // Retrieve the rental cost based on the selected rental type (half-day or full-day) and only consider reservation prices
+                const rentalCost = rentalObject.cost.find(cost => cost.hasOwnProperty(`reservation-${rentalType}`));
 
                 if (rentalCost) {
                     // Calculate number of days for the rental
@@ -246,9 +269,9 @@ async function updateTotalCost() {
                     // Calculate total cost for the rental
                     let rentalTotalCost = 0;
                     if (days === 0) { // If rental is for the same day
-                        rentalTotalCost = rentalCost[rentalType] * 1; // Get the rental period cost and multiply by 1
+                        rentalTotalCost = rentalCost[`reservation-${rentalType}`] * 1; // Get the rental period cost and multiply by 1
                     } else if (days > 0) { // For rentals spanning multiple days
-                        rentalTotalCost = rentalCost[rentalType] * days; // Multiply rental period cost by number of days
+                        rentalTotalCost = rentalCost[`reservation-${rentalType}`] * days; // Multiply rental period cost by number of days
                     }
 
                     totalCost += rentalTotalCost;
@@ -275,3 +298,4 @@ async function updateTotalCost() {
     totalCostElement.textContent = `Total Cost: $${totalCost}`;
     totalCostElement.classList.add("totalCost");
 }
+
