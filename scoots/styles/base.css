@@ -313,12 +313,12 @@ hr {
     width: 50%;
 }
 
-.weather-events-container {
+/* .weather-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px;
-}
+} */
 
 .current-weather,
 .tomorrow-weather,
@@ -336,7 +336,7 @@ hr {
     padding-bottom: 20px;
     background-color: #ebebeb;
     border: 1px solid #ebebeb;
-    width: 50%;
+    width: 100%;
 }
 
 .footer-content {
@@ -416,6 +416,10 @@ td {
 
 
 /*--------- Reservations ------------*/
+
+/* body {
+    background-image: linear-gradient(#6AD4E8 45%, #99EBDB, #AAF3D7);
+} */
 
 form fieldset {
     margin: 0 auto;
