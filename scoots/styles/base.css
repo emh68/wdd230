@@ -8,10 +8,16 @@
     src: url('fonts/bronkoh-extrabold-bf65519bc761d7b-webfont.woff');
 }
 
+@font-face {
+    font-family: 'bronkoh-heavyitalic';
+    src: url('fonts/bronkoh-heavyitalic-bf65519bc78690c-webfont.woff')
+}
+
 :root {
     font-family: 'bronkohregular';
     --font_breg: 'bronkohregular';
     --font_bxbold: 'bronkohextrabold';
+    --font_hvyitalic: 'bronkoh-heavyitalic';
 }
 
 * {
@@ -21,9 +27,19 @@
 }
 
 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: #fff;
     text-align: center;
+    font-size: 3.5rem;
+    font-family: var(--font_hvyitalic);
+
+    /* text-align: center;
     color: #000;
-    font-family: var(--font_breg), Arial, Helvetica, sans-serif;
+    font-family: var(--font_breg), Arial, Helvetica, sans-serif; */
     /* margin: 0 auto; */
 }
 
@@ -32,13 +48,12 @@ body {
 
 }
 
-main {
-
-    /* background-color: #999; */
-    /* background-image: url("/scoots/images/beach-background.webp");
+/* main {
+    background-color: #999;
+    background-image: url("/scoots/images/beach-background.webp");
     background-repeat: no-repeat;
-    background-size: cover; */
-}
+    background-size: cover;
+} */
 
 header {
     display: flex;
@@ -145,6 +160,8 @@ ul {
 
 .hero {
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .hero img {
@@ -152,6 +169,17 @@ ul {
     height: auto;
     object-fit: cover;
 }
+
+/* .hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: #F9FD46;
+    text-align: center;
+    font-size: 4rem;
+} */
 
 .wave-design-layer-1,
 .wave-design-layer-2,
