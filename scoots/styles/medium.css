@@ -16,4 +16,41 @@
     #menu {
         display: none;
     }
+
+    body {
+        max-width: 100%;
+        margin: auto;
+    }
+
+
+    main {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    hr {
+        grid-column: 1 / -1;
+    }
+
+    .rentals {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .rentals-headline {
+        grid-column: 1 / -1;
+    }
+
+    .button {
+        grid-column: 1 / -1;
+        width: 200px;
+    }
 }
