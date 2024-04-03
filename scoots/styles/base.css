@@ -339,6 +339,10 @@ hr {
     width: 50%;
 }
 
+.footer-content {
+    color: #35F083;
+}
+
 footer {
     text-align: center;
     padding: 20px;
