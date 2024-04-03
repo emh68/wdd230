@@ -141,45 +141,22 @@ ul {
     background: none;
 }
 
-.test {
-    background-color: #AAF3D7;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.rentals {
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
-    min-height: 400px;
-    padding: 100px 20vw;
+    background-color: bisque;
 }
 
-/* .curve {
-    position: absolute;
-    height: 225px;
-    width: 100%;
-    bottom: 0;
+.scooters,
+.atvs,
+.jeeps,
+.jetski {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
 }
 
-.curve::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: aqua;
-    transform: translate(85%, 60%);
-}
-
-.curve::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: #AAF3D7;
-    transform: translate(-4%, 40%);
-    z-index: -1;
-} */
 
 .weather-events-container {
     display: grid;
