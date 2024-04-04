@@ -158,16 +158,20 @@ ul {
     background: none;
 }
 
-.hero {
+.hero,
+.transition {
     position: relative;
     width: 100%;
     height: auto;
+    z-index: 0;
 }
 
-.hero img {
+.hero img,
+.transition img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    z-index: 0;
 }
 
 /* .hero h1 {
@@ -242,7 +246,7 @@ ul {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    /* z-index: 2; */
+    z-index: 2;
 }
 
 .wave-design-layer-4 svg {
