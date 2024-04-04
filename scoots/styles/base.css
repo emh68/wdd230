@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'bronkohregular';
-    src: url('fonts/bronkoh-regular-bf65519bc788d98-webfont.woff');
+    src: url('fonts/bronkoh-regular-bf65519bc788d98-webfont.woff2');
 }
 
 @font-face {
     font-family: 'bronkohextrabold';
-    src: url('fonts/bronkoh-extrabold-bf65519bc761d7b-webfont.woff');
+    src: url('fonts/bronkoh-extrabold-bf65519bc761d7b-webfont.woff2');
 }
 
 @font-face {
     font-family: 'bronkoh-heavyitalic';
-    src: url('fonts/bronkoh-heavyitalic-bf65519bc78690c-webfont.woff')
+    src: url('fonts/bronkoh-heavyitalic-bf65519bc78690c-webfont.woff2')
 }
 
 :root {
@@ -35,7 +35,11 @@ h1 {
     color: #fff;
     text-align: center;
     font-size: 3.5rem;
-    font-family: var(--font_hvyitalic);
+    font-family: 'bronkoh-heavyitalic';
+    /* font-family: var(--font_hvyitalic); */
+    /* font-family: 'Asap Condensed';
+    font-weight: 700;
+    font-style: italic; */
 
     /* text-align: center;
     color: #000;
@@ -158,16 +162,15 @@ ul {
     background: none;
 }
 
-.hero,
-.transition {
+.hero {
     position: relative;
     width: 100%;
     height: auto;
     z-index: 0;
+
 }
 
-.hero img,
-.transition img {
+.hero img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -345,11 +348,17 @@ hr {
     width: 50%;
 }
 
-/* .weather-container {
+.weather-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
-    padding: 20px;
+    /* grid-gap: 20px; */
+    padding-top: 70px;
+    background-color: #0C326B;
+
+}
+
+/* .transition {
+    background-color: #0C326B;
 } */
 
 .current-weather,
@@ -365,10 +374,14 @@ hr {
 .weather {
     align-items: center;
     text-align: center;
-    padding-bottom: 20px;
+    position: relative;
+    /* top: 100px; */
+    padding: 20px;
     background-color: #ebebeb;
-    border: 1px solid #ebebeb;
-    width: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .footer-content {
