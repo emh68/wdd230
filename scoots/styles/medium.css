@@ -35,9 +35,9 @@
         margin-bottom: 0;
     }
 
-    hr {
+    /* hr {
         grid-column: 1 / -1;
-    }
+    } */
 
     .rentals {
         display: grid;
