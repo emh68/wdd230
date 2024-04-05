@@ -47,7 +47,6 @@
     </header>
     <main>
         <div class="hero">
-            <!-- <h1>SCOOTS SCOOTER TOURS AND RENTALS</h1> -->
             <picture>
                 <source srcset="images/reef.webp" media="(max-width: 640px)">
                 <source srcset="images/reef.webp" media="(max-width: 1280px)">
@@ -84,52 +83,36 @@
                 <hr>
             </div>
             <form action="thankyou.html" method="get" class="contact-form">
-                <fieldset>
-                    <legend>User Info</legend>
-                    <label>First Name*<input type="text" id="fname" name="fname" class="contact-input" required></label>
-                    <label>Last Name*<input type="text" id="lname" name="lname" class="contact-input" required></label>
-                    <label>Cruise Line<input type="text" id="cruiseline" name="cruiseline" class="contact-input"
-                            pattern="[a-zA-Z\s\-]{5,}"
-                            title="Only alpha characters, hyphens and spaces are allowed and must be at least 5 characters long."></label>
-                    <label>Email*<input type="email" id="email" name="email" class="contact-input"
+                <!-- <fieldset> -->
+                <!-- <legend>User Info</legend> -->
+                <div class="form-container">
+                    <label class="contact-label">First Name*<input type="text" id="fname" name="fname"
+                            class="contact-input" required></label>
+                    <label class="contact-label">Last Name*<input type="text" id="lname" name="lname"
+                            class="contact-input" required></label>
+                    <label class="contact-label">Email*<input type="email" id="email" name="email" class="contact-input"
                             placeholder="yourname@something.com" required></label>
-                    <label>Phone*<input type="tel" id="phone" name="phone" class="contact-input"
+                    <label class="contact-label">Phone*<input type="tel" id="phone" name="phone" class="contact-input"
                             placeholder="i.e. 3258954456" required></label>
-                </fieldset>
-                <input type="hidden" id="dateTime" name="dateTime">
-                <div class="button-container">
-                    <input type="submit" value="Reserve Now" class="contact-submitBtn">
+                    <label class="contact-label">Message<textarea id="message" name="message" class="message" rows="6"
+                            cols="50"></textarea></label>
+                    <!-- <label class="contact-label">Country*<input type="text" id="country" name="country"
+                        class="contact-input" required></label>
+                <label class="contact-label">Cruise Line<input type="text" id="cruiseline" name="cruiseline"
+                        class="contact-input" pattern="[a-zA-Z\s\-]{5,}"
+                        title="Only alpha characters, hyphens and spaces are allowed and must be at least 5 characters long."></label> -->
+                    <!-- </fieldset> -->
+                    <input type="hidden" id="dateTime" name="dateTime">
+                    <div class="button-container">
+                        <input type="submit" value="Send" class="contact-submitBtn">
+                    </div>
                 </div>
             </form>
         </section>
-        <!-- <div class="wave-background">
-            <div class="wave-design-layer-4">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                        class="shape-fill"></path>
-                </svg>
-            </div>
-            <div class="wave-design-layer-5">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                        class="shape-fill"></path>
-                </svg>
-            </div>
-            <div class="wave-design-layer-6">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                        class="shape-fill"></path>
-                </svg>
-            </div>
-        </div> -->
-
     </main>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1tziehXbxvBvg4fcIwr8V228uXlRzoGw&ehbc=2E312F&noprof=1"
+        width="640" height="480" loading="lazy">
+    </iframe>
     <footer>
         <div class="contact-info">
             <p>
@@ -143,11 +126,8 @@
                 230 Project &nbsp;|&nbsp; <span id="lastModified">Last
                     Modified:</span></span>
         </div>
-
     </footer>
     <script src="scripts/index.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
