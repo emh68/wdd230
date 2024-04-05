@@ -47,33 +47,36 @@
         </a>
     </header>
     <main>
-        <form action="thankyou.html" method="get">
-            <fieldset>
-                <legend>User Info</legend>
-                <label>First Name*<input type="text" id="fname" name="fname" required></label>
-                <label>Last Name*<input type="text" id="lname" name="lname" required></label>
-                <label>Cruise Line<input type="text" id="cruiseline" name="cruiseline" pattern="[a-zA-Z\s\-]{5,}"
-                        title="Only alpha characters, hyphens and spaces are allowed and must be at least 5 characters long."></label>
-                <label>Email*<input type="email" id="email" name="email" placeholder="yourname@something.com"
-                        required></label>
-                <label>Phone*<input type="tel" id="phone" name="phone" placeholder="i.e. 3258954456" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Reservation Info</legend>
-                <div id="message"></div>
-                <label>Pickup Date* <input type="date" id="pickupdate" name="pickupdate" required></label>
-                <label>Return Date* <input type="date" id="returndate" name="returndate" required></label>
-                <div id="rentalInputs"></div>
+        <div class="reservations">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>User Info</legend>
+                    <label>First Name*<input type="text" id="fname" name="fname" required></label>
+                    <label>Last Name*<input type="text" id="lname" name="lname" required></label>
+                    <label>Cruise Line<input type="text" id="cruiseline" name="cruiseline" pattern="[a-zA-Z\s\-]{5,}"
+                            title="Only alpha characters, hyphens and spaces are allowed and must be at least 5 characters long."></label>
+                    <label>Email*<input type="email" id="email" name="email" placeholder="yourname@something.com"
+                            required></label>
+                    <label>Phone*<input type="tel" id="phone" name="phone" placeholder="i.e. 3258954456"
+                            required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Reservation Info</legend>
+                    <div id="message"></div>
+                    <label>Pickup Date* <input type="date" id="pickupdate" name="pickupdate" required></label>
+                    <label>Return Date* <input type="date" id="returndate" name="returndate" required></label>
+                    <div id="rentalInputs"></div>
 
-                <button type="button" id="addRentalButton">Add Rental</button>
-                <div id="totalCost">Total Cost: $0</div>
-            </fieldset>
+                    <button type="button" id="addRentalButton">Add Rental</button>
+                    <div id="totalCost">Total Cost: $0</div>
+                </fieldset>
 
-            <input type="hidden" id="dateTime" name="dateTime">
-            <div class="button-container">
-                <input type="submit" value="Reserve Now" class="submitBtn">
-            </div>
-        </form>
+                <input type="hidden" id="dateTime" name="dateTime">
+                <div class="button-container">
+                    <input type="submit" value="Reserve Now" class="submitBtn">
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="contact-info">
