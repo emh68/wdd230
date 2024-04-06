@@ -291,18 +291,15 @@ hr {
     margin: auto;
 }
 
-.scooters,
-.atvs,
-.jeeps,
-.jetski {
-    align-items: center;
-    text-align: center;
-    /* padding: 20px; */
+.scooters-container,
+.atvs-container,
+.jeeps-container,
+.jetski-container {
     background-color: #fff;
-    /* width: 60%; */
-    max-width: fit-content;
-    margin: 25px auto;
-
+    max-width: 340px;
+    height: 386px;
+    margin: 20px auto;
+    padding-top: 5px;
 }
 
 .scooters img,
@@ -312,21 +309,35 @@ hr {
 .metro img,
 .dio img,
 .pcx150 img {
-    display: block;
-    margin: 0 auto;
+    /* display: block;
     max-width: 100%;
-    height: 245.3px;
-    padding: 5px;
-    background-color: #fff;
+    height: auto; */
+    width: 100%;
+    max-width: 325px;
+    /* Set width to fill container */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 10px;
+
+    /* display: block; */
+    /* margin: 0 auto; */
+    /* max-width: 100%; */
+    /* height: auto; */
+    /* padding: 5px; */
+    /* background-color: #fff; */
 }
 
-.scooters h3,
+.scooters-content {
+    padding: 10px;
+}
+
+/* .scooters h3,
 .atvs h3,
 .jeeps h3,
 .jetski h3 {
     text-align: center;
     padding: 20px;
-}
+} */
 
 .rentals p {
     padding: 10px;
