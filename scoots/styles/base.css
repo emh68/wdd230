@@ -72,7 +72,19 @@ header {
     text-align: center;
     justify-content: center;
     background-color: #0C326B;
+    padding: 10px 20px;
 }
+
+.logo img {
+    align-items: center;
+    justify-items: center;
+    max-width: 350px;
+    height: auto;
+    /* position: relative;
+    left: 10px; */
+    /* margin-left: 40px; */
+}
+
 
 #menu {
     display: block;
@@ -93,7 +105,7 @@ header {
 
 .navigation {
     font-family: var(--font_bxbold);
-    font-size: small;
+    font-size: larger;
     justify-content: center;
     padding: 20px;
 }
