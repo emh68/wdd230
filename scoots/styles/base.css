@@ -69,17 +69,23 @@ body {
 
 header {
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
     background-color: #0C326B;
     padding: 10px 20px;
 }
 
+.logo {
+    justify-content: center;
+    align-content: center;
+}
+
 .logo img {
-    align-items: center;
-    justify-items: center;
-    max-width: 350px;
+    max-width: 100%;
     height: auto;
+    /* margin: 0 auto; */
     /* position: relative;
     left: 10px; */
     /* margin-left: 40px; */
@@ -107,7 +113,7 @@ header {
     font-family: var(--font_bxbold);
     font-size: larger;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .navigation li {
@@ -288,6 +294,7 @@ ul {
 .rentals {
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    max-width: 100%;
     gap: 20px;
     align-items: center;
     text-align: center;
@@ -307,35 +314,29 @@ hr {
 .atvs-container,
 .jeeps-container,
 .jetski-container {
+    max-width: 100%;
+    width: 335px;
+    margin: 15px auto 15px;
     background-color: #fff;
-    max-width: 340px;
-    height: 386px;
-    margin: 20px auto;
-    padding-top: 5px;
+    /* max-width: 340px; */
+    /* height: 386px; */
+    /* margin: 20px auto; */
+    /* padding-top: 5px; */
 }
 
-.scooters img,
-.atvs img,
-.jeeps img,
-.jetski img,
-.metro img,
-.dio img,
-.pcx150 img {
+.scooters-container img,
+.atvs-container img,
+.jeeps-container img,
+.jetski-container img {
     /* display: block;
     max-width: 100%;
     height: auto; */
-    width: 100%;
-    max-width: 325px;
-    /* Set width to fill container */
+    max-width: 100%;
+    width: 325px;
+    /* max-width: 325px; */
     height: auto;
-    /* Maintain aspect ratio */
-    margin-bottom: 10px;
-
-    /* display: block; */
-    /* margin: 0 auto; */
-    /* max-width: 100%; */
-    /* height: auto; */
-    /* padding: 5px; */
+    padding-top: 5px;
+    /* margin: 5px 5px 5px 10px; */
     /* background-color: #fff; */
 }
 
@@ -368,8 +369,9 @@ hr {
 }
 
 .weather-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    max-width: 100%;
+    /* display: grid;
+    grid-template-columns: 1fr; */
     /* grid-gap: 20px; */
     padding-top: 70px;
     background-color: #0C326B;
@@ -395,7 +397,7 @@ hr {
     background-color: #ebebeb;
     border: 1px solid #ebebeb;
     border-radius: 10px;
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
     z-index: 3;
 }

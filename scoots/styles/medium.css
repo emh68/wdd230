@@ -1,7 +1,24 @@
 @media screen and (min-width: 640px) {
 
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .logo img {
+        width: 250px;
+        height: auto;
+
+    }
+
     .navigation {
         display: flex;
+        justify-content: center;
+        /* Center items horizontally */
+        align-items: center;
     }
 
     .navigation li {
@@ -41,7 +58,7 @@
 
     .rentals {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-columns: repeat(4, 1fr); */
         gap: 20px;
     }
 
