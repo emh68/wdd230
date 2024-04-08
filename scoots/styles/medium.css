@@ -56,15 +56,14 @@
         grid-column: 1 / -1;
     } */
 
-    .rentals {
+    .vehicles {
         display: grid;
-
         grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
         gap: 20px;
         max-width: 100%;
     }
 
-    .rentals-headline {
+    .vehicles-headline {
         grid-column: 1 / -1;
     }
 
@@ -110,6 +109,34 @@
     .weather hr {
         grid-column: 1 / -1;
     }
+
+    /* .rentals {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    } */
+
+    .scooters {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .rentals-headline {
+        grid-column: 1 / -1;
+    }
+
+    .pricing {
+        display: grid;
+        grid-template-columns: 3fr;
+        max-width: 100%;
+    }
+
+
+
+    /* table {
+        max-width: 100%;
+
+    } */
 
 
 

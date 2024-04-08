@@ -292,6 +292,7 @@ ul {
     opacity: 45%;
 }
 
+.vehicles,
 .rentals {
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
@@ -300,7 +301,7 @@ ul {
     align-items: center;
     text-align: center;
     /* background-color: bisque; */
-    z-index: 3;
+    /* z-index: 3; */
     background-image: linear-gradient(#6AD4E8 45%, #99EBDB, #AAF3D7);
     padding-bottom: 40px;
 }
@@ -358,7 +359,7 @@ hr {
     padding: 20px;
 } */
 
-.rentals p {
+.vehicles p {
     padding: 10px;
     text-align: center;
 }
@@ -432,7 +433,7 @@ footer {
 
 /*--------- Rentals --------------- */
 :root {
-    --back: rgb(115, 38, 76);
+    --back: #0C326B;
     --back2: hsla(0, 0%, 95%, 1);
     --foredark: hsla(0, 0%, 10%, 1);
     --forelight: hsla(0, 0%, 100%, 1);
@@ -446,14 +447,47 @@ footer {
     font-family: "Trebushet MS", Arial, serif;
 } */
 
+.metro-container,
+.dio-container,
+.pcx150-container {
+    max-width: 250px;
+    height: auto;
+    background-color: #fff;
+    margin: 20px auto;
+}
+
+.metro-container img,
+.dio-container img,
+.pcx150-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto 15px;
+    background-color: #fff;
+}
+
+.rentals h3 {
+    padding-bottom: 10px;
+}
+
+.pricing {
+    max-width: 100%;
+    max-width: 250px;
+    margin: auto;
+    overflow-x: auto;
+}
+
 table {
     /* margin: 0 auto; */
-    width: 75%;
+    max-width: 100%;
     margin: 10px auto;
     border: thin solid var(--border);
     box-shadow: 0 0 10px var(--shadow);
     border-collapse: collapse;
-    z-index: 5;
+    /* z-index: 5; */
+}
+
+#rentalBody {
+    background-color: rgb(255, 255, 255);
 }
 
 tr:first-child th,
@@ -479,12 +513,15 @@ th {
 }
 
 td {
+    /* background-color: #fff; */
     text-align: center;
+    /* z-index: 5; */
 }
 
 tbody tr:nth-child(even) {
     background-color: var(--zebra);
 }
+
 
 
 /* th,

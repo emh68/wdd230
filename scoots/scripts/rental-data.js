@@ -31,23 +31,24 @@ function populateTable() {
 
                 // Reservation Half Day
                 const reservationHalfDayCell = document.createElement('td');
-                reservationHalfDayCell.textContent = rental.cost[0]['reservation-half-day'] || '';
+                reservationHalfDayCell.textContent = `$${rental.cost[0]['reservation-half-day'] || ''}`;
                 row.appendChild(reservationHalfDayCell);
 
                 // Reservation Full Day
                 const reservationFullDayCell = document.createElement('td');
-                reservationFullDayCell.textContent = rental.cost[1]['reservation-full-day'] || '';
+                reservationFullDayCell.textContent = `$${rental.cost[1]['reservation-full-day'] || ''}`;
                 row.appendChild(reservationFullDayCell);
 
                 // Walk-In Half Day
                 const walkInHalfDayCell = document.createElement('td');
-                walkInHalfDayCell.textContent = rental.cost[0]['walk-in-half-day'] || '';
+                walkInHalfDayCell.textContent = `$${rental.cost[0]['walk-in-half-day'] || ''}`;
                 row.appendChild(walkInHalfDayCell);
 
                 // Walk-In Full Day
                 const walkInFullDayCell = document.createElement('td');
-                walkInFullDayCell.textContent = rental.cost[1]['walk-in-full-day'] || '';
+                walkInFullDayCell.textContent = `$${rental.cost[1]['walk-in-full-day'] || ''}`;
                 row.appendChild(walkInFullDayCell);
+
 
                 // Append the row to the table body
                 tableBody.appendChild(row);
