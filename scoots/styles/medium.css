@@ -96,7 +96,7 @@
     }
 
     .social {
-        display: grid;
+        display: inline-block;
         grid-column: 1 / -1;
     }
 

@@ -410,7 +410,7 @@ hr {
     color: #fff;
     background-color: #0C326B;
     /* border: 1px solid #ebebeb; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     max-width: 100%;
     margin: 0 auto;
     z-index: 1;
