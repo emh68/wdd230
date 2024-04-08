@@ -59,7 +59,7 @@
     .rentals {
         display: grid;
 
-        grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
         gap: 20px;
         max-width: 100%;
     }
@@ -95,12 +95,16 @@
         width: 200px;
     }
 
-    /* .weather {
-        grid-column: 2;
+    .weather {
+        /* grid-column: 2; */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 5px;
-    } */
+    }
+
+    .weather hr {
+        grid-column: 1 / -1;
+    }
 
 
 

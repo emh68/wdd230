@@ -314,7 +314,9 @@ hr {
 .scooters-container,
 .atvs-container,
 .jeeps-container,
-.jetski-container {
+.jetski-container,
+.jeep-tour-container,
+.cenote-container {
     max-width: 100%;
     width: 325px;
     height: 400px;
@@ -329,7 +331,9 @@ hr {
 .scooters-container img,
 .atvs-container img,
 .jeeps-container img,
-.jetski-container img {
+.jetski-container img,
+.jeep-tour-container img,
+.cenote-container img {
     /* display: block;
     max-width: 100%;
     height: auto; */
@@ -403,12 +407,13 @@ hr {
     position: relative;
     /* top: 100px; */
     padding: 20px;
-    background-color: #ebebeb;
-    border: 1px solid #ebebeb;
+    color: #fff;
+    background-color: #0C326B;
+    /* border: 1px solid #ebebeb; */
     border-radius: 10px;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
-    z-index: 3;
+    z-index: 1;
 }
 
 .footer-content {
