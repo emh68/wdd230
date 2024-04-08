@@ -95,6 +95,11 @@
         width: 200px;
     }
 
+    .social {
+        display: grid;
+        grid-column: 1 / -1;
+    }
+
     .weather {
         /* grid-column: 2; */
         display: grid;
