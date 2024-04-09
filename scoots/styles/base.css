@@ -58,7 +58,6 @@ h2 {
 body {
     max-width: 100%;
     /* background-color: #0C326B; */
-
 }
 
 /* main {
@@ -86,12 +85,7 @@ header {
 .logo img {
     max-width: 100%;
     height: auto;
-    /* margin: 0 auto; */
-    /* position: relative;
-    left: 10px; */
-    /* margin-left: 40px; */
 }
-
 
 #menu {
     display: block;
@@ -99,7 +93,6 @@ header {
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    /* background-color: #2F3061; */
     color: #fff;
 }
 
@@ -114,7 +107,6 @@ header {
     font-family: var(--font_bxbold);
     font-size: larger;
     justify-content: center;
-    /* padding: 20px; */
 }
 
 .navigation li {
@@ -248,7 +240,6 @@ ul {
 .wave-design-layer-5,
 .wave-design-layer-6 {
     position: absolute;
-    /* top: 0; */
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -294,8 +285,6 @@ ul {
 
 .vehicles,
 .rentals {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     max-width: 100%;
     gap: 20px;
     align-items: center;
@@ -335,12 +324,8 @@ hr {
 .jetski-container img,
 .jeep-tour-container img,
 .cenote-container img {
-    /* display: block;
-    max-width: 100%;
-    height: auto; */
     max-width: 100%;
     width: 325px;
-    /* max-width: 325px; */
     height: auto;
     padding: 5px;
     /* margin: 5px 5px 5px 10px; */
@@ -351,22 +336,15 @@ hr {
     padding: 5px;
 }
 
-/* .scooters h3,
-.atvs h3,
-.jeeps h3,
-.jetski h3 {
-    text-align: center;
-    padding: 20px;
-} */
-
 .vehicles p {
     padding: 10px;
     text-align: center;
 }
 
 .button-container {
+    padding: 20px;
     max-width: 100%;
-    margin: 40px;
+    z-index: 3;
 }
 
 .button {
@@ -384,12 +362,8 @@ hr {
 
 .weather-container {
     max-width: 100%;
-    /* display: grid;
-    grid-template-columns: 1fr; */
-    /* grid-gap: 20px; */
-    padding-top: 70px;
+    padding-top: 120px;
     background-color: #0C326B;
-
 }
 
 .current-weather,
@@ -429,8 +403,6 @@ footer {
     z-index: 5;
 }
 
-
-
 /*--------- Rentals --------------- */
 :root {
     --back: #0C326B;
@@ -449,7 +421,10 @@ footer {
 
 .metro-container,
 .dio-container,
-.pcx150-container {
+.pcx150-container,
+.honda-pioneer-container,
+.jeep2-container,
+.jeep4-container {
     max-width: 250px;
     height: auto;
     background-color: #fff;
@@ -462,6 +437,27 @@ footer {
     max-width: 100%;
     height: auto;
     margin: 15px auto 15px;
+    background-color: #fff;
+}
+
+.jeep2-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto 15px;
+    background-color: #fff;
+}
+
+.honda-pioneer-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 50px auto 15px;
+    background-color: #fff;
+}
+
+.jeep4-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 60px auto 15px;
     background-color: #fff;
 }
 
@@ -522,38 +518,25 @@ tbody tr:nth-child(even) {
     background-color: var(--zebra);
 }
 
-
-
-/* th,
-td {
-    border: 1px solid #000;
-    padding: 8px;
-    text-align: center;
-} */
-
-
 /*--------- Reservations ------------*/
-
-/* body {
-    background-image: linear-gradient(#6AD4E8 45%, #99EBDB, #AAF3D7);
-} */
-
 .reservations {
     background-image: linear-gradient(#6AD4E8 45%, #99EBDB, #AAF3D7);
 }
 
 form fieldset {
     margin: 0 auto;
-    max-width: 600px;
-    border: 1px solid #000;
-    border-radius: 10px;
+    max-width: 100%;
+    width: 600px;
+    border: 2px solid #000;
+    border-radius: 5px;
     padding: 10px;
     background-color: #fff;
 }
 
-/* form legend {
-    padding: 0px;
-} */
+form legend {
+    font-weight: 900;
+    font-size: large;
+}
 
 form label {
     display: block;
@@ -622,28 +605,35 @@ label {
     font-size: .8rem;
 }
 
+.addRentalButton {
+    display: block;
+    border: none;
+    background-color: #0C326B;
+    color: #F9FD46;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+}
+
 #rentalInputs {
     padding-top: 10px;
     padding-bottom: 10px;
-
 }
 
 .totalCost {
     font-weight: bold;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px;
 }
 
-
-form input.submitBtn {
+.submitBtn {
     display: block;
-    border: none;
     background-color: #0C326B;
-    color: #fff;
-    border-radius: 5px;
-    padding: .75rem 1.5rem;
-    margin: 0 auto;
-    /* width: 96%; */
-    /* max-width: 15rem; */
+    color: #35F083;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 200px;
+    margin: 20px auto;
+    z-index: 3;
 }
 
 /* ------ CONTACT US -------*/
