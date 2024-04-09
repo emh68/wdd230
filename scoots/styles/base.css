@@ -424,7 +424,10 @@ footer {
 .pcx150-container,
 .honda-pioneer-container,
 .jeep2-container,
-.jeep4-container {
+.jeep4-container,
+.waverunner-ex-container,
+.waverunner-vx-container,
+.sea-doo-gti-container {
     max-width: 250px;
     height: auto;
     background-color: #fff;
@@ -433,7 +436,10 @@ footer {
 
 .metro-container img,
 .dio-container img,
-.pcx150-container img {
+.pcx150-container img,
+.waverunner-ex-container img,
+.waverunner-vx-container img,
+.sea-doo-gti-container img {
     max-width: 100%;
     height: auto;
     margin: 15px auto 15px;
