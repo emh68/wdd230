@@ -36,7 +36,6 @@ h1 {
     text-align: center;
     font-size: 3.5rem;
     font-family: var(--font_hvyitalic), Arial, Helvetica, sans-serif;
-    /* margin: 0 auto; */
     text-shadow: 0 0 10px#fff;
 }
 
@@ -51,21 +50,12 @@ h1 {
 
 h2 {
     font-family: var(--font_hvyitalic), Arial, Helvetica, sans-serif;
-    /* color: #fff; */
     color: #0C326B;
 }
 
 body {
     max-width: 100%;
-    /* background-color: #0C326B; */
 }
-
-/* main {
-    background-color: #999;
-    background-image: url("/scoots/images/beach-background.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 header {
     display: flex;
@@ -177,7 +167,7 @@ ul {
     background: none;
 }
 
-.hero {
+.hero-container {
     position: relative;
     width: 100%;
     height: auto;
@@ -212,9 +202,9 @@ ul {
     transform: rotateY(180deg);
 }
 
-.wave-design-layer-1 .shape,
-.wave-design-layer-2 .shape,
-.wave-design-layer-3 .shape {
+.wave-design-layer-1 .shape-fill,
+.wave-design-layer-2 .shape-fill,
+.wave-design-layer-3 .shape-fill {
     fill: #6AD4E8;
 }
 
@@ -230,11 +220,11 @@ ul {
     height: 148px;
 }
 
-.wave-design-layer-2 .shape {
+.wave-design-layer-2 .shape-fill {
     opacity: 65%;
 }
 
-.wave-design-layer-3 .shape {
+.wave-design-layer-3 .shape-fill {
     opacity: 45%;
 }
 
@@ -259,9 +249,9 @@ ul {
     transform: rotateY(180deg);
 }
 
-.wave-design-layer-4 .shape,
-.wave-design-layer-5 .shape,
-.wave-design-layer-6 .shape {
+.wave-design-layer-4 .shape-fill,
+.wave-design-layer-5 .shape-fill,
+.wave-design-layer-6 .shape-fill {
     fill: #AAF3D7;
 }
 
@@ -277,11 +267,11 @@ ul {
     height: 148px;
 }
 
-.wave-design-layer-5 .shape {
+.wave-design-layer-5 .shape-fill {
     opacity: 65%;
 }
 
-.wave-design-layer-6 .shape {
+.wave-design-layer-6 .shape-fill {
     opacity: 45%;
 }
 
@@ -291,8 +281,6 @@ ul {
     gap: 20px;
     align-items: center;
     text-align: center;
-    /* background-color: bisque; */
-    /* z-index: 3; */
     background-image: linear-gradient(#6AD4E8 45%, #99EBDB, #AAF3D7);
     padding-bottom: 40px;
     padding-top: 40px;
