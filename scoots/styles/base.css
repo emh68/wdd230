@@ -130,9 +130,11 @@ header {
     background-color: #AAF3D7;
 }
 
-/* .active::before {
-    content: "👉 ";
-} */
+.navigation .active {
+    text-decoration: underline;
+    text-decoration-color: #F9FD46;
+    text-decoration-thickness: 4px;
+}
 
 .show li {
     display: block;
@@ -293,6 +295,7 @@ ul {
     /* z-index: 3; */
     background-image: linear-gradient(#6AD4E8 45%, #99EBDB, #AAF3D7);
     padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 hr {
@@ -391,8 +394,13 @@ hr {
     z-index: 1;
 }
 
+.social {
+    margin: 20px auto;
+}
+
 .footer-content {
     color: #35F083;
+    padding: 20px;
 }
 
 footer {
