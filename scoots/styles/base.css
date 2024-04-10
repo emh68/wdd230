@@ -511,7 +511,7 @@ tbody tr:nth-child(even) {
 }
 
 form fieldset {
-    margin: 0 auto;
+    margin: 0 auto 10px;
     max-width: 100%;
     width: 600px;
     border: 2px solid #000;
@@ -601,6 +601,22 @@ label {
 .totalCost {
     font-weight: bold;
     padding: 10px 0px;
+}
+
+.rental-policies {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.rental-policies li {
+    list-style-type: disc;
+    padding: 5px;
+    margin-left: 20px;
 }
 
 .submitBtn {

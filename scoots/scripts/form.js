@@ -4,7 +4,7 @@ async function fetchData() {
     try {
         const response = await fetch(rentalsData);
         const data = await response.json();
-        console.log("Fetched rental data:", data); // Log the fetched data
+        console.log("Fetched rental data:", data);
         return data.rentals;
     } catch (error) {
         console.error('Error fetching rental data:', error);
@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Add one rental by default with inputs disabled
     addRental(true);
 
-    // Add event listener to the "Add Rental" button
+    // Event listener for the "Add Rental" button
     const addRentalButton = document.getElementById("addRentalButton");
     addRentalButton.addEventListener("click", addRental);
 
-    // Add event listener to check dates before selecting rental period or vehicle type
+    // Check dates before selecting rental period or vehicle type
     const pickupDateInput = document.getElementById("pickupdate");
     const returnDateInput = document.getElementById("returndate");
     pickupDateInput.addEventListener("change", function () {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         checkDatesBeforeSelection();
     });
 
-    // Add event listener to handle changes in vehicle selection
+    // Event listener to handle changes in vehicle selection
     const rentalInputs = document.getElementById("rentalInputs");
     rentalInputs.addEventListener("change", function (event) {
         const target = event.target;
@@ -99,8 +99,8 @@ async function addNewRental(disableInputs = false) {
     halfDayInput.type = "radio";
     halfDayInput.name = `vehicle_${rentalNumber}_rental`;
     halfDayInput.value = "half-day";
-    halfDayInput.addEventListener("change", updateTotalCost); // Add event listener
-    halfDayInput.disabled = disableInputs; // Disable the radio buttons for default rental
+    halfDayInput.addEventListener("change", updateTotalCost);
+    halfDayInput.disabled = disableInputs; // Disable the radio buttons for default rental until valid dates selected
     rentalPeriodDiv.appendChild(halfDayInput);
 
     const halfDayLabel = document.createElement("label");

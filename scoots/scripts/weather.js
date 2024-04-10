@@ -1,4 +1,4 @@
-// Weather API and calculate wind chill
+// Weather API to provide weather forecast
 document.addEventListener('DOMContentLoaded', function () {
     const currentWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=20.5066&lon=-86.944&appid=b2384255491935468122e0e1ee279982&units=imperial';
     const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.5066&lon=-86.944&appid=b2384255491935468122e0e1ee279982&units=imperial';

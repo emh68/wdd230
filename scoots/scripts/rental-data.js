@@ -1,3 +1,4 @@
+// Populates rental rates in rentals table
 const rentalsData = "https://emh68.github.io/wdd230/scoots/data/rentals.json";
 
 async function fetchData() {
