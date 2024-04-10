@@ -650,6 +650,11 @@ label {
     z-index: 3;
 }
 
+picture img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ------ CONTACT US -------*/
 .contact {
     /* display: grid;
