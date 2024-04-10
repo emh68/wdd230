@@ -5,7 +5,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        /* justify-content: center; */
     }
 
     .logo img {
@@ -17,7 +16,6 @@
     .navigation {
         display: flex;
         justify-content: center;
-        /* Center items horizontally */
         align-items: center;
     }
 
@@ -39,7 +37,6 @@
         margin: auto;
     }
 
-
     main {
         margin: auto;
         max-width: 100%;
@@ -51,10 +48,6 @@
         width: 100%;
         margin-bottom: 0;
     }
-
-    /* hr {
-        grid-column: 1 / -1;
-    } */
 
     .vehicles {
         display: grid;
@@ -71,24 +64,6 @@
         grid-column: 1 / -1;
     }
 
-    /* .button {
-        width: 400px;
-    } */
-
-    /* .scooters-container,
-    .atvs-container,
-    .jeeps-container,
-    .jetski-container {
-        
-        max-width: 340px;
-        height: 386px;
-        
-        margin: 5px;
-        padding: 5px;
-        
-    } */
-
-
     .button {
         grid-column: 1 / -1;
         width: 200px;
@@ -100,7 +75,6 @@
     }
 
     .weather {
-        /* grid-column: 2; */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 5px;
@@ -109,12 +83,6 @@
     .weather hr {
         grid-column: 1 / -1;
     }
-
-    /* .rentals {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-    } */
 
     .scooters,
     .atvs,
@@ -132,14 +100,4 @@
         grid-template-columns: 3fr;
         max-width: 100%;
     }
-
-
-
-    /* table {
-        max-width: 100%;
-
-    } */
-
-
-
 }
