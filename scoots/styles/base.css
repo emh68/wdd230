@@ -212,9 +212,9 @@ ul {
     transform: rotateY(180deg);
 }
 
-.wave-design-layer-1 .shape-fill,
-.wave-design-layer-2 .shape-fill,
-.wave-design-layer-3 .shape-fill {
+.wave-design-layer-1 .shape,
+.wave-design-layer-2 .shape,
+.wave-design-layer-3 .shape {
     fill: #6AD4E8;
 }
 
@@ -230,11 +230,11 @@ ul {
     height: 148px;
 }
 
-.wave-design-layer-2 .shape-fill {
+.wave-design-layer-2 .shape {
     opacity: 65%;
 }
 
-.wave-design-layer-3 .shape-fill {
+.wave-design-layer-3 .shape {
     opacity: 45%;
 }
 
@@ -259,9 +259,9 @@ ul {
     transform: rotateY(180deg);
 }
 
-.wave-design-layer-4 .shape-fill,
-.wave-design-layer-5 .shape-fill,
-.wave-design-layer-6 .shape-fill {
+.wave-design-layer-4 .shape,
+.wave-design-layer-5 .shape,
+.wave-design-layer-6 .shape {
     fill: #AAF3D7;
 }
 
@@ -277,11 +277,11 @@ ul {
     height: 148px;
 }
 
-.wave-design-layer-5 .shape-fill {
+.wave-design-layer-5 .shape {
     opacity: 65%;
 }
 
-.wave-design-layer-6 .shape-fill {
+.wave-design-layer-6 .shape {
     opacity: 45%;
 }
 
