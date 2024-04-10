@@ -303,10 +303,6 @@ hr {
     height: 400px;
     margin: 15px auto 15px;
     background-color: #fff;
-    /* max-width: 340px; */
-    /* height: 386px; */
-    /* margin: 20px auto; */
-    /* padding-top: 5px; */
 }
 
 .scooters-container img,
@@ -319,8 +315,6 @@ hr {
     width: 325px;
     height: auto;
     padding: 5px;
-    /* margin: 5px 5px 5px 10px; */
-    /* background-color: #fff; */
 }
 
 .scooters-content {
@@ -345,7 +339,6 @@ hr {
     padding: 10px;
     border-radius: 20px;
     text-decoration: none;
-    /* margin: 20px auto 20px; */
     max-width: 200px;
     margin: 0 auto;
     z-index: 3;
@@ -371,12 +364,9 @@ hr {
     align-items: center;
     text-align: center;
     position: relative;
-    /* top: 100px; */
     padding: 20px;
     color: #fff;
     background-color: #0C326B;
-    /* border: 1px solid #ebebeb; */
-    /* border-radius: 10px; */
     max-width: 100%;
     margin: 0 auto;
     z-index: 1;
@@ -410,10 +400,6 @@ footer {
     --shadow: hsl(0, 0%, 50%);
     --zebra: hsla(234, 76%, 77%, 0.26);
 }
-
-/* body {
-    font-family: "Trebushet MS", Arial, serif;
-} */
 
 .metro-container,
 .dio-container,
@@ -475,13 +461,11 @@ footer {
 }
 
 table {
-    /* margin: 0 auto; */
     max-width: 100%;
     margin: 10px auto;
     border: thin solid var(--border);
     box-shadow: 0 0 10px var(--shadow);
     border-collapse: collapse;
-    /* z-index: 5; */
 }
 
 #rentalBody {
@@ -502,7 +486,6 @@ td {
 
 th {
     background-color: var(--back2);
-    /* background-color: var(--back2); */
     font-size: larger;
 }
 
@@ -511,9 +494,7 @@ th {
 }
 
 td {
-    /* background-color: #fff; */
     text-align: center;
-    /* z-index: 5; */
 }
 
 tbody tr:nth-child(even) {
@@ -555,23 +536,15 @@ form label input {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* .rental-period-div {
-    display: flex;
-    align-items: center;
-} */
-
 .rental-period-div label {
     display: inline-flex;
     margin-right: 40px;
     align-items: center;
     margin-right: 30px;
-    /* display: inline-block; */
 }
 
 .rental-period-div input[type="radio"] {
     margin-right: 10px;
-    /* display: inline-block; */
-    /* vertical-align: middle; */
 }
 
 .radio-label {
@@ -645,13 +618,6 @@ picture img {
 
 /* ------ CONTACT US -------*/
 .contact {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-    /* gap: 20px; */
-    /* align-items: center; */
-    /* text-align: center; */
-    /* background-color: bisque; */
-    /* z-index: 3; */
     background-image: linear-gradient(#6AD4E8 45%, #99EBDB, #AAF3D7);
     padding-bottom: 40px;
     position: relative;
@@ -672,12 +638,6 @@ picture img {
     background-image: linear-gradient(#6AD4E8 45%, #99EBDB, #AAF3D7);
     display: flex;
     flex-direction: column;
-    /* align-items: left; */
-    /* Different styling for this form */
-    /* background-color: #35F083; */
-    /* padding: 20px; */
-    /* border-radius: 10px; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 
