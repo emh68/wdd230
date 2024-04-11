@@ -59,6 +59,93 @@ async function addRental(isDefault = false) {
     }
 }
 
+// async function addNewRental(disableInputs = false) {
+//     const rentalInputs = document.getElementById("rentalInputs");
+//     const rentalNumber = rentalInputs.children.length + 1;
+//     const rentals = await fetchData();
+
+//     // Create a container div for the rental content
+//     const containerDiv = document.createElement("div");
+//     containerDiv.classList.add("rental-container");
+
+//     // Create the rental div
+//     const div = document.createElement("div");
+
+//     const selectLabel = document.createElement("label");
+//     selectLabel.textContent = "Select Vehicle Type:";
+//     div.appendChild(selectLabel);
+
+//     const select = document.createElement("select");
+//     select.name = `vehicle_${rentalNumber}_type`;
+//     select.disabled = disableInputs; // Disable the select for default rental
+
+//     rentals.forEach(rental => {
+//         const option = document.createElement("option");
+//         option.value = rental.vehicle;
+//         option.textContent = `${rental.vehicle} (${rental.capacity})`;
+//         select.appendChild(option);
+//     });
+
+//     div.appendChild(select);
+
+//     // Add rental period selection for each unit
+//     const rentalPeriodDiv = document.createElement("div");
+//     rentalPeriodDiv.classList.add("rental-period-div");
+//     const rentalPeriodLabel = document.createElement("label");
+//     rentalPeriodLabel.textContent = `Select Rental Period:`;
+//     rentalPeriodDiv.appendChild(rentalPeriodLabel);
+
+//     const halfDayInput = document.createElement("input");
+//     halfDayInput.type = "radio";
+//     halfDayInput.name = `vehicle_${rentalNumber}_rental`;
+//     halfDayInput.value = "half-day";
+//     halfDayInput.addEventListener("change", updateTotalCost);
+//     halfDayInput.disabled = disableInputs; // Disable the radio buttons for default rental until valid dates selected
+//     rentalPeriodDiv.appendChild(halfDayInput);
+
+//     const halfDayLabel = document.createElement("label");
+//     halfDayLabel.textContent = "Half Day";
+//     rentalPeriodDiv.appendChild(halfDayLabel);
+
+//     const fullDayInput = document.createElement("input");
+//     fullDayInput.type = "radio";
+//     fullDayInput.name = `vehicle_${rentalNumber}_rental`;
+//     fullDayInput.value = "full-day";
+//     fullDayInput.addEventListener("change", updateTotalCost); // Add event listener
+//     fullDayInput.disabled = disableInputs; // Disable the radio buttons for default rental
+//     rentalPeriodDiv.appendChild(fullDayInput);
+
+//     const fullDayLabel = document.createElement("label");
+//     fullDayLabel.textContent = "Full Day";
+//     rentalPeriodDiv.appendChild(fullDayLabel);
+
+//     div.appendChild(rentalPeriodDiv);
+
+//     // Add delete button
+//     const deleteButton = document.createElement("button");
+//     deleteButton.textContent = "❌";
+//     deleteButton.classList.add("deleteButton");
+//     deleteButton.addEventListener("click", function () {
+//         rentalInputs.removeChild(containerDiv); // Remove the container div instead of rental div
+//         updateTotalCost();
+//     });
+//     containerDiv.appendChild(deleteButton); // Append delete button to the container div
+
+//     // Append the rental div to the container div
+//     containerDiv.appendChild(div);
+
+//     // Append the container div to rental inputs
+//     rentalInputs.appendChild(containerDiv);
+
+//     // If the rental duration is more than one day, disable the half-day option for all rentals
+//     const differenceInDays = calculateDifferenceInDays();
+//     if (differenceInDays > 0) {
+//         disableHalfDayOptions();
+//     }
+
+//     return containerDiv; // Return the container div
+// }
+
 async function addNewRental(disableInputs = false) {
     const rentalInputs = document.getElementById("rentalInputs");
     const rentalNumber = rentalInputs.children.length + 1;
@@ -95,28 +182,26 @@ async function addNewRental(disableInputs = false) {
     rentalPeriodLabel.textContent = `Select Rental Period:`;
     rentalPeriodDiv.appendChild(rentalPeriodLabel);
 
+    const halfDayLabel = document.createElement("label");
     const halfDayInput = document.createElement("input");
     halfDayInput.type = "radio";
     halfDayInput.name = `vehicle_${rentalNumber}_rental`;
     halfDayInput.value = "half-day";
     halfDayInput.addEventListener("change", updateTotalCost);
     halfDayInput.disabled = disableInputs; // Disable the radio buttons for default rental until valid dates selected
-    rentalPeriodDiv.appendChild(halfDayInput);
-
-    const halfDayLabel = document.createElement("label");
-    halfDayLabel.textContent = "Half Day";
+    halfDayLabel.appendChild(halfDayInput);
+    halfDayLabel.appendChild(document.createTextNode("Half Day"));
     rentalPeriodDiv.appendChild(halfDayLabel);
 
+    const fullDayLabel = document.createElement("label");
     const fullDayInput = document.createElement("input");
     fullDayInput.type = "radio";
     fullDayInput.name = `vehicle_${rentalNumber}_rental`;
     fullDayInput.value = "full-day";
     fullDayInput.addEventListener("change", updateTotalCost); // Add event listener
     fullDayInput.disabled = disableInputs; // Disable the radio buttons for default rental
-    rentalPeriodDiv.appendChild(fullDayInput);
-
-    const fullDayLabel = document.createElement("label");
-    fullDayLabel.textContent = "Full Day";
+    fullDayLabel.appendChild(fullDayInput);
+    fullDayLabel.appendChild(document.createTextNode("Full Day"));
     rentalPeriodDiv.appendChild(fullDayLabel);
 
     div.appendChild(rentalPeriodDiv);
@@ -145,6 +230,7 @@ async function addNewRental(disableInputs = false) {
 
     return containerDiv; // Return the container div
 }
+
 
 function calculateDifferenceInDays() {
     const pickupDate = document.getElementById("pickupdate").value;
