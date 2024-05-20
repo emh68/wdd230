@@ -116,7 +116,7 @@ header {
 .navigation a:hover,
 .navigation a:active {
   color: white;
-  background-color: black;
+  background-color: #14213D;
 }
 
 .show li {
@@ -125,6 +125,38 @@ header {
 
 #menu.show::before {
   content: "x";
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ebebeb;
+  min-width: 260px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #14213D;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 ul {
