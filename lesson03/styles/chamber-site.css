@@ -34,20 +34,20 @@ nav {
     padding: 10px;
 }
 
-
 nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
 }
 
-
 nav li {
     display: block;
     flex: 1 1 auto;
     text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', 'Trebucher MS', 'Arial', 'sans-serif';
+    text-align: center;
 }
-
 
 nav a {
     color: #fff;
@@ -84,7 +84,6 @@ main ul li {
     margin-right: 10px;
     margin-bottom: 10px;
 }
-
 
 .hex-codes {
     display: flex;
