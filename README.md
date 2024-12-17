@@ -56,5 +56,5 @@ To view my personal website which includes the final project as well as several 
 
 ## **Course Disclaimer**
 
-> *This repository contains starter code provided by BYU-Idaho for **WDD 230: Web Development Frountend I**. This material is for educational purposes only. Redistribution or reuse is prohibited without permission.*
+> *Please note this material is for educational purposes only. Redistribution or reuse is prohibited without permission.*
 
