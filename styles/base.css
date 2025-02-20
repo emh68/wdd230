@@ -104,6 +104,7 @@ header {
 }
 
 .navigation a {
+  font-family: 'Trebuchet MS', 'Arial', 'sans-serif';
   display: block;
   padding: .5rem;
   text-align: left;
