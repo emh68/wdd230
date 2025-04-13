@@ -17,7 +17,7 @@ function displayLinks(weeks) {
 
         week.links.forEach((link, index) => {
             let linkElement = document.createElement('a');
-            linkElement.href = `${baseURL}${link.url}`;
+            linkElement.href = link.url.startsWith('http') ? link.url : `${baseURL}${link.url}`;
             linkElement.target = '_blank';
             linkElement.textContent = link.title;
             const separator = document.createTextNode(' | ');
