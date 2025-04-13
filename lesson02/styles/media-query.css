@@ -1,3 +1,12 @@
+:root {
+    --max-width: 640px;
+    --border-color: #bbb;
+    --bg-light: #e6f2ff;
+    --bg-dark: black;
+    --text-light: white;
+    --padding: 1rem;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -5,20 +14,29 @@ body {
 header,
 main,
 footer {
-    max-width: 640px;
-    margin: 1rem auto;
-    border: 1px solid #bbb;
-    padding: 1rem;
-    background-color: #e6f2ff;
+    max-width: var(--max-width);
+    margin: var(--padding) auto;
+    border: 1px solid var(--border-color);
+    padding: var(--padding);
+}
+
+header {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+main,
+footer {
+    background-color: var(--bg-light);
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    gap: var(--padding);
 }
 
 section {
-    padding: 1rem;
+    padding: var(--padding);
     background-color: #fff;
 }
