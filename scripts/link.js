@@ -33,24 +33,3 @@ function displayLinks(weeks) {
 }
 
 getLinks();
-
-// Dynamically populate weather info.
-
-
-
-// Dynamically populate iframe map
-// function loadMap() {
-//     let mapContainer = document.querySelector('#map-container');
-//     let iframe = document.createElement('iframe');
-//     iframe.src = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13693.115600552277!2d-111.79146195040659!3d43.82217967670141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706422928546!5m2!1sen!2sus';
-//     iframe.width = 400;
-//     iframe.height = 250;
-//     iframe.title = 'Google Map of Rexburg, ID';
-//     iframe.allowfullscreen = true;
-//     iframe.referrerpolicy = 'no-referrer-when-downgrade';
-//     iframe.loading = 'lazy';
-//     mapContainer.appendChild(iframe);
-// }
-
-// // Load the map after the page has loaded
-// window.addEventListener('load', loadMap);
